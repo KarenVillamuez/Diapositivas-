@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 950" width="100%" height="100%">
+<rect width="1400" height="950" fill="#FFFFFF"/>
+<text x="60" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2C0509">EVALUACIÓN COMPARATIVA DE MODELOS TEÓRICOS</text>
+<text x="60" y="92" font-family="Arial, sans-serif" font-size="18" fill="#5D4A4D">Análisis multidimensional de 6 propuestas para mediación conversacional de escritura asistida</text>
+<line x1="60" y1="110" x2="1340" y2="110" stroke="#EAE0E1" stroke-width="2"/>
+<polygon points="600.0,360.0 695.3,415.0 695.3,525.0 600.0,580.0 504.7,525.0 504.7,415.0" fill="#F8EEEE" stroke="#EAE0E1" stroke-width="1.8"/>
+<text x="610" y="376.0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#8D7A7D">Bajo (1)</text>
+<polygon points="600.0,250.0 790.5,360.0 790.5,580.0 600.0,690.0 409.5,580.0 409.5,360.0" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.8"/>
+<text x="610" y="266.0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#8D7A7D">Medio (2)</text>
+<polygon points="600.0,140.0 885.8,305.0 885.8,635.0 600.0,800.0 314.2,635.0 314.2,305.0" fill="#FAF5F5" stroke="#EAE0E1" stroke-width="1.8"/>
+<text x="610" y="156.0" font-family="Courier New, monospace" font-size="13" font-weight="bold" fill="#8D7A7D">Alto (3)</text>
+<line x1="600" y1="470" x2="600.0" y2="140.0" stroke="#EAE0E1" stroke-width="2"/>
+<text x="600.0" y="105.0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="middle">Recursividad</text>
+<line x1="600" y1="470" x2="885.7883832488648" y2="305.0" stroke="#EAE0E1" stroke-width="2"/>
+<text x="930.4293994002423" y="279.0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="start">Desglose</text>
+<text x="930.4293994002423" y="301.0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="start">Andamiable</text>
+<line x1="600" y1="470" x2="885.7883832488648" y2="635.0" stroke="#EAE0E1" stroke-width="2"/>
+<text x="930.4293994002423" y="649.0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="start">Potencial</text>
+<text x="930.4293994002423" y="671.0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="start">Frente a IA</text>
+<line x1="600" y1="470" x2="600.0" y2="800.0" stroke="#EAE0E1" stroke-width="2"/>
+<text x="600.0" y="834.0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="middle">Aplicabilidad</text>
+<text x="600.0" y="856.0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="middle">Profesional</text>
+<line x1="600" y1="470" x2="314.2116167511353" y2="635.0000000000001" stroke="#EAE0E1" stroke-width="2"/>
+<text x="269.57060059975777" y="649.0000000000001" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="end">Mediación</text>
+<text x="269.57060059975777" y="671.0000000000001" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="end">Dialógica</text>
+<line x1="600" y1="470" x2="314.2116167511351" y2="305.0000000000002" stroke="#EAE0E1" stroke-width="2"/>
+<text x="269.57060059975754" y="279.0000000000002" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="end">Integración</text>
+<text x="269.57060059975754" y="301.0000000000002" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="end">Emocional</text>
+<polygon points="600.0,250.0 790.5,360.0 790.5,580.0 600.0,580.0 409.5,580.0 504.7,415.0" fill="none" stroke="#4A6B82" stroke-width="2.2" stroke-dasharray="6,4"/>
+<polygon points="600.0,250.0 790.5,360.0 695.3,525.0 600.0,580.0 504.7,525.0 504.7,415.0" fill="none" stroke="#7A5C80" stroke-width="2.2" stroke-dasharray="4,4"/>
+<polygon points="600.0,250.0 885.8,305.0 790.5,580.0 600.0,690.0 504.7,525.0 314.2,305.0" fill="none" stroke="#8C6A3E" stroke-width="2.2" stroke-dasharray="8,4"/>
+<polygon points="600.0,250.0 790.5,360.0 695.3,525.0 600.0,800.0 409.5,580.0 409.5,360.0" fill="none" stroke="#3B7A57" stroke-width="2.2" stroke-dasharray="5,3"/>
+<polygon points="600.0,140.0 885.8,305.0 885.8,635.0 600.0,690.0 504.7,525.0 504.7,415.0" fill="rgba(70, 8, 17, 0.22)" stroke="#460811" stroke-width="4.5"/>
+<circle cx="600.0" cy="140.0" r="5.5" fill="#460811" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="885.7883832488648" cy="305.0" r="5.5" fill="#460811" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="885.7883832488648" cy="635.0" r="5.5" fill="#460811" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="600.0" cy="690.0" r="5.5" fill="#460811" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="504.7372055837118" cy="525.0" r="5.5" fill="#460811" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="504.73720558371167" cy="415.00000000000006" r="5.5" fill="#460811" stroke="#FFFFFF" stroke-width="2"/>
+<polygon points="600.0,140.0 695.3,415.0 885.8,635.0 600.0,800.0 314.2,635.0 314.2,305.0" fill="rgba(201, 16, 27, 0.22)" stroke="#C9101B" stroke-width="4.5"/>
+<circle cx="600.0" cy="140.0" r="5.5" fill="#C9101B" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="695.2627944162882" cy="415.0" r="5.5" fill="#C9101B" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="885.7883832488648" cy="635.0" r="5.5" fill="#C9101B" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="600.0" cy="800.0" r="5.5" fill="#C9101B" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="314.2116167511353" cy="635.0000000000001" r="5.5" fill="#C9101B" stroke="#FFFFFF" stroke-width="2"/>
+<circle cx="314.2116167511351" cy="305.0000000000002" r="5.5" fill="#C9101B" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="1010" y="150" width="340" height="710" fill="#FAF5F5" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="1010" y="150" width="340" height="8" fill="#460811"/>
+<text x="1034" y="190" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#C9101B" letter-spacing="1">MODELOS SELECCIONADOS</text>
+<rect x="1034" y="210" width="20" height="20" fill="#460811"/>
+<text x="1064" y="226" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#2C0509">Flower y Hayes (1981)</text>
+<text x="1064" y="250" font-family="Arial, sans-serif" font-size="15" fill="#5D4A4D">Proceso cognitivo cíclico: planear,</text>
+<text x="1064" y="270" font-family="Arial, sans-serif" font-size="15" fill="#5D4A4D">redactar y revisar. Aporta las fases.</text>
+<rect x="1034" y="298" width="20" height="20" fill="#C9101B"/>
+<text x="1064" y="314" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#2C0509">Schön (1983)</text>
+<text x="1064" y="338" font-family="Arial, sans-serif" font-size="15" fill="#5D4A4D">Práctica reflexiva en la acción.</text>
+<text x="1064" y="358" font-family="Arial, sans-serif" font-size="15" fill="#5D4A4D">Aporta el diálogo y la sorpresa.</text>
+<line x1="1034" y1="385" x2="1326" y2="385" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="1034" y="415" font-family="Courier New, monospace" font-size="15" font-weight="bold" fill="#8D7A7D" letter-spacing="1">MODELOS CONTRASTADOS</text>
+<line x1="1034" y1="453" x2="1056" y2="453" stroke="#4A6B82" stroke-width="3" stroke-dasharray="4,3"/>
+<text x="1064" y="457" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Bereiter y Scardamalia</text>
+<text x="1064" y="475" font-family="Arial, sans-serif" font-size="13" fill="#8D7A7D">Transformar vs. decir conocimiento</text>
+<line x1="1034" y1="501" x2="1056" y2="501" stroke="#7A5C80" stroke-width="3" stroke-dasharray="4,3"/>
+<text x="1064" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Kellogg</text>
+<text x="1064" y="523" font-family="Arial, sans-serif" font-size="13" fill="#8D7A7D">Sobrecarga de memoria de trabajo</text>
+<line x1="1034" y1="549" x2="1056" y2="549" stroke="#8C6A3E" stroke-width="3" stroke-dasharray="4,3"/>
+<text x="1064" y="553" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Zimmerman y Risemberg</text>
+<text x="1064" y="571" font-family="Arial, sans-serif" font-size="13" fill="#8D7A7D">Autorregulación y motivación</text>
+<line x1="1034" y1="597" x2="1056" y2="597" stroke="#3B7A57" stroke-width="3" stroke-dasharray="4,3"/>
+<text x="1064" y="601" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Grupo Didactext</text>
+<text x="1064" y="619" font-family="Arial, sans-serif" font-size="13" fill="#8D7A7D">Didáctica sociocognitiva general</text>
+<rect x="1026" y="660" width="308" height="175" fill="#FFFFFF" stroke="#B38600" stroke-width="2"/>
+<rect x="1026" y="660" width="308" height="6" fill="#F5C21B"/>
+<text x="1040" y="692" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#B38600">HALLAZGO DE SELECCIÓN</text>
+<text x="1040" y="720" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2C0509">Complementariedad Exacta:</text>
+<text x="1040" y="742" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">Ningún modelo por sí solo cubría la</text>
+<text x="1040" y="762" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">necesidad. Flower y Hayes da la división</text>
+<text x="1040" y="782" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">operativa; Schön la lógica reflexiva</text>
+<text x="1040" y="802" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9101B">que impide que la IA sustituya al autor.</text>
+<text x="60" y="915" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Fig. 1. Evaluación comparativa de modelos de escritura reflexiva.</text>
+<text x="600" y="915" font-family="Arial, sans-serif" font-size="15" font-style="italic" fill="#8D7A7D">Figure 1. Comparative evaluation of reflective writing models. Fuente: Autores.</text>
+</svg>

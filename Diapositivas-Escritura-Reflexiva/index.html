@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VI Congreso Internacional de Investigación Interdisciplinar | Escritura Reflexiva Asistida por IA</title>
+  <meta name="description" content="Diseño de un modelo de mediación conversacional para la escritura reflexiva asistida por inteligencia artificial. VI Congreso Internacional Cartagena 2026.">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="icon" type="image/png" href="assets/image2.png">
+</head>
+<body>
+
+  <!-- Viewport de Presentación -->
+  <main id="presentation-viewport">
+    
+    <!-- Barra de progreso superior -->
+    <div id="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+
+    <!-- Escenario 16:9 auto-escalable -->
+    <div id="slides-stage">
+<!-- ====================================================================
+     SLIDE 01: PORTADA PRINCIPAL (HERO DARK · VINOTINTO)
+     ==================================================================== -->
+<section class="slide s-cover active" id="slide-1" data-notes="Abrir la ponencia con fuerza e instalar la tensión: 'Hoy la IA escribe por nosotros en segundos. Eso resuelve el texto, pero abre una pregunta incómoda: si yo no lo pensé, ¿el texto es mío? El problema no es la tecnología: es la delegación sostenida del pensamiento.'">
+  
+  <!-- Marca de agua de la Torre del Reloj de Cartagena -->
+  <img src="assets/image1.png" alt="Torre del Reloj" class="s1-tower-bg">
+
+  <!-- Header institucional -->
+  <div class="s1-header">
+    <img src="assets/image2.png" alt="#LoxTIC" class="s1-logo-loxtic">
+    <div class="s1-vsep"></div>
+    <div class="s1-congress-meta">
+      <div class="s1-congress-title">VI Congreso Internacional de<br>Investigación Interdisciplinar</div>
+      <div class="s1-congress-date">CARTAGENA DE INDIAS · 28–30 OCT 2026</div>
+    </div>
+  </div>
+
+  <!-- Bloque central de título -->
+  <div class="s1-title-block">
+    <div class="s1-tag-row">
+      <span class="s1-red-pill"></span>
+      <span class="s1-tag-label">ARTÍCULO DE INVESTIGACIÓN · ESCRITURA REFLEXIVA E IA</span>
+    </div>
+
+    <h1 class="s1-main-title" style="font-size: 50px; line-height: 1.15; max-width: 1400px; margin-bottom: 14px;">
+      Diseño de un modelo de mediación conversacional para la escritura reflexiva asistida por inteligencia artificial
+    </h1>
+    
+    <div class="s1-sub-title" style="font-size: 24px; color: #EAE0E1; margin-bottom: 24px;">
+      Design of a Conversational Mediation Model for Reflective Writing Assisted by Artificial Intelligence
+    </div>
+
+    <!-- Pregunta Gancho Oral -->
+    <div style="display: inline-flex; align-items: center; gap: 14px; background: rgba(245, 194, 27, 0.12); border-left: 5px solid var(--c-gold); padding: 10px 22px; margin-bottom: 28px;">
+      <span style="font-family: var(--font-mono); font-size: 20px; font-weight: bold; color: var(--c-gold); letter-spacing: 1px;">PREGUNTA GUÍA:</span>
+      <span style="font-family: var(--font-sans); font-size: 22px; font-weight: 700; color: #FFFFFF;">¿Y si la inteligencia artificial no escribiera por nosotros?</span>
+    </div>
+
+    <div class="s1-authors-list" style="font-family: var(--font-sans); font-size: 20px; color: #FAF5F5; line-height: 1.4;">
+      <div><strong>Ponente / Autores:</strong> Semillero de Investigación en Informática y Educación</div>
+      <div style="font-family: var(--font-mono); font-size: 16px; color: var(--c-gold); margin-top: 6px;">Área: Tecnologías Emergentes en Educación y Lingüística Aplicada</div>
+    </div>
+  </div>
+
+  <!-- Logos institucionales inferiores -->
+  <div class="s1-footer-logos">
+    <img src="assets/image3.png" alt="Universidad Distrital" class="s1-uni-logo s1-distrital">
+    <img src="assets/image4.png" alt="Universidad Tecnológica de Bolívar" class="s1-uni-logo s1-utb">
+    <img src="assets/image5.png" alt="Universidad de Cartagena" class="s1-uni-logo s1-unicartagena">
+  </div>
+
+</section>
+
+<!-- ====================================================================
+     SLIDE 02: RESUMEN EJECUTIVO / RUTA DE LA PONENCIA EN CUATRO ACTOS
+     ==================================================================== -->
+<section class="slide s-white" id="slide-2" data-notes="Presentar el hilo conductor: 'La ponencia no se divide en bloques aislados, sino en cuatro eslabones de una sola historia: la IA puede acompañar la escritura sin escribir por nosotros si la diseñamos para preguntar en lugar de responder. Ese hilo empieza con una pregunta, se traduce en diseño, se verifica con evidencia y cierra con una propuesta abierta.'">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">RESUMEN EJECUTIVO &middot; RUTA DE LA PONENCIA</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: space-between; padding-top: 10px; padding-bottom: 10px;">
+    
+    <div>
+      <h2 class="s-lead-question" style="font-size: 38px; font-weight: 800; margin-bottom: 8px; line-height: 1.2;">
+        Hilo conductor: acompañar la escritura sin reemplazar el razonamiento del autor
+      </h2>
+      <p style="font-family: var(--font-sans); font-size: 23px; color: var(--c-gray-text); margin: 0 0 16px 0;">
+        Una propuesta metodológica basada en reglas condicionales y disparadores semánticos en formato Markdown.
+      </p>
+    </div>
+
+    <!-- Retícula de los 4 Actos en horizontal -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+      
+      <!-- Acto 1 -->
+      <div style="background: #FAF5F5; border-top: 6px solid var(--c-wine-primary); border-left: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 20px; display: flex; flex-direction: column; justify-content: space-between; height: 490px;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">ACTO 01</span>
+            <span style="font-family: var(--font-mono); font-size: 14px; color: var(--c-gray-muted);">3–4 MIN</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 14px; line-height: 1.18;">
+            Contexto y Problema
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 19px; color: var(--c-gray-text); line-height: 1.4; margin-bottom: 16px;">
+            <strong>Propósito:</strong> Instalar la tensión. La delegación acrítica debilita el pensamiento; el desaprovechamiento pierde la herramienta.
+          </div>
+        </div>
+        <div style="border-top: 1px solid var(--c-border-subtle); padding-top: 14px;">
+          <div style="font-family: var(--font-mono); font-size: 13px; font-weight: bold; color: var(--c-wine-primary); margin-bottom: 4px;">FRASE-PUENTE:</div>
+          <div style="font-family: var(--font-sans); font-size: 16px; font-style: italic; color: var(--c-text-dark); line-height: 1.3;">
+            “Si el problema es la delegación, la pregunta es cómo acompañar sin sustituir.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Acto 2 -->
+      <div style="background: #FAF5F5; border-top: 6px solid var(--c-red-accent); border-left: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 20px; display: flex; flex-direction: column; justify-content: space-between; height: 490px;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px;">ACTO 02</span>
+            <span style="font-family: var(--font-mono); font-size: 14px; color: var(--c-gray-muted);">4–5 MIN</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 14px; line-height: 1.18;">
+            Metodología y Diseño
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 19px; color: var(--c-gray-text); line-height: 1.4; margin-bottom: 16px;">
+            <strong>Propósito:</strong> Mostrar la apuesta. DBR adaptada en 3 fases: articulación de Flower-Hayes con Schön y 4 principios no sustitutivos.
+          </div>
+        </div>
+        <div style="border-top: 1px solid var(--c-border-subtle); padding-top: 14px;">
+          <div style="font-family: var(--font-mono); font-size: 13px; font-weight: bold; color: var(--c-red-accent); margin-bottom: 4px;">FRASE-PUENTE:</div>
+          <div style="font-family: var(--font-sans); font-size: 16px; font-style: italic; color: var(--c-text-dark); line-height: 1.3;">
+            “Diseñamos el modelo; ahora había que probar si se sostenía.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Acto 3 -->
+      <div style="background: #FAF5F5; border-top: 6px solid var(--c-gold-dark); border-left: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 20px; display: flex; flex-direction: column; justify-content: space-between; height: 490px;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-gold-dark); letter-spacing: 1.5px;">ACTO 03</span>
+            <span style="font-family: var(--font-mono); font-size: 14px; color: var(--c-gray-muted);">4–5 MIN</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 14px; line-height: 1.18;">
+            Resultados y Evidencia
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 19px; color: var(--c-gray-text); line-height: 1.4; margin-bottom: 16px;">
+            <strong>Propósito:</strong> Verificación interna. El autor en el centro, lógica del agente y simulación empírica con 3 perfiles de escritor.
+          </div>
+        </div>
+        <div style="border-top: 1px solid var(--c-border-subtle); padding-top: 14px;">
+          <div style="font-family: var(--font-mono); font-size: 13px; font-weight: bold; color: var(--c-gold-dark); margin-bottom: 4px;">FRASE-PUENTE:</div>
+          <div style="font-family: var(--font-sans); font-size: 16px; font-style: italic; color: var(--c-text-dark); line-height: 1.3;">
+            “Los resultados muestran coherencia, pero también límites.”
+          </div>
+        </div>
+      </div>
+
+      <!-- Acto 4 -->
+      <div style="background: #FAF5F5; border-top: 6px solid var(--c-wine-primary); border-left: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 20px; display: flex; flex-direction: column; justify-content: space-between; height: 490px;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">ACTO 04</span>
+            <span style="font-family: var(--font-mono); font-size: 14px; color: var(--c-gray-muted);">3–4 MIN</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 14px; line-height: 1.18;">
+            Conclusiones y Cierre
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 19px; color: var(--c-gray-text); line-height: 1.4; margin-bottom: 16px;">
+            <strong>Propósito:</strong> Cerrar y proyectar. La IA no necesita redactar para ayudar. Aportes, límites y validación futura con personas reales.
+          </div>
+        </div>
+        <div style="border-top: 1px solid var(--c-border-subtle); padding-top: 14px;">
+          <div style="font-family: var(--font-mono); font-size: 13px; font-weight: bold; color: var(--c-wine-primary); margin-bottom: 4px;">FRASE-PUENTE:</div>
+          <div style="font-family: var(--font-sans); font-size: 16px; font-style: italic; color: var(--c-text-dark); line-height: 1.3;">
+            “Acompañar sin reemplazar: el texto siempre debe ser del autor.”
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Barra de veredicto unificador -->
+    <div style="background: #FDF8E8; border-left: 8px solid var(--c-gold); padding: 16px 28px; display: flex; align-items: center; justify-content: space-between;">
+      <span style="font-family: var(--font-mono); font-size: 18px; font-weight: bold; color: var(--c-wine-primary); letter-spacing: 1px;">TESIS CENTRAL:</span>
+      <span style="font-family: var(--font-sans); font-size: 23px; font-weight: 700; color: var(--c-text-dark);">
+        “La IA puede acompañar la escritura sin escribir por nosotros, si la diseñamos para preguntar en lugar de responder.”
+      </span>
+    </div>
+
+  </div>
+
+  <div class="slide-footer-rule"></div>
+  <footer class="slide-footer">
+    <span class="sf-left">VI CONGRESO INTERNACIONAL &middot; CARTAGENA 2026</span>
+    <span class="sf-right">LOHACEMOSXTIC.COM</span>
+  </footer>
+
+</section>
+
+<!-- ====================================================================
+     SLIDE 03: SEPARADOR ACTO 1 (HERO DARK · VINOTINTO)
+     ==================================================================== -->
+<section class="slide s-cover" id="slide-3" data-notes="Transición oral de apertura del Acto 1: 'Comencemos instalando la tensión. Aquí no se resuelve nada; se abre la herida. Hoy la inteligencia artificial entrega textos inmediatos y listos para copiar, acelerando la tarea pero acostumbrando a las personas a delegar su pensamiento.'">
+  
+  <img src="assets/image1.png" alt="Torre del Reloj" class="s1-tower-bg">
+
+  <div class="s1-header">
+    <img src="assets/image2.png" alt="#LoxTIC" class="s1-logo-loxtic">
+    <div class="s1-vsep"></div>
+    <div class="s1-congress-meta">
+      <div class="s1-congress-title">VI Congreso Internacional de Investigación Interdisciplinar</div>
+      <div class="s1-congress-date">CARTAGENA DE INDIAS · 28–30 OCT 2026</div>
+    </div>
+  </div>
+
+  <div class="s1-title-block" style="top: 32%;">
+    <div class="s1-tag-row">
+      <span class="s1-red-pill"></span>
+      <span class="s1-tag-label" style="color: var(--c-gold); letter-spacing: 2px;">PRIMER BLOQUE DE LA PONENCIA</span>
+    </div>
+
+    <div style="font-family: var(--font-mono); font-size: 80px; font-weight: 800; color: var(--c-gold); line-height: 1; margin: 10px 0 16px 0;">
+      ACTO 01
+    </div>
+
+    <h2 style="font-family: var(--font-sans); font-size: 60px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin: 0 0 24px 0; max-width: 1300px;">
+      Contexto y Problema: La Tensión de la Delegación
+    </h2>
+
+    <div style="font-family: var(--font-sans); font-size: 28px; color: #EAE0E1; max-width: 1200px; line-height: 1.4; border-left: 6px solid var(--c-red-accent); padding-left: 24px;">
+      ¿Por qué es un problema que la IA escriba por nosotros? Cuando la máquina redacta en segundos, el autor deja de elaborar sus ideas y se acumula una deuda cognitiva invisible.
+    </div>
+  </div>
+
+  <div style="position: absolute; bottom: 6%; left: 5.7%; font-family: var(--font-mono); font-size: 18px; color: var(--c-gold);">
+    DURACIÓN SUGERIDA: 3–4 MINUTOS &middot; FUNCIÓN NARRATIVA: INSTALAR LA TENSIÓN
+  </div>
+
+</section>
+
+<!-- ====================================================================
+     SLIDE 04: 01 · CONTEXTO Y PROBLEMA / LA DOBLE TENSIÓN
+     ==================================================================== -->
+<section class="slide s-white" id="slide-4" data-notes="Hoy la IA escribe por nosotros en segundos. Eso resuelve el texto, pero abre una pregunta incómoda: si yo no lo pensé, ¿el texto es mío? Hay quienes adoptan sin más lo que la IA propone y dejan de elaborar sus ideas. Y hay quienes, por miedo, la evitan por completo y desaprovechan una herramienta que bien usada podría apoyar sin reemplazar. El problema no es la tecnología: es la delegación sostenida del pensamiento.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">01 &middot; CONTEXTO Y PROBLEMA &middot; LA DOBLE TENSI&Oacute;N</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 18px;">
+    
+    <h2 class="s-lead-question" style="font-size: 44px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 24px; line-height: 1.18;">
+      Dos caminos opuestos ante la IA: delegaci&oacute;n acr&iacute;tica versus desaprovechamiento
+    </h2>
+
+    <!-- Díptico Comparativo -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; align-items: stretch; margin-bottom: 20px;">
+      
+      <!-- Tarjeta 1: Delegación Acrítica -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 32px 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+        <!-- Marca de agua icono alerta / sustitución -->
+        <div style="position: absolute; right: 20px; top: 20px; opacity: 0.08; color: var(--c-red-accent); pointer-events: none;">
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
+
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px; margin-bottom: 12px;">
+            RIESGO 01 &middot; DELEGACI&Oacute;N ACR&Iacute;TICA
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+            Sustituci&oacute;n y Atrofia del Pensamiento
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 23px; color: #110103; line-height: 1.45; margin-bottom: 20px;">
+            El autor entrega el borrador a la IA para que redacte o resuelva el argumento completo. La soluci&oacute;n es inmediata, pero se suspende la elaboraci&oacute;n cognitiva interna.
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--c-border-subtle); padding-top: 18px;">
+          <div style="font-family: var(--font-mono); font-size: 15px; color: #63575A; font-weight: 700; margin-bottom: 6px;">CONSECUENCIA PEDAG&Oacute;GICA:</div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: var(--c-red-accent); font-weight: 700; line-height: 1.35;">
+            P&eacute;rdida de agencia autoral, homogeneizaci&oacute;n del estilo y debilitamiento progresivo del criterio argumentativo [9], [13], [14].
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Desaprovechamiento -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 32px 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+        <!-- Marca de agua icono bloqueo / desconexión -->
+        <div style="position: absolute; right: 20px; top: 20px; opacity: 0.08; color: var(--c-wine-primary); pointer-events: none;">
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+          </svg>
+        </div>
+
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; margin-bottom: 12px;">
+            RIESGO 02 &middot; DESAPROVECHAMIENTO
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+            Rechazo por Temor y P&eacute;rdida de Apoyo
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 23px; color: #110103; line-height: 1.45; margin-bottom: 20px;">
+            Por miedo al plagio, la sanci&oacute;n o la adulteraci&oacute;n de la autor&iacute;a, se proh&iacute;be o elude la IA por completo, desestimando su potencial como interlocutor dial&oacute;gico.
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--c-border-subtle); padding-top: 18px;">
+          <div style="font-family: var(--font-mono); font-size: 15px; color: #63575A; font-weight: 700; margin-bottom: 6px;">CONSECUENCIA PEDAG&Oacute;GICA:</div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: var(--c-wine-primary); font-weight: 700; line-height: 1.35;">
+            Se renuncia a un andamiaje capaz de cuestionar premisas, ordenar ideas y propiciar autorregulaci&oacute;n metacognitiva [17].
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja de Síntesis Inferior -->
+    <div style="background: var(--c-wine-dark); color: #FFFFFF; padding: 18px 30px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold);">
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: var(--c-gold); letter-spacing: 1px;">DIAGN&Oacute;STICO CLAVE:</span>
+        <span style="font-family: var(--font-sans); font-size: 23px; font-weight: 600; color: #FFFFFF;">
+          El problema <strong>no es la tecnolog&iacute;a en s&iacute;</strong>, sino la delegaci&oacute;n sostenida del pensamiento inducida por interfaces que entregan respuestas terminadas.
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 05: 01 · CONTEXTO Y PROBLEMA / LA PREGUNTA DE INVESTIGACIÓN
+     ==================================================================== -->
+<section class="slide s-white" id="slide-5" data-notes="Si el problema es la delegación, la pregunta que guía esta investigación es cómo acompañar sin sustituir. La solución no pasa por pedirle a la IA que redacte mejor o con más estilo, sino por transformar radicalmente su rol: pasar de un generador que entrega respuestas a un espejo que formula preguntas para que el autor piense.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">01 &middot; CONTEXTO Y PROBLEMA &middot; CAMBIO DE PARADIGMA</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 18px;">
+    
+    <h2 class="s-lead-question" style="font-size: 44px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 24px; line-height: 1.18;">
+      &iquest;C&oacute;mo acompa&ntilde;ar la escritura sin reemplazar el razonamiento del autor?
+    </h2>
+
+    <!-- Contraste de Enfoques -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; align-items: stretch; margin-bottom: 20px;">
+      
+      <!-- Enfoque Convencional -->
+      <div style="background: #FAF5F5; border-left: 8px solid #8D7A7D; border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 32px 30px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: #8D7A7D; letter-spacing: 1.5px;">
+              PARADIGMA CONVENCIONAL
+            </span>
+            <span style="background: #EAE0E1; color: #460811; font-family: var(--font-mono); font-size: 14px; font-weight: 700; padding: 4px 10px;">
+              IA PRODUCTORA
+            </span>
+          </div>
+          
+          <div style="font-family: var(--font-sans); font-size: 30px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+            La IA como Or&aacute;culo y Sustituto
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px; font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 800;">&times;</span>
+              <span><strong>Mecanismo:</strong> Genera texto final a partir de indicaciones m&iacute;nimas (<em>prompt-to-text</em>).</span>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 800;">&times;</span>
+              <span><strong>Efecto en el autor:</strong> Revisor pasivo que se limita a aceptar, retocar o pulir texto ajeno.</span>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 800;">&times;</span>
+              <span><strong>Consecuencia:</strong> Suprime la fricci&oacute;n cognitiva necesaria para consolidar el pensamiento cr&iacute;tico.</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--c-border-subtle); padding: 14px 18px; margin-top: 14px;">
+          <span style="font-family: var(--font-mono); font-size: 16px; color: #63575A;">Prompt t&iacute;pico: </span>
+          <span style="font-family: var(--font-sans); font-size: 17px; color: var(--c-red-accent); font-style: italic;">"Escr&iacute;beme la introducci&oacute;n y conclusiones de mi ensayo..."</span>
+        </div>
+      </div>
+
+      <!-- Enfoque Propuesto -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 32px 30px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">
+              PARADIGMA PROPUESTO
+            </span>
+            <span style="background: var(--c-wine-primary); color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; padding: 4px 10px;">
+              IA MEDIADORA
+            </span>
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 30px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+            La IA como Espejo Dial&oacute;gico y May&eacute;utico
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px; font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 800;">&#10003;</span>
+              <span><strong>Mecanismo:</strong> Pregunta en lugar de responder; refleja inconsistencias usando los propios t&eacute;rminos del autor.</span>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 800;">&#10003;</span>
+              <span><strong>Efecto en el autor:</strong> Protagonista activo que articula, argumenta y toma decisiones aut&oacute;nomas.</span>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 800;">&#10003;</span>
+              <span><strong>Consecuencia:</strong> Preserva la fricci&oacute;n productiva que detona reflexi&oacute;n en la acci&oacute;n (Sch&ouml;n).</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: #FFFFFF; border: 1px solid var(--c-wine-primary); padding: 14px 18px; margin-top: 14px;">
+          <span style="font-family: var(--font-mono); font-size: 16px; color: var(--c-wine-primary); font-weight: 700;">Intervenci&oacute;n del modelo: </span>
+          <span style="font-family: var(--font-sans); font-size: 17px; color: var(--c-text-dark); font-weight: 600;">"Mencionas que X contradice a Y. &iquest;C&oacute;mo se concilian en tu argumento?"</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja Puente de Salida hacia el Acto 2 -->
+    <div style="background: #32060D; color: #FFFFFF; padding: 18px 30px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold);">
+      <div style="font-family: var(--font-sans); font-size: 23px; font-weight: 700;">
+        <span style="color: var(--c-gold);">FRASE-PUENTE:</span> &ldquo;Si el problema es la delegaci&oacute;n, la pregunta es c&oacute;mo acompa&ntilde;ar sin sustituir. Para responderla, tomamos un camino de dise&ntilde;o.&rdquo;
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 06: SEPARADOR ACTO 2 · METODOLOGÍA (HERO DARK · VINOTINTO)
+     ==================================================================== -->
+<section class="slide s-act-sep" id="slide-6" data-notes="Para responder cómo acompañar sin sustituir, tomamos un camino de diseño. No partimos de cero: adaptamos la metodología DBR para estructurar, fundamentar y formalizar un modelo con reglas explícitas antes de cualquier despliegue con usuarios.">
+
+  <!-- Marca de agua de la Torre del Reloj -->
+  <img src="assets/image1.png" alt="Torre del Reloj" class="s1-tower-bg">
+
+  <!-- Header con Logos -->
+  <div class="s1-header">
+    <img src="assets/image2.png" alt="#LoxTIC" class="s1-logo-loxtic">
+    <div class="s1-vsep"></div>
+    <div class="s1-congress-meta">
+      <div class="s1-congress-title">VI Congreso Internacional de<br>Investigaci&oacute;n Interdisciplinar</div>
+      <div class="s1-congress-date">CARTAGENA DE INDIAS &middot; 28&ndash;30 OCT 2026</div>
+    </div>
+  </div>
+
+  <!-- Contenido Central del Separador -->
+  <div class="s1-title-block">
+    <div class="s1-tag-row">
+      <span class="s1-red-pill"></span>
+      <span class="s1-tag-label">ESLAB&Oacute;N 02 DE 04 &middot; EL CAMINO DE DISE&Ntilde;O</span>
+    </div>
+
+    <div style="font-family: var(--font-mono); font-size: 26px; font-weight: 800; color: var(--c-gold); letter-spacing: 2px; margin-bottom: 8px;">
+      ACTO 2
+    </div>
+
+    <h2 style="font-family: var(--font-sans); font-size: 54px; font-weight: 800; color: #FFFFFF; line-height: 1.15; margin: 0 0 16px 0;">
+      Metodolog&iacute;a: Del Fundamento Te&oacute;rico a la Gu&iacute;a Condicional
+    </h2>
+
+    <!-- Pregunta que Responde el Acto -->
+    <div style="background: rgba(245, 194, 27, 0.12); border-left: 6px solid var(--c-gold); padding: 14px 24px; max-width: 1200px; margin-bottom: 22px;">
+      <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-gold); letter-spacing: 1px; margin-bottom: 4px;">
+        PREGUNTA CENTRAL DEL ACTO 2:
+      </div>
+      <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 700; color: #FFFFFF; line-height: 1.25;">
+        &iquest;C&oacute;mo dise&ntilde;amos una mediaci&oacute;n que no reemplace al autor?
+      </div>
+    </div>
+
+    <div style="font-family: var(--font-sans); font-size: 22px; color: #FAF5F5; line-height: 1.45; max-width: 1300px;">
+      Investigaci&oacute;n Basada en el Dise&ntilde;o (DBR adaptada) &middot; Evaluaci&oacute;n comparativa de 6 modelos te&oacute;ricos &middot; 4 principios rectores de mediaci&oacute;n &middot; Formalizaci&oacute;n en Markdown con disparadores sem&aacute;nticos.
+    </div>
+  </div>
+
+  <!-- Logos institucionales inferiores -->
+  <div class="s1-footer-logos">
+    <img src="assets/image3.png" alt="Universidad Distrital" class="s1-uni-logo s1-distrital">
+    <img src="assets/image4.png" alt="Universidad Tecnol&oacute;gica de Bol&iacute;var" class="s1-uni-logo s1-utb">
+    <img src="assets/image5.png" alt="Universidad de Cartagena" class="s1-uni-logo s1-unicartagena">
+  </div>
+
+</section>
+
+<!-- ====================================================================
+     SLIDE 07: 02 · METODOLOGÍA / DBR ADAPTADA EN TRES FASES
+     ==================================================================== -->
+<section class="slide s-white" id="slide-7" data-notes="Adoptamos la Investigación Basada en el Diseño (DBR) adaptada. En lugar de saltar de inmediato a un experimento de aula con variables no controladas, la DBR nos exige primero fundamentar las condiciones del problema, formalizar el artefacto pedagógico con reglas explícitas y verificar su coherencia interna mediante pruebas rigurosas.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">02 &middot; METODOLOG&Iacute;A &middot; INVESTIGACI&Oacute;N BASADA EN EL DISE&Ntilde;O (DBR)</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: center; padding-top: 10px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 44px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 28px; line-height: 1.2;">
+      El camino: DBR adaptada en tres fases de desarrollo y verificaci&oacute;n
+    </h2>
+
+    <div style="display: flex; flex-direction: column; gap: 26px;">
+      
+      <!-- Fila de Proceso Conectado (3 Fases) -->
+      <div style="display: flex; align-items: stretch; gap: 16px;">
+        
+        <!-- Fase 1: Exploración y Condiciones -->
+        <div style="flex: 1; position: relative; background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+          <!-- Icono de Esquina Sobresaliendo -->
+          <div style="position: absolute; top: -14px; right: -8px; transform: rotate(10deg); filter: drop-shadow(0 3px 6px rgba(70, 8, 17, 0.16)); pointer-events: none; z-index: 2;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--c-wine-primary)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              <line x1="9" y1="7" x2="15" y2="7"/>
+              <line x1="9" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+
+          <div style="position: relative; z-index: 1;">
+            <div style="margin-bottom: 12px; padding-right: 36px;">
+              <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">
+                FASE 01 &middot; EXPLORACI&Oacute;N
+              </span>
+            </div>
+            
+            <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 10px; line-height: 1.15;">
+              An&aacute;lisis del Problema
+            </div>
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; margin-top: 4px; position: relative; z-index: 1;">
+            Revisi&oacute;n del estado del arte en escritura asistida, identificaci&oacute;n de la delegaci&oacute;n cognitiva y delimitaci&oacute;n de los <strong style="color: var(--c-wine-primary);">criterios de dise&ntilde;o pedag&oacute;gico</strong> [10].
+          </div>
+        </div>
+
+        <!-- Flecha Conectora 1 -->
+        <div style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--c-wine-primary); z-index: 1;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/>
+          </svg>
+        </div>
+
+        <!-- Fase 2: Modelado y Formalización -->
+        <div style="flex: 1; position: relative; background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+          <!-- Icono de Esquina Sobresaliendo -->
+          <div style="position: absolute; top: -14px; right: -8px; transform: rotate(-8deg); filter: drop-shadow(0 3px 6px rgba(201, 16, 27, 0.18)); pointer-events: none; z-index: 2;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--c-red-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+
+          <div style="position: relative; z-index: 1;">
+            <div style="margin-bottom: 12px; padding-right: 36px;">
+              <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px;">
+                FASE 02 &middot; FORMALIZACI&Oacute;N
+              </span>
+            </div>
+
+            <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 10px; line-height: 1.15;">
+              Traducci&oacute;n en Gu&iacute;a Operativa
+            </div>
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; margin-top: 4px; position: relative; z-index: 1;">
+            Selecci&oacute;n te&oacute;rica (Flower-Hayes + Sch&ouml;n), formulaci&oacute;n de los <strong style="color: var(--c-red-accent);">cuatro principios rectores</strong> y codificaci&oacute;n en gu&iacute;a Markdown con disparadores sem&aacute;nticos.
+          </div>
+        </div>
+
+        <!-- Flecha Conectora 2 -->
+        <div style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #9A7200; z-index: 1;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/>
+          </svg>
+        </div>
+
+        <!-- Fase 3: Verificación Interna -->
+        <div style="flex: 1; position: relative; background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+          <!-- Icono de Esquina Sobresaliendo -->
+          <div style="position: absolute; top: -14px; right: -8px; transform: rotate(10deg); filter: drop-shadow(0 3px 6px rgba(154, 114, 0, 0.18)); pointer-events: none; z-index: 2;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9A7200" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+
+          <div style="position: relative; z-index: 1;">
+            <div style="margin-bottom: 12px; padding-right: 36px;">
+              <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: #9A7200; letter-spacing: 1.5px;">
+                FASE 03 &middot; VERIFICACI&Oacute;N
+              </span>
+            </div>
+
+            <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 10px; line-height: 1.15;">
+              Pruebas de Coherencia
+            </div>
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; margin-top: 4px; position: relative; z-index: 1;">
+            Diagrama de estados y actividades, simulaci&oacute;n con <strong style="color: #9A7200;">tres perfiles contrastantes</strong> (novato, competente, experto) y auditor&iacute;a de no-sustituci&oacute;n.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tarjeta Explicativa Inferior -->
+      <div style="background: #FFFFFF; border: 2px solid var(--c-wine-primary); padding: 18px 26px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 18px;">
+          <span style="background: var(--c-wine-primary); color: #FFFFFF; font-family: var(--font-mono); font-size: 15px; font-weight: 800; padding: 6px 12px;">
+            PROP&Oacute;SITO METODOL&Oacute;GICO
+          </span>
+          <span style="font-family: var(--font-sans); font-size: 22px; color: var(--c-text-dark); font-weight: 600;">
+            Asegurar que el modelo sea <strong>estructuralmente s&oacute;lido</strong> y pedag&oacute;gicamente aut&oacute;nomo antes de someterlo a pruebas emp&iacute;ricas en aula.
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 08: 02 · METODOLOGÍA / SELECCIÓN TEÓRICA (FIGURA 1)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-8" data-notes="Para responder cómo acompañar sin sustituir, revisamos seis modelos de escritura reflexiva reconocidos en la literatura. Ninguno por sí solo cubría la necesidad completa: unos se enfocaban en la cognición individual y otros en la introspección profesional. Pero dos se complementaban de manera perfecta: Flower y Hayes nos dieron las etapas recursivas de escritura, y Schön nos dio la lógica reflexiva de pensar mientras se actúa.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">02 &middot; METODOLOG&Iacute;A &middot; SELECCI&Oacute;N TE&Oacute;RICA</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 42px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 20px; line-height: 1.2;">
+      De seis modelos te&oacute;ricos a dos: complementariedad Flower-Hayes y Sch&ouml;n
+    </h2>
+
+    <div style="display: flex; gap: 28px; align-items: stretch; height: 585px;">
+      
+      <!-- Columna Principal: Marco de Ventana con Figura 1 del Paper -->
+      <div style="flex: 0 0 760px; height: 585px; border: 2.5px solid var(--c-wine-primary); box-shadow: 0 14px 36px rgba(44, 5, 9, 0.16); overflow: hidden; position: relative; border-radius: 0; background: #FFFFFF; display: flex; flex-direction: column;">
+        
+        <!-- Header superior del marco de figura -->
+        <div style="background: var(--c-wine-primary); padding: 10px 18px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+          <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px;">
+            FIGURA 1 &middot; EVALUACI&Oacute;N MULTIDIMENSIONAL
+          </span>
+          <span style="font-family: var(--font-sans); font-size: 14px; color: var(--c-gold); font-weight: 700;">
+            Radar de Cobertura Te&oacute;rica (6 Dimensiones)
+          </span>
+        </div>
+
+        <!-- Imagen de Figura 1 -->
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 12px; background: #FFFFFF;">
+          <img src="assets/figura_1.png" alt="Figura 1: Evaluación comparativa de 6 modelos de escritura reflexiva" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+        </div>
+
+        <!-- Pie de figura -->
+        <div style="background: #FAF5F5; border-top: 1px solid var(--c-border-subtle); padding: 8px 16px; font-family: var(--font-mono); font-size: 14px; color: #63575A; text-align: right;">
+          Fuente: Elaboraci&oacute;n propia basada en revisi&oacute;n sistem&aacute;tica de la literatura.
+        </div>
+      </div>
+
+      <!-- Columna Lateral: Justificación Teórica y Complementariedad -->
+      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+        
+        <!-- Tarjeta 1: Flower & Hayes -->
+        <div style="position: relative; background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 18px 22px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="margin-bottom: 6px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1px;">
+              01 &middot; FLOWER &amp; HAYES (1981)
+            </span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 6px; line-height: 1.15;">
+            Arquitectura Cognitiva y Recursividad
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.38;">
+            Aporta la estructura operativa de fases: <strong>planificaci&oacute;n, redacci&oacute;n y revisi&oacute;n</strong>. La escritura no es lineal sino un proceso recursivo de soluci&oacute;n de problemas.
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Schön -->
+        <div style="position: relative; background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 18px 22px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="margin-bottom: 6px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1px;">
+              02 &middot; SCH&Ouml;N (1983, 1987)
+            </span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 6px; line-height: 1.15;">
+            Reflexi&oacute;n en la Acci&oacute;n y Conversaci&oacute;n
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.38;">
+            Aporta la l&oacute;gica dial&oacute;gica: el escritor mantiene una <em>conversaci&oacute;n reflexiva con los materiales</em> cuando surge una sorpresa o desajuste con su expectativa original.
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Síntesis de Complementariedad -->
+        <div style="position: relative; background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 18px 22px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="margin-bottom: 6px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #9A7200; letter-spacing: 1px;">
+              S&Iacute;NTESIS &middot; ARTICULACI&Oacute;N TE&Oacute;RICA
+            </span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #9A7200; margin-bottom: 6px; line-height: 1.15;">
+            Estructura Cognitiva + Din&aacute;mica May&eacute;utica
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.38;">
+            Flower y Hayes ordenan el <strong>d&oacute;nde y cu&aacute;ndo</strong> intervenir; Sch&ouml;n determina el <strong>c&oacute;mo intervenir</strong> (cuestionar sin resolver).
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 09: 02 · METODOLOGÍA / CUATRO PRINCIPIOS DE DISEÑO
+     ==================================================================== -->
+<section class="slide s-white" id="slide-9" data-notes="Para garantizar que el modelo no caiga en la trampa de la sustitución, establecimos cuatro principios no negociables: No sustitución, para que nunca redacte por el autor; Fricción cognitiva, para mantener el esfuerzo de pensar; Activación granular, para intervenir solo ante señales reales de duda; y Atención pragmática, para respetar el tiempo y la decisión del escritor si decide no reflexionar.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">02 &middot; METODOLOG&Iacute;A &middot; PRINCIPIOS DE DISE&Ntilde;O</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 42px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 22px; line-height: 1.2;">
+      Cuatro principios mantienen la autonom&iacute;a del autor frente al asistente
+    </h2>
+
+    <!-- Cuadrícula 2x2 de Principios -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 24px; flex: 1; margin-bottom: 18px;">
+      
+      <!-- Principio 1: No sustitución -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 26px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px;">
+              PRINCIPIO 01 &middot; MANDATORIO
+            </span>
+            <span style="background: var(--c-red-accent); color: #FFFFFF; font-family: var(--font-mono); font-size: 13px; font-weight: 700; padding: 3px 8px;">
+              PROHIBIDO REDACTAR
+            </span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 10px; line-height: 1.2;">
+            No Sustituci&oacute;n del Autor
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; line-height: 1.38;">
+            El agente tiene <strong>prohibido redactar, reescribir frases o juzgar con notas</strong>. Ante solicitudes directas como <em>"hazlo t&uacute;"</em>, declina cort&eacute;smente y formula una pregunta orientadora.
+          </div>
+        </div>
+      </div>
+
+      <!-- Principio 2: Fricción cognitiva productiva -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 26px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">
+              PRINCIPIO 02 &middot; COGNITIVO
+            </span>
+            <span style="background: var(--c-wine-primary); color: #FFFFFF; font-family: var(--font-mono); font-size: 13px; font-weight: 700; padding: 3px 8px;">
+              ESFUERZO ACTIVO
+            </span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 10px; line-height: 1.2;">
+            Fricci&oacute;n Cognitiva Productiva
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; line-height: 1.38;">
+            Preserva la dificultad deseable del pensar. La IA introduce preguntas que invitan a <strong>revisar supuestos, contrastar evidencias y precisar definiciones</strong> antes de dar por cerrado un p&aacute;rrafo.
+          </div>
+        </div>
+      </div>
+
+      <!-- Principio 3: Activación granular -->
+      <div style="background: #FAF5F5; border-left: 8px solid #9A7200; border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 26px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #9A7200; letter-spacing: 1.5px;">
+              PRINCIPIO 03 &middot; INTERACCI&Oacute;N
+            </span>
+            <span style="background: #9A7200; color: #FFFFFF; font-family: var(--font-mono); font-size: 13px; font-weight: 700; padding: 3px 8px;">
+              DISPARADORES SEM&Aacute;NTICOS
+            </span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 10px; line-height: 1.2;">
+            Activaci&oacute;n Granular y No Intrusiva
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; line-height: 1.38;">
+            La intervenci&oacute;n no ocurre de manera invasiva ni peri&oacute;dica forzada. Se detona exclusivamente ante <strong>se&ntilde;ales textuales de desajuste, duda expl&iacute;cita o petici&oacute;n voluntaria</strong> del autor.
+          </div>
+        </div>
+      </div>
+
+      <!-- Principio 4: Atención pragmática -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 26px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #9A7200; letter-spacing: 1.5px;">
+              PRINCIPIO 04 &middot; FLEXIBILIDAD
+            </span>
+            <span style="background: var(--c-gold); color: #32060D; font-family: var(--font-mono); font-size: 13px; font-weight: 800; padding: 3px 8px;">
+              RUTA PRAGM&Aacute;TICA
+            </span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 10px; line-height: 1.2;">
+            Atenci&oacute;n Pragm&aacute;tica (Respeto al Tiempo)
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; line-height: 1.38;">
+            El modelo no es un laberinto r&iacute;gido. Si el autor manifiesta urgencia o decide no profundizar, el agente <strong>habilita la salida directa sin penalizaci&oacute;n ni reproches morales</strong>.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja Resumen Inferior -->
+    <div style="background: var(--c-wine-dark); color: #FFFFFF; padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold);">
+      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 700;">
+        <span style="color: var(--c-gold);">REGLA DE ORO:</span> El texto final le pertenece 100% al autor; la IA opera como caja de resonancia para afinar el pensamiento.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 10: 02 · METODOLOGÍA / LA GUÍA EN MARKDOWN
+     ==================================================================== -->
+<section class="slide s-white" id="slide-10" data-notes="Para materializar estos principios, construimos una guía en Markdown que cualquier asistente de IA puede interpretar como system prompt. No requiere código propietario ni arquitecturas complejas: son reglas condicionales y disparadores semánticos que obligan al modelo a guardar silencio cuando debe, preguntar cuando hay duda y respetar la voluntad del autor. Diseñamos el modelo; ahora había que probar si se sostenía.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">02 &middot; METODOLOG&Iacute;A &middot; FORMALIZACI&Oacute;N EN MARKDOWN</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 42px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 20px; line-height: 1.2;">
+      Una gu&iacute;a en Markdown: reglas condicionales y disparadores sem&aacute;nticos
+    </h2>
+
+    <div style="display: flex; gap: 28px; align-items: stretch; height: 535px;">
+      
+      <!-- Columna Izquierda: Visor del Sistema Prompt en Markdown (Mono) -->
+      <div style="flex: 1.1; background: #0E0305; border: 2px solid var(--c-wine-primary); padding: 22px 24px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--font-mono); box-shadow: 0 12px 32px rgba(44, 5, 9, 0.2);">
+        
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(245, 194, 27, 0.3); padding-bottom: 10px; margin-bottom: 14px;">
+            <span style="color: var(--c-gold); font-size: 15px; font-weight: 800; letter-spacing: 1px;">
+              SYSTEM_PROMPT &middot; MEDIACION_REFLEXIVA.MD
+            </span>
+            <span style="color: #FAF5F5; font-size: 13px; opacity: 0.6;">
+              Interpretable por cualquier LLM
+            </span>
+          </div>
+
+          <pre style="margin: 0; font-size: 18px; line-height: 1.5; color: #FAF5F5; white-space: pre-wrap;">
+<span style="color: var(--c-gold);"># ROL Y LÍMITES</span>
+Eres un espejo dialógico. <strong style="color: var(--c-red-accent);">NO redactes</strong> párrafos ni corrijas estilo.
+
+<span style="color: var(--c-gold);"># REGLAS CONDICIONALES DE DISPARO</span>
+<span style="color: #64B5F6;">SI</span> autor presenta [BORRADOR] con incoherencia o duda:
+   &rarr; Formular pregunta mayéutica usando sus mismos términos.
+
+<span style="color: #64B5F6;">SI</span> autor solicita <span style="color: var(--c-red-accent);">"Redáctalo tú"</span>:
+   &rarr; Declinar cortésmente: "¿Qué idea clave quieres destacar?"
+
+<span style="color: #64B5F6;">SI</span> autor invoca [RUTA_PRAGMÁTICA] (prisa / cierre):
+   &rarr; Suspender cuestionamiento y validar cierre del texto.
+          </pre>
+        </div>
+
+        <div style="background: rgba(245, 194, 27, 0.1); border-left: 4px solid var(--c-gold); padding: 8px 14px; font-size: 14px; color: var(--c-gold);">
+          Universal: Funciona en modelos locales (Llama, Gemma) y propietarios (Claude, GPT).
+        </div>
+      </div>
+
+      <!-- Columna Derecha: 3 Pilares Operativos de la Guía -->
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 14px;">
+        
+        <!-- Pilar 1 -->
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 16px 20px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 4px;">
+            01 &middot; INDEPENDENCIA DE PLATAFORMA
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+            Sin Código Propietario ni Vendor Lock-in
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.35;">
+            Cualquier docente o estudiante puede inyectar la gu&iacute;a en una ventana de chat est&aacute;ndar sin necesidad de APIs pagas ni extensiones.
+          </div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 16px 20px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-red-accent); margin-bottom: 4px;">
+            02 &middot; DISPARADORES SEM&Aacute;NTICOS
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+            Monitoreo de Se&ntilde;ales en Tiempo Real
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.35;">
+            Detecta vacilaci&oacute;n (&ldquo;no s&eacute; si&rdquo;), contradicciones l&oacute;gicas o bloqueos para activar la intervenci&oacute;n justa sin abrumar.
+          </div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 16px 20px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: #9A7200; margin-bottom: 4px;">
+            03 &middot; GOBERNANZA DEL AVANCE
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: #9A7200; margin-bottom: 4px;">
+            Transici&oacute;n Epistemol&oacute;gica de Fase
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.35;">
+            No permite avanzar a redacci&oacute;n formal hasta que el autor resuelva su prop&oacute;sito comunicativo b&aacute;sico.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Franja Puente de Salida hacia el Acto 3 -->
+    <div style="background: #32060D; color: #FFFFFF; padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold); margin-top: 16px;">
+      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 700;">
+        <span style="color: var(--c-gold);">FRASE-PUENTE:</span> &ldquo;Dise&ntilde;amos el modelo y sus reglas; ahora hab&iacute;a que probar si se sosten&iacute;a en la pr&aacute;ctica.&rdquo;
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 11: SEPARADOR ACTO 3 · RESULTADOS (HERO DARK · VINOTINTO)
+     ==================================================================== -->
+<section class="slide s-act-sep" id="slide-11" data-notes="Llegamos al Acto 3: Resultados. Aquí mostramos el modelo en acción: primero la arquitectura base sin tecnología, luego la integración del agente conversacional en torno al autor, y finalmente la verificación con tres perfiles de escritor para responder con evidencia si el modelo funciona.">
+
+  <!-- Marca de agua de la Torre del Reloj -->
+  <img src="assets/image1.png" alt="Torre del Reloj" class="s1-tower-bg">
+
+  <!-- Header con Logos -->
+  <div class="s1-header">
+    <img src="assets/image2.png" alt="#LoxTIC" class="s1-logo-loxtic">
+    <div class="s1-vsep"></div>
+    <div class="s1-congress-meta">
+      <div class="s1-congress-title">VI Congreso Internacional de<br>Investigaci&oacute;n Interdisciplinar</div>
+      <div class="s1-congress-date">CARTAGENA DE INDIAS &middot; 28&ndash;30 OCT 2026</div>
+    </div>
+  </div>
+
+  <!-- Contenido Central del Separador -->
+  <div class="s1-title-block">
+    <div class="s1-tag-row">
+      <span class="s1-red-pill"></span>
+      <span class="s1-tag-label">ESLAB&Oacute;N 03 DE 04 &middot; LA EVIDENCIA</span>
+    </div>
+
+    <div style="font-family: var(--font-mono); font-size: 26px; font-weight: 800; color: var(--c-gold); letter-spacing: 2px; margin-bottom: 8px;">
+      ACTO 3
+    </div>
+
+    <h2 style="font-family: var(--font-sans); font-size: 54px; font-weight: 800; color: #FFFFFF; line-height: 1.15; margin: 0 0 16px 0;">
+      Resultados: El Modelo en Acci&oacute;n y su Verificaci&oacute;n
+    </h2>
+
+    <!-- Pregunta que Responde el Acto -->
+    <div style="background: rgba(245, 194, 27, 0.12); border-left: 6px solid var(--c-gold); padding: 14px 24px; max-width: 1200px; margin-bottom: 22px;">
+      <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-gold); letter-spacing: 1px; margin-bottom: 4px;">
+        PREGUNTA CENTRAL DEL ACTO 3:
+      </div>
+      <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 700; color: #FFFFFF; line-height: 1.25;">
+        &iquest;Funciona lo que dise&ntilde;amos? &iquest;Se sostiene la no-sustituci&oacute;n?
+      </div>
+    </div>
+
+    <div style="font-family: var(--font-sans); font-size: 22px; color: #FAF5F5; line-height: 1.45; max-width: 1300px;">
+      Modelo base sin IA (Fig. 2) &middot; Modelo integrado con agente conversacional (Fig. 3) &middot; Matriz de avance epistemol&oacute;gico (Tabla 1) &middot; Diagrama de actividades (Fig. 4) &middot; Simulaci&oacute;n con 3 perfiles contrastantes (Fig. 5).
+    </div>
+  </div>
+
+  <!-- Logos institucionales inferiores -->
+  <div class="s1-footer-logos">
+    <img src="assets/image3.png" alt="Universidad Distrital" class="s1-uni-logo s1-distrital">
+    <img src="assets/image4.png" alt="Universidad Tecnol&oacute;gica de Bol&iacute;var" class="s1-uni-logo s1-utb">
+    <img src="assets/image5.png" alt="Universidad de Cartagena" class="s1-uni-logo s1-unicartagena">
+  </div>
+
+</section>
+
+<!-- ====================================================================
+     SLIDE 12: 03 · RESULTADOS / MODELO SIN IA (FIGURA 2)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-12" data-notes="Antes de incorporar cualquier tecnología, era indispensable modelar el proceso de escritura reflexiva en su estado natural. La Figura 2 muestra las ocho fases secuenciales y recursivas (P1 a P8). Noten los puntos críticos de quiebre y duda en P2 y la recursión en P7: escribir no es una línea recta, sino un ciclo continuo de ajuste cognitivo.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 &middot; RESULTADOS &middot; MODELO BASE SIN IA</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 12px; padding-bottom: 16px;">
+    
+    <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 16px; line-height: 1.2;">
+      Modelo de escritura reflexiva sin mediaci&oacute;n tecnol&oacute;gica (P1 a P8)
+    </h2>
+
+    <!-- Marco Panorámico de la Figura 2 -->
+    <div style="width: 100%; height: 420px; border: 2px solid var(--c-wine-primary); box-shadow: 0 10px 28px rgba(44, 5, 9, 0.12); position: relative; background: #FFFFFF; display: flex; flex-direction: column; margin-bottom: 18px;">
+      
+      <!-- Barra superior de identificación -->
+      <div style="background: var(--c-wine-primary); padding: 8px 18px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+        <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px;">
+          FIGURA 2 &middot; ARQUITECTURA COGNITIVA TRADICIONAL
+        </span>
+        <span style="font-family: var(--font-sans); font-size: 14px; color: var(--c-gold); font-weight: 700;">
+          8 Fases de Escritura Reflexiva y Bucles de Recursi&oacute;n
+        </span>
+      </div>
+
+      <!-- Imagen Figura 2 -->
+      <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 10px; background: #FFFFFF; overflow: hidden;">
+        <img src="assets/figura_2.png" alt="Figura 2: Modelo de escritura reflexiva sin mediación de IA" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+      </div>
+
+      <!-- Barra inferior -->
+      <div style="background: #FAF5F5; border-top: 1px solid var(--c-border-subtle); padding: 6px 16px; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 13px; color: #63575A;">
+        <span>Fases P1–P3 (Planear) &middot; P4–P6 (Redactar y Confrontar) &middot; P7–P8 (Revisar y Cerrar)</span>
+        <span>Fuente: Elaboraci&oacute;n propia articulando Flower &amp; Hayes con Sch&ouml;n.</span>
+      </div>
+    </div>
+
+    <!-- 3 Tarjetas de Análisis Inferior -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; flex: 1; align-items: stretch;">
+      
+      <!-- Tarjeta 1 -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 2px;">
+          P1 &ndash; P3 &middot; PLANIFICACI&Oacute;N
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+          G&eacute;nesis y Organizaci&oacute;n
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Activaci&oacute;n de saberes previos y fijaci&oacute;n de prop&oacute;sitos antes de generar prosa formal.
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-red-accent); margin-bottom: 2px;">
+          P4 &ndash; P6 &middot; EL QUIEBRE (SCH&Ouml;N)
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+          Sorpresa ante el Borrador
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          El autor relee y descubre brechas entre lo pensado y lo escrito, detonando reflexi&oacute;n en la acci&oacute;n.
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: #9A7200; margin-bottom: 2px;">
+          P7 &ndash; P8 &middot; RECURSI&Oacute;N
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: #9A7200; margin-bottom: 4px;">
+          Bucle de Ajuste Epist&eacute;mico
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Desde la revisi&oacute;n se regresa a reestructurar o replantear ideas; no es un proceso de l&iacute;nea de montaje.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 13: 03 · RESULTADOS / MODELO CON IA: EL AUTOR EN EL CENTRO (FIGURA 3)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-13" data-notes="Aquí reside el núcleo de nuestra propuesta. La Figura 3 muestra cómo se integra la IA: el autor permanece en el centro absoluto con el control de su texto. El asistente no se interpone ni redacta; actúa como un espejo que gravita alrededor de las fases, disparando cuatro tipos de intervenciones mayéuticas (I1 a I4) exclusivamente ante quiebres cognitivos.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 &middot; RESULTADOS &middot; MODELO INTEGRADO CON IA</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 18px; line-height: 1.2;">
+      El autor en el centro: la IA como espejo dial&oacute;gico en 4 intervenciones
+    </h2>
+
+    <div style="display: flex; gap: 26px; align-items: stretch; height: 585px;">
+      
+      <!-- Columna Principal: Marco de Ventana con Figura 3 -->
+      <div style="flex: 0 0 880px; height: 585px; border: 2.5px solid var(--c-wine-primary); box-shadow: 0 14px 36px rgba(44, 5, 9, 0.16); overflow: hidden; position: relative; border-radius: 0; background: #FFFFFF; display: flex; flex-direction: column;">
+        
+        <!-- Header del marco -->
+        <div style="background: var(--c-wine-primary); padding: 10px 18px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+          <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px;">
+            FIGURA 3 &middot; ARQUITECTURA DE MEDIACI&Oacute;N CONVERSACIONAL
+          </span>
+          <span style="font-family: var(--font-sans); font-size: 14px; color: var(--c-gold); font-weight: 700;">
+            El Autor en el Centro &middot; Intervenciones I1 &ndash; I4
+          </span>
+        </div>
+
+        <!-- Imagen Figura 3 -->
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 12px; background: #FFFFFF;">
+          <img src="assets/figura_3.png" alt="Figura 3: Modelo integrado con mediación conversacional de IA" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+        </div>
+
+        <!-- Pie del marco -->
+        <div style="background: #FAF5F5; border-top: 1px solid var(--c-border-subtle); padding: 8px 16px; font-family: var(--font-mono); font-size: 13px; color: #63575A; text-align: right;">
+          Fuente: Elaboraci&oacute;n propia. Cuatro n&oacute;dulos de mediaci&oacute;n calibrados por fase.
+        </div>
+      </div>
+
+      <!-- Columna Lateral: Desglose de las 4 Intervenciones Mayéuticas -->
+      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 10px;">
+        
+        <!-- I1 -->
+        <div style="background: #FAF5F5; border-left: 5px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 10px 14px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: var(--c-wine-primary);">I1 &middot; PROP&Oacute;SITO (P2)</span>
+            <span style="font-size: 11px; background: #EAE0E1; padding: 2px 6px; font-family: var(--font-mono); font-weight: 700;">PLAN</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 17px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 2px;">
+            Activaci&oacute;n May&eacute;utica
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 15px; color: #110103; font-style: italic;">
+            &ldquo;&iquest;Qu&eacute; cambio de perspectiva buscas provocar en tu lector?&rdquo;
+          </div>
+        </div>
+
+        <!-- I2 -->
+        <div style="background: #FAF5F5; border-left: 5px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 10px 14px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: var(--c-red-accent);">I2 &middot; DESAJUSTE (P4/P5)</span>
+            <span style="font-size: 11px; background: #FDE8E9; color: var(--c-red-accent); padding: 2px 6px; font-family: var(--font-mono); font-weight: 700;">TEXTO</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 17px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 2px;">
+            Espejo Sem&aacute;ntico
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 15px; color: #110103; font-style: italic;">
+            &ldquo;Mencionas X pero luego concluyes Y. &iquest;C&oacute;mo se conectan ambas ideas?&rdquo;
+          </div>
+        </div>
+
+        <!-- I3 -->
+        <div style="background: #FAF5F5; border-left: 5px solid #9A7200; border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 10px 14px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: #9A7200;">I3 &middot; EVIDENCIA (P6/P7)</span>
+            <span style="font-size: 11px; background: #FFF9E6; color: #9A7200; padding: 2px 6px; font-family: var(--font-mono); font-weight: 700;">REVISI&Oacute;N</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 17px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 2px;">
+            Contraste de Premisas
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 15px; color: #110103; font-style: italic;">
+            &ldquo;&iquest;Qu&eacute; contraejemplo podr&iacute;a debilitar esta afirmaci&oacute;n?&rdquo;
+          </div>
+        </div>
+
+        <!-- I4 -->
+        <div style="background: #FAF5F5; border-left: 5px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 10px 14px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: #9A7200;">I4 &middot; CIERRE (P8)</span>
+            <span style="font-size: 11px; background: #FFF9E6; color: #9A7200; padding: 2px 6px; font-family: var(--font-mono); font-weight: 700;">METACOGNICI&Oacute;N</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 17px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 2px;">
+            Validaci&oacute;n Aut&oacute;noma
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 15px; color: #110103; font-style: italic;">
+            &ldquo;&iquest;El texto final expresa con claridad tu prop&oacute;sito de P1?&rdquo;
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 14: 03 · RESULTADOS / CONDICIONES DE AVANCE (TABLA 1)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-14" data-notes="Para que la mediación sea rigurosa, definimos una matriz de condiciones de avance (Tabla 1 del artículo). La IA no pasa a la siguiente fase simplemente porque el usuario escribió tres líneas: evalúa si se cumplió la condición epistemológica. Si el autor aún no tiene claro su propósito, el modelo no lo deja saltar a redactar, salvo que el usuario invoque la ruta pragmática.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 &middot; RESULTADOS &middot; CONDICIONES DE AVANCE ENTRE FASES</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 18px; line-height: 1.2;">
+      Condiciones de avance: la gu&iacute;a transita solo cuando el autor cumple el criterio
+    </h2>
+
+    <!-- Tabla Formal Científica (Tabla 1 del Paper) -->
+    <div style="background: #FAF5F5; border: 2px solid var(--c-wine-primary); padding: 6px; box-shadow: 0 10px 28px rgba(44, 5, 9, 0.1); margin-bottom: 18px; flex: 1; display: flex; flex-direction: column;">
+      
+      <table style="width: 100%; height: 100%; border-collapse: collapse; font-family: var(--font-sans); text-align: left;">
+        <thead>
+          <tr style="background: var(--c-wine-primary); color: #FFFFFF; font-size: 18px;">
+            <th style="padding: 12px 16px; font-family: var(--font-mono); letter-spacing: 1px; width: 22%;">BLOQUE OPERATIVO</th>
+            <th style="padding: 12px 16px; font-family: var(--font-mono); letter-spacing: 1px; width: 26%;">DISPARADOR DEL AUTOR</th>
+            <th style="padding: 12px 16px; font-family: var(--font-mono); letter-spacing: 1px; width: 28%;">CONDICI&Oacute;N DE AVANCE</th>
+            <th style="padding: 12px 16px; font-family: var(--font-mono); letter-spacing: 1px; width: 24%;">ACCI&Oacute;N DEL ASISTENTE</th>
+          </tr>
+        </thead>
+        <tbody style="font-size: 18px; color: #110103; line-height: 1.35;">
+          
+          <!-- Fila 1: Planificación -->
+          <tr style="border-bottom: 1px solid var(--c-border-subtle); background: #FFFFFF;">
+            <td style="padding: 12px 16px; font-weight: 800; color: var(--c-wine-primary); border-left: 6px solid var(--c-wine-primary);">
+              P1 &ndash; P3 &middot; Planificaci&oacute;n
+              <div style="font-size: 14px; font-family: var(--font-mono); font-weight: normal; color: #63575A;">G&eacute;nesis de ideas</div>
+            </td>
+            <td style="padding: 12px 16px;">
+              Declaraci&oacute;n de tema o vacilaci&oacute;n inicial: <em>&ldquo;No s&eacute; c&oacute;mo enfocar este p&aacute;rrafo...&rdquo;</em>
+            </td>
+            <td style="padding: 12px 16px; font-weight: 700;">
+              El autor explicita su audiencia objetivo y su pregunta central de trabajo.
+            </td>
+            <td style="padding: 12px 16px; color: var(--c-wine-dark);">
+              <strong>I1:</strong> May&eacute;utica de prop&oacute;sito. Prohibido sugerir esquemas de contenido.
+            </td>
+          </tr>
+
+          <!-- Fila 2: Textualización / Quiebre -->
+          <tr style="border-bottom: 1px solid var(--c-border-subtle); background: #FAF5F5;">
+            <td style="padding: 12px 16px; font-weight: 800; color: var(--c-red-accent); border-left: 6px solid var(--c-red-accent);">
+              P4 &ndash; P5 &middot; Textualizaci&oacute;n
+              <div style="font-size: 14px; font-family: var(--font-mono); font-weight: normal; color: #63575A;">Primer borrador y quiebre</div>
+            </td>
+            <td style="padding: 12px 16px;">
+              Env&iacute;o de borrador con contradicci&oacute;n l&oacute;gica o brecha argumental evidente.
+            </td>
+            <td style="padding: 12px 16px; font-weight: 700;">
+              El autor reconoce expl&iacute;citamente la discrepancia entre su intenci&oacute;n y el texto.
+            </td>
+            <td style="padding: 12px 16px; color: var(--c-wine-dark);">
+              <strong>I2:</strong> Espejo sem&aacute;ntico. Refleja la tensi&oacute;n usando los mismos t&eacute;rminos del autor.
+            </td>
+          </tr>
+
+          <!-- Fila 3: Revisión y Recursión -->
+          <tr style="border-bottom: 1px solid var(--c-border-subtle); background: #FFFFFF;">
+            <td style="padding: 12px 16px; font-weight: 800; color: #9A7200; border-left: 6px solid #9A7200;">
+              P6 &ndash; P7 &middot; Revisi&oacute;n
+              <div style="font-size: 14px; font-family: var(--font-mono); font-weight: normal; color: #63575A;">Reestructuraci&oacute;n y ajuste</div>
+            </td>
+            <td style="padding: 12px 16px;">
+              Petici&oacute;n de revisi&oacute;n o duda de solidez: <em>&ldquo;&iquest;Se sostiene esta conclusi&oacute;n?&rdquo;</em>
+            </td>
+            <td style="padding: 12px 16px; font-weight: 700;">
+              El autor reordena argumentos o aporta evidencia aut&oacute;noma adicional.
+            </td>
+            <td style="padding: 12px 16px; color: var(--c-wine-dark);">
+              <strong>I3:</strong> Pregunta de contraste. Prohibido corregir ortograf&iacute;a o calificar.
+            </td>
+          </tr>
+
+          <!-- Fila 4: Salida Pragmática -->
+          <tr style="background: #FAF5F5;">
+            <td style="padding: 12px 16px; font-weight: 800; color: var(--c-gold); border-left: 6px solid var(--c-gold);">
+              P8 / Salida &middot; Pragm&aacute;tica
+              <div style="font-size: 14px; font-family: var(--font-mono); font-weight: normal; color: #63575A;">Cierre o l&iacute;mite de tiempo</div>
+            </td>
+            <td style="padding: 12px 16px;">
+              Declaraci&oacute;n de satisfacci&oacute;n o manifestaci&oacute;n de urgencia: <em>&ldquo;Debo cerrar ya&rdquo;</em>.
+            </td>
+            <td style="padding: 12px 16px; font-weight: 700;">
+              Decisi&oacute;n consciente del autor de finalizar la sesi&oacute;n sin m&aacute;s ciclos.
+            </td>
+            <td style="padding: 12px 16px; color: var(--c-wine-dark);">
+              <strong>I4 / Salida:</strong> Validaci&oacute;n metacognitiva y cierre inmediato sin reproches.
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <!-- Franja de Síntesis Inferior -->
+    <div style="background: var(--c-wine-dark); color: #FFFFFF; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold);">
+      <div style="font-family: var(--font-sans); font-size: 21px; font-weight: 700;">
+        <span style="color: var(--c-gold);">GOBERNANZA EPIST&Eacute;MICA:</span> A diferencia de un LLM comercial complaciente, el modelo supedita la transici&oacute;n al esfuerzo reflexivo demostrado por el escritor.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 15: 03 · RESULTADOS / DIAGRAMA DE ACTIVIDADES DEL AGENTE (FIGURA 4)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-15" data-notes="Para verificar que el comportamiento del agente fuera determinista y predecible, construimos el diagrama de actividades formal (Figura 4). Aquí se aprecia la lógica interna: la IA evalúa la entrada, guarda silencio cuando el autor avanza de forma fluida, interviene solo ante desajustes y activa de inmediato la ruta pragmática en dorado si el usuario lo solicita.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 &middot; RESULTADOS &middot; DIAGRAMA DE ACTIVIDADES</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 12px; padding-bottom: 16px;">
+    
+    <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 14px; line-height: 1.2;">
+      Diagrama de actividades: decisiones l&oacute;gicas, silencios y la ruta pragm&aacute;tica
+    </h2>
+
+    <!-- Marco Panorámico de la Figura 4 -->
+    <div style="width: 100%; height: 430px; border: 2.5px solid var(--c-wine-primary); box-shadow: 0 10px 28px rgba(44, 5, 9, 0.12); position: relative; background: #FFFFFF; display: flex; flex-direction: column; margin-bottom: 18px;">
+      
+      <!-- Barra superior de identificación -->
+      <div style="background: var(--c-wine-primary); padding: 8px 18px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+        <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px;">
+          FIGURA 4 &middot; FLUJO DE CONTROL Y DECISI&Oacute;N DEL AGENTE
+        </span>
+        <span style="font-family: var(--font-sans); font-size: 14px; color: var(--c-gold); font-weight: 700;">
+          Compuertas L&oacute;gicas, No-Sustituci&oacute;n y Ruta Pragm&aacute;tica
+        </span>
+      </div>
+
+      <!-- Imagen Figura 4 -->
+      <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 10px; background: #FFFFFF; overflow: hidden;">
+        <img src="assets/figura_4.png" alt="Figura 4: Diagrama de actividades de la mediación conversacional" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+      </div>
+
+      <!-- Barra inferior -->
+      <div style="background: #FAF5F5; border-top: 1px solid var(--c-border-subtle); padding: 6px 16px; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 13px; color: #63575A;">
+        <span>Compuertas: Entrada &rarr; An&aacute;lisis de Intenci&oacute;n &rarr; Evaluaci&oacute;n de Sustituci&oacute;n &rarr; Intervenci&oacute;n / Silencio</span>
+        <span>Fuente: Elaboraci&oacute;n propia bajo est&aacute;ndar UML de actividades.</span>
+      </div>
+    </div>
+
+    <!-- 3 Tarjetas de Análisis Inferior -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; flex: 1; align-items: stretch;">
+      
+      <!-- Tarjeta 1: Silencio Activo -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 2px;">
+          RAMA 01 &middot; SILENCIO ACTIVO
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+          No Interrupci&oacute;n Innecesaria
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Si el autor avanza con coherencia y sin vacilaci&oacute;n, el agente <strong>no interrumpe el flujo creador</strong>.
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Bloqueo de Sustitución -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-red-accent); margin-bottom: 2px;">
+          RAMA 02 &middot; ANTE "HAZLO T&Uacute;"
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+          Contenci&oacute;n y Repregunta
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Detecta la petici&oacute;n de delegaci&oacute;n acr&iacute;tica, declina la redacci&oacute;n y <strong>devuelve una pregunta focalizada</strong>.
+        </div>
+      </div>
+
+      <!-- Tarjeta 3: Ruta Pragmática -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: #9A7200; margin-bottom: 2px;">
+          RAMA 03 &middot; RUTA PRAGM&Aacute;TICA
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: #9A7200; margin-bottom: 4px;">
+          Cierre Inmediato Respetado
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Si el usuario declara urgencia o decisi&oacute;n de cierre, el agente suspende la may&eacute;utica y <strong>respeta la entrega</strong>.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 16: 03 · RESULTADOS / VALIDACIÓN CON TRES PERFILES (FIGURA 5)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-16" data-notes="Probamos la guía con tres perfiles de escritor sobre el mismo tipo de asistente que buscábamos evaluar. El principiante recorrió la guía completa, por ser el perfil de mayor exigencia; el competente y el experto tuvieron recorridos acotados. En los tres casos la guía conservó su consistencia interna: se adaptó al vocabulario y punto de partida de cada uno, y respetó la decisión de cerrar.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 &middot; RESULTADOS &middot; VALIDACI&Oacute;N PR&Aacute;CTICA</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 12px; padding-bottom: 16px;">
+    
+    <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 14px; line-height: 1.2;">
+      Pruebas de escritorio: tres perfiles contrastantes sobre el mismo asistente
+    </h2>
+
+    <!-- Marco Panorámico de la Figura 5 -->
+    <div style="width: 100%; height: 430px; border: 2.5px solid var(--c-wine-primary); box-shadow: 0 10px 28px rgba(44, 5, 9, 0.12); position: relative; background: #FFFFFF; display: flex; flex-direction: column; margin-bottom: 18px;">
+      
+      <!-- Barra superior de identificación -->
+      <div style="background: var(--c-wine-primary); padding: 8px 18px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
+        <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px;">
+          FIGURA 5 &middot; SIMULACI&Oacute;N DE INTERACCI&Oacute;N CON TRES PERFILES DE ESCRITOR
+        </span>
+        <span style="font-family: var(--font-sans); font-size: 14px; color: var(--c-gold); font-weight: 700;">
+          Principiante &middot; Competente &middot; Experto
+        </span>
+      </div>
+
+      <!-- Imagen Figura 5 -->
+      <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 10px; background: #FFFFFF; overflow: hidden;">
+        <img src="assets/figura_5.png" alt="Figura 5: Validación práctica del modelo en tres perfiles de escritor" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+      </div>
+
+      <!-- Barra inferior -->
+      <div style="background: #FAF5F5; border-top: 1px solid var(--c-border-subtle); padding: 6px 16px; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 13px; color: #63575A;">
+        <span>Pruebas de consistencia interna y adaptabilidad sem&aacute;ntica en entorno LLM controlado.</span>
+        <span>Fuente: Elaboraci&oacute;n propia basada en simulaciones de escritorio.</span>
+      </div>
+    </div>
+
+    <!-- 3 Columnas Comparativas Inferiores -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; flex: 1; align-items: stretch;">
+      
+      <!-- Perfil 1: Principiante -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-red-accent); margin-bottom: 2px;">
+          PERFIL 01 &middot; PRINCIPIANTE
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+          Recorrido Completo (P1 &ndash; P8)
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Mayor demanda de andamiaje. La IA contuvo la tentaci&oacute;n de delegar y gui&oacute; la clarificaci&oacute;n del prop&oacute;sito.
+        </div>
+      </div>
+
+      <!-- Perfil 2: Competente -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 2px;">
+          PERFIL 02 &middot; COMPETENTE
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+          Intervenci&oacute;n Selectiva
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Activaci&oacute;n puntual solo ante quiebres en revisi&oacute;n (P6/P7). Respet&oacute; la planificaci&oacute;n aut&oacute;noma previa.
+        </div>
+      </div>
+
+      <!-- Perfil 3: Experto -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: #9A7200; margin-bottom: 2px;">
+          PERFIL 03 &middot; EXPERTO
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 20px; font-weight: 800; color: #9A7200; margin-bottom: 4px;">
+          Ruta Pragm&aacute;tica Inmediata
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 17px; color: #110103; line-height: 1.35;">
+          Consulta puntual sobre contraargumentos y cierre r&aacute;pido sin fricciones innecesarias ni reproches.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 17: 03 · RESULTADOS / HALLAZGOS PRINCIPALES
+     ==================================================================== -->
+<section class="slide s-white" id="slide-17" data-notes="Los resultados de las simulaciones arrojaron tres certezas clave: primero, una consistencia interna absoluta en el seguimiento de reglas; segundo, cero por ciento de sustitución textual, demostrando que es técnicamente viable frenar la delegación en un LLM; y tercero, adaptabilidad plena a los tres perfiles. Pero estos resultados también revelan límites que nos llevan al Acto 4.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 &middot; RESULTADOS &middot; S&Iacute;NTESIS DE EVIDENCIA</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 42px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 24px; line-height: 1.2;">
+      Tres hallazgos clave: consistencia, no sustituci&oacute;n y adaptabilidad
+    </h2>
+
+    <!-- 3 Tarjetas de Métricas y Hallazgos -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; flex: 1; margin-bottom: 20px;">
+      
+      <!-- Hallazgo 1 -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; margin-bottom: 12px;">
+            HALLAZGO 01 &middot; GOBERNANZA
+          </div>
+          
+          <div style="font-family: var(--font-sans); font-size: 64px; font-weight: 900; color: var(--c-wine-primary); line-height: 1; margin-bottom: 14px;">
+            100%
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 12px; line-height: 1.2;">
+            Consistencia Interna
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.4;">
+            El agente sigui&oacute; rigurosamente las reglas condicionales, respet&oacute; los silencios y no sufri&oacute; desv&iacute;os de rol ni alucinaciones de proceso.
+          </div>
+        </div>
+      </div>
+
+      <!-- Hallazgo 2 -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px; margin-bottom: 12px;">
+            HALLAZGO 02 &middot; NO SUSTITUCI&Oacute;N
+          </div>
+          
+          <div style="font-family: var(--font-sans); font-size: 64px; font-weight: 900; color: var(--c-red-accent); line-height: 1; margin-bottom: 14px;">
+            0%
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 12px; line-height: 1.2;">
+            L&iacute;neas Redactadas por IA
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.4;">
+            Ante solicitudes expl&iacute;citas de <em>&ldquo;escr&iacute;belo t&uacute;&rdquo;</em>, el modelo siempre declin&oacute; y reformul&oacute; el problema como pregunta gu&iacute;a para el autor.
+          </div>
+        </div>
+      </div>
+
+      <!-- Hallazgo 3 -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #9A7200; letter-spacing: 1.5px; margin-bottom: 12px;">
+            HALLAZGO 03 &middot; ADAPTABILIDAD
+          </div>
+          
+          <div style="font-family: var(--font-sans); font-size: 64px; font-weight: 900; color: #9A7200; line-height: 1; margin-bottom: 14px;">
+            3 / 3
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 12px; line-height: 1.2;">
+            Perfiles Calibrados
+          </div>
+
+          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.4;">
+            Modulaci&oacute;n din&aacute;mica del nivel de profundidad y vocabulario seg&uacute;n la autonom&iacute;a inicial del autor, respetando siempre la ruta pragm&aacute;tica.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja Puente de Salida hacia el Acto 4 -->
+    <div style="background: #32060D; color: #FFFFFF; padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold);">
+      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 700;">
+        <span style="color: var(--c-gold);">FRASE-PUENTE:</span> &ldquo;Los resultados muestran coherencia, pero tambi&eacute;n l&iacute;mites. Y son esos l&iacute;mites los que abren el trabajo futuro.&rdquo;
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 18: SEPARADOR ACTO 4 · CONCLUSIONES (HERO DARK · VINOTINTO)
+     ==================================================================== -->
+<section class="slide s-act-sep" id="slide-18" data-notes="Entramos al Acto 4: Conclusiones. Aquí cerramos el hilo que abrimos al inicio. Respondemos con claridad la pregunta de investigación, delimitamos con honestidad académica los límites del estudio y proyectamos el camino que queda abierto.">
+
+  <!-- Marca de agua de la Torre del Reloj -->
+  <img src="assets/image1.png" alt="Torre del Reloj" class="s1-tower-bg">
+
+  <!-- Header con Logos -->
+  <div class="s1-header">
+    <img src="assets/image2.png" alt="#LoxTIC" class="s1-logo-loxtic">
+    <div class="s1-vsep"></div>
+    <div class="s1-congress-meta">
+      <div class="s1-congress-title">VI Congreso Internacional de<br>Investigaci&oacute;n Interdisciplinar</div>
+      <div class="s1-congress-date">CARTAGENA DE INDIAS &middot; 28&ndash;30 OCT 2026</div>
+    </div>
+  </div>
+
+  <!-- Contenido Central del Separador -->
+  <div class="s1-title-block">
+    <div class="s1-tag-row">
+      <span class="s1-red-pill"></span>
+      <span class="s1-tag-label">ESLAB&Oacute;N 04 DE 04 &middot; EL CIERRE Y EL FUTURO</span>
+    </div>
+
+    <div style="font-family: var(--font-mono); font-size: 26px; font-weight: 800; color: var(--c-gold); letter-spacing: 2px; margin-bottom: 8px;">
+      ACTO 4
+    </div>
+
+    <h2 style="font-family: var(--font-sans); font-size: 54px; font-weight: 800; color: #FFFFFF; line-height: 1.15; margin: 0 0 16px 0;">
+      Conclusiones: Acompa&ntilde;ar sin Reemplazar
+    </h2>
+
+    <!-- Pregunta que Responde el Acto -->
+    <div style="background: rgba(245, 194, 27, 0.12); border-left: 6px solid var(--c-gold); padding: 14px 24px; max-width: 1200px; margin-bottom: 22px;">
+      <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-gold); letter-spacing: 1px; margin-bottom: 4px;">
+        PREGUNTA CENTRAL DEL ACTO 4:
+      </div>
+      <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 700; color: #FFFFFF; line-height: 1.25;">
+        &iquest;Qu&eacute; significa esto para el futuro de la escritura asistida por IA?
+      </div>
+    </div>
+
+    <div style="font-family: var(--font-sans); font-size: 22px; color: #FAF5F5; line-height: 1.45; max-width: 1300px;">
+      Respuesta a la pregunta inicial &middot; Contribuci&oacute;n metodol&oacute;gica a la DBR &middot; Reconocimiento de l&iacute;mites en simulaci&oacute;n &middot; Validaci&oacute;n futura con escritores humanos en aula real.
+    </div>
+  </div>
+
+  <!-- Logos institucionales inferiores -->
+  <div class="s1-footer-logos">
+    <img src="assets/image3.png" alt="Universidad Distrital" class="s1-uni-logo s1-distrital">
+    <img src="assets/image4.png" alt="Universidad Tecnol&oacute;gica de Bol&iacute;var" class="s1-uni-logo s1-utb">
+    <img src="assets/image5.png" alt="Universidad de Cartagena" class="s1-uni-logo s1-unicartagena">
+  </div>
+
+</section>
+
+<!-- ====================================================================
+     SLIDE 19: 04 · CONCLUSIONES / APORTE Y LÍMITES
+     ==================================================================== -->
+<section class="slide s-white" id="slide-19" data-notes="Volvemos a la pregunta inicial: ¿cómo acompañar la escritura sin reemplazar el razonamiento del autor? La respuesta es que la IA no necesita redactar por la persona para ser una ayuda efectiva. Basta con devolver preguntas basadas en sus propias palabras y respetar su ritmo. El aporte es un modelo estructurado y portable; pero reconocemos con honestidad que proviene de simulaciones controladas y no de interacciones con personas de carne y hueso.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">04 &middot; CONCLUSIONES &middot; APORTE Y L&Iacute;MITES</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 42px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 22px; line-height: 1.2;">
+      La respuesta: la IA no necesita redactar para ser una ayuda efectiva
+    </h2>
+
+    <!-- Díptico Aportes vs. Límites -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; align-items: stretch; margin-bottom: 20px;">
+      
+      <!-- Columna Izquierda: Aportes -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 28px 26px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; margin-bottom: 10px;">
+            CONTRIBUCI&Oacute;N &middot; LO QUE LOGRA EL MODELO
+          </div>
+          
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+            Artefacto Metodol&oacute;gico S&oacute;lido y Portable
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px; font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.4;">
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 800;">&#10003;</span>
+              <span><strong>Demostraci&oacute;n de viabilidad:</strong> Es t&eacute;cnicamente posible guiar a un LLM para que opere como espejo reflexivo sin suplantar al autor.</span>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 800;">&#10003;</span>
+              <span><strong>Articulaci&oacute;n te&oacute;rica formal:</strong> Se enlaza la estructura cognitiva de Flower &amp; Hayes con la may&eacute;utica de Sch&ouml;n.</span>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 800;">&#10003;</span>
+              <span><strong>Democratizaci&oacute;n pedag&oacute;gica:</strong> La gu&iacute;a en Markdown es transferible a cualquier entorno de chat sin costo de infraestructura.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Límites -->
+      <div style="background: #FAF5F5; border-left: 8px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 28px 26px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px; margin-bottom: 10px;">
+            L&Iacute;MITES &middot; HONESTIDAD ACAD&Eacute;MICA
+          </div>
+          
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+            Alcance de las Simulaciones Controladas
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px; font-family: var(--font-sans); font-size: 20px; color: #110103; line-height: 1.4;">
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 800;">&times;</span>
+              <span><strong>Pruebas sin humanos:</strong> Los datos provienen de simulaciones controladas de escritorio, no de estudiantes reales en contextos de aula.</span>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 800;">&times;</span>
+              <span><strong>Tolerancia a la fricci&oacute;n:</strong> Falta medir el impacto motivacional y la posible frustraci&oacute;n ante la negativa del bot a redactar.</span>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 800;">&times;</span>
+              <span><strong>Transferencia a largo plazo:</strong> Requiere verificar si los h&aacute;bitos reflexivos persisten cuando el estudiante redacta sin IA.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Franja de Síntesis Inferior -->
+    <div style="background: var(--c-wine-dark); color: #FFFFFF; padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold);">
+      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 700;">
+        <span style="color: var(--c-gold);">EQUILIBRIO METODOL&Oacute;GICO:</span> La coherencia interna del modelo est&aacute; comprobada; el siguiente paso ineludible es la validaci&oacute;n emp&iacute;rica en el aula viva.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================================
+     SLIDE 20: 04 · CONCLUSIONES / TRABAJO FUTURO Y CIERRE MEMORABLE
+     ==================================================================== -->
+<section class="slide s-white" id="slide-20" data-notes="Cerramos con la mirada puesta en el futuro. Tenemos tres líneas prioritarias: validar con personas en aulas reales, evaluar el rendimiento en modelos abiertos y ligeros, y medir la transferencia del pensamiento crítico. Concluyo con la frase que guio este trabajo: Acompañar sin reemplazar. Porque el texto siempre debe pertenecerle al autor, incluso cuando la inteligencia artificial ayuda a pensarlo. Muchas gracias.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">04 &middot; CONCLUSIONES &middot; TRABAJO FUTURO Y CIERRE</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 20px; line-height: 1.2;">
+      Horizontes de investigaci&oacute;n: tres l&iacute;neas prioritarias hacia el aula viva
+    </h2>
+
+    <!-- 3 Pilares de Trabajo Futuro -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-bottom: 22px;">
+      
+      <!-- Pilar 1 -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 20px 22px;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 6px;">
+          L&Iacute;NEA 01 &middot; EMP&Iacute;RICA
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 8px;">
+          Validaci&oacute;n en Aula Real
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.4;">
+          Estudio cuasiexperimental con estudiantes universitarios midiendo autorregulaci&oacute;n, voz autoral y satisfacci&oacute;n del usuario.
+        </div>
+      </div>
+
+      <!-- Pilar 2 -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 20px 22px;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-red-accent); margin-bottom: 6px;">
+          L&Iacute;NEA 02 &middot; TECNOL&Oacute;GICA
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 8px;">
+          Modelos SLM Locales
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.4;">
+          Evaluaci&oacute;n de observancia de reglas en modelos abiertos y ligeros (Llama 3.2, Gemma 2) ejecutados 100% offline en hardware escolar.
+        </div>
+      </div>
+
+      <!-- Pilar 3 -->
+      <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 20px 22px;">
+        <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: #9A7200; margin-bottom: 6px;">
+          L&Iacute;NEA 03 &middot; COGNITIVA
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 8px;">
+          Transferencia Longitudinal
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.4;">
+          Verificar si el entrenamiento may&eacute;utico con IA genera habilidades reflexivas sostenibles cuando el autor redacta sin asistencia.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Frase Memorable de Cierre -->
+    <div style="background: #32060D; color: #FFFFFF; padding: 24px 32px; border-left: 8px solid var(--c-gold); margin-bottom: 22px; box-shadow: 0 10px 28px rgba(44, 5, 9, 0.2);">
+      <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 700; line-height: 1.35; color: #FFFFFF;">
+        &ldquo;Acompa&ntilde;ar sin reemplazar: porque el texto siempre debe pertenecerle al autor, incluso cuando la inteligencia artificial ayuda a pensarlo.&rdquo;
+      </div>
+    </div>
+
+    <!-- Barra Inferior de Contacto y Logos -->
+    <div style="display: flex; justify-content: space-between; align-items: center; background: #FAF5F5; border: 1px solid var(--c-border-subtle); padding: 12px 24px;">
+      <div style="font-family: var(--font-sans); font-size: 20px; color: var(--c-text-dark);">
+        <strong>&iexcl;Muchas gracias! &middot; Espacio para Preguntas y Di&aacute;logo</strong>
+        <div style="font-family: var(--font-mono); font-size: 15px; color: #63575A; margin-top: 4px;">Semillero de Investigaci&oacute;n &middot; VI Congreso Internacional Cartagena 2026</div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="assets/image3.png" alt="Universidad Distrital" style="height: 38px; object-fit: contain;">
+        <img src="assets/image4.png" alt="Universidad Tecnol&oacute;gica de Bol&iacute;var" style="height: 38px; object-fit: contain;">
+        <img src="assets/image5.png" alt="Universidad de Cartagena" style="height: 38px; object-fit: contain;">
+      </div>
+    </div>
+
+  </div>
+</section>
+    </div><!-- /#slides-stage -->
+
+    <!-- Panel flotante de notas del orador (toggle con tecla N) -->
+    <div id="speaker-notes-panel" style="display: none; position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%); width: 85%; max-width: 1400px; background: rgba(50, 6, 13, 0.95); color: #FFFFFF; border-left: 8px solid var(--c-gold); padding: 18px 28px; z-index: 9999; font-family: var(--font-sans); font-size: 21px; line-height: 1.4; box-shadow: 0 10px 40px rgba(0,0,0,0.8);">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <span style="font-family: var(--font-mono); font-size: 15px; font-weight: bold; color: var(--c-gold); letter-spacing: 1.5px;">GUION ORAL DEL PONENTE (TECLA N PARA OCULTAR)</span>
+        <span id="notes-slide-indicator" style="font-family: var(--font-mono); font-size: 15px; color: #EAE0E1;"></span>
+      </div>
+      <div id="speaker-notes-content" style="color: #FAF5F5;"></div>
+    </div>
+
+  </main>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>

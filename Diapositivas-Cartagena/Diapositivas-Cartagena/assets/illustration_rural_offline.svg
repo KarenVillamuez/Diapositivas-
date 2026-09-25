@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 460" width="700" height="460">
+  <defs>
+    <!-- Fondo Claro y Elegante en Armonía con la Diapositiva Blanca -->
+    <linearGradient id="bgLightStudio" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8EDEF"/>
+      <stop offset="100%" stop-color="#EBE0E3"/>
+    </linearGradient>
+
+    <!-- Foco de Iluminación Central Suave (Aura Clara Perla/Cálida) -->
+    <radialGradient id="lightSpotlight" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FBF4F5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#EFE3E6" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Chasis del Portátil Escolar (Grafito Oscuro de Alto Contraste) -->
+    <linearGradient id="laptopLidMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#241E20"/>
+      <stop offset="35%" stop-color="#363032"/>
+      <stop offset="70%" stop-color="#272224"/>
+      <stop offset="100%" stop-color="#191516"/>
+    </linearGradient>
+
+    <linearGradient id="laptopBaseDeck" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#332C2E"/>
+      <stop offset="40%" stop-color="#251F21"/>
+      <stop offset="100%" stop-color="#141011"/>
+    </linearGradient>
+
+    <!-- Pantalla Interior de Alto Contraste LoxTIC -->
+    <linearGradient id="displayGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190306"/>
+      <stop offset="55%" stop-color="#2E060D"/>
+      <stop offset="100%" stop-color="#130103"/>
+    </linearGradient>
+
+    <!-- Acabado Metálico Cromado de la Memoria USB SanDisk -->
+    <linearGradient id="usbMetalBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#ECECEC"/>
+      <stop offset="70%" stop-color="#C2C2C2"/>
+      <stop offset="100%" stop-color="#9C9C9C"/>
+    </linearGradient>
+
+    <linearGradient id="usbRedAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E3E"/>
+      <stop offset="60%" stop-color="#C51625"/>
+      <stop offset="100%" stop-color="#7B1113"/>
+    </linearGradient>
+
+    <!-- Sombra Suave y Realista sobre Fondo Claro -->
+    <filter id="softContactShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#4A1521" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- 1. FONDO CLARO LUMINOSO -->
+  <rect width="700" height="460" fill="url(#bgLightStudio)"/>
+  <rect width="700" height="460" fill="url(#lightSpotlight)"/>
+
+  <!-- 2. SOMBRA DE CONTACTO SOBRE EL SUELO CLARO -->
+  <ellipse cx="350" cy="365" rx="245" ry="18" fill="rgba(60,15,22,0.18)"/>
+  <ellipse cx="350" cy="365" rx="170" ry="10" fill="rgba(60,15,22,0.28)"/>
+
+  <!-- 3. GRUPO PRINCIPAL: PORTÁTIL OSCURO HERO SOBRE FONDO CLARO -->
+  <g id="laptop-station" transform="translate(0, -18)" filter="url(#softContactShadow)">
+    
+    <!-- ==============================================
+         A. BASE INFERIOR (TECLADO Y TRACKPAD)
+         ============================================== -->
+    <!-- Estructura Unibody Inferior en Perspectiva -->
+    <polygon points="175,268 525,268 565,372 135,372" fill="url(#laptopBaseDeck)" stroke="#110E0F" stroke-width="1.8"/>
+    
+    <!-- Bisel Frontal del Portátil -->
+    <polygon points="135,372 565,372 561,380 139,380" fill="#151213"/>
+    <rect x="330" y="372" width="40" height="3" rx="1.5" fill="#3D3638"/>
+
+    <!-- Hendidura del Teclado Escolar -->
+    <polygon points="195,276 505,276 522,332 178,332" fill="#161214" stroke="#2B2426" stroke-width="1"/>
+    
+    <!-- Filas Esquemáticas de Teclas -->
+    <line x1="200" y1="285" x2="500" y2="285" stroke="#3D3538" stroke-width="3"/>
+    <line x1="195" y1="296" x2="505" y2="296" stroke="#3D3538" stroke-width="3"/>
+    <line x1="190" y1="307" x2="510" y2="307" stroke="#3D3538" stroke-width="3"/>
+    <line x1="185" y1="318" x2="515" y2="318" stroke="#3D3538" stroke-width="3"/>
+    
+    <!-- Barra Espaciadora Central -->
+    <line x1="310" y1="318" x2="390" y2="318" stroke="#52484B" stroke-width="3.5"/>
+
+    <!-- Trackpad Centrado -->
+    <rect x="315" y="338" width="70" height="24" rx="2.5" fill="#1C181A" stroke="#383033" stroke-width="1"/>
+
+    <!-- ==============================================
+         B. PANTALLA DESPLEGADA (LID)
+         ============================================== -->
+    <!-- Bisel Exterior de la Tapa del Portátil -->
+    <rect x="175" y="65" width="350" height="225" rx="8" fill="url(#laptopLidMetal)" stroke="#110E0F" stroke-width="2"/>
+    
+    <!-- Webcam y Micrófono del Portátil Escolar -->
+    <circle cx="350" cy="73" r="2.2" fill="#0D0A0B"/>
+    <circle cx="358" cy="73" r="1" fill="#27C93F"/>
+
+    <!-- Pantalla Interior de Alto Contraste LoxTIC -->
+    <rect x="187" y="80" width="326" height="198" rx="4" fill="url(#displayGlass)"/>
+    
+    <!-- Barra Superior de Sistema en la Pantalla -->
+    <rect x="187" y="80" width="326" height="24" fill="#240508"/>
+    <circle cx="202" cy="92" r="3.5" fill="#FF5F56"/>
+    <circle cx="212" cy="92" r="3.5" fill="#FFBD2E"/>
+    <circle cx="222" cy="92" r="3.5" fill="#27C93F"/>
+    
+    <!-- Texto de Cabecera en Español -->
+    <text x="238" y="96" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="bold" fill="#F7EEEE">LoxTIC &#183; Asistente Local Aut&#243;nomo</text>
+
+    <!-- CONTENIDO CENTRAL DE LA PANTALLA: EMBLEMA 100% AISLADO -->
+    <g transform="translate(262, 114)">
+      <!-- Escudo de Autonomía Dorada / Vino -->
+      <circle cx="88" cy="38" r="30" fill="#2C0509" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="88" cy="38" r="22" fill="#7B1113"/>
+      
+      <!-- Icono Candado Seguro en Blanco Nítido -->
+      <rect x="80" y="34" width="16" height="13" rx="2" fill="#FFFFFF"/>
+      <path d="M 83 34 L 83 29 C 83 26, 93 26, 93 29 L 93 34" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="88" cy="40" r="1.5" fill="#7B1113"/>
+
+      <!-- Titular Protagónico en Español -->
+      <text x="88" y="86" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="900" fill="#F5C21B" text-anchor="middle" letter-spacing="1">100% AISLADO</text>
+      
+      <!-- Subtítulo en Español -->
+      <text x="88" y="100" font-family="'Inter', sans-serif" font-size="9.5" font-weight="bold" fill="#FAF5F5" text-anchor="middle">INFERENCIA LOCAL &#183; CERO NUBE</text>
+
+      <!-- Simulación de Interfaz Educativa en Español -->
+      <rect x="5" y="112" width="166" height="16" rx="3" fill="#FAF5F5"/>
+      <text x="12" y="124" font-family="'Inter', sans-serif" font-size="8.5" font-weight="bold" fill="#110103">&#10003; Consulta curricular resuelta</text>
+
+      <rect x="18" y="134" width="140" height="6" rx="3" fill="#D4AF37" opacity="0.75"/>
+    </g>
+
+    <!-- ==============================================
+         C. MEMORIA USB 3.0 CONECTADA EN EL LATERAL
+         ============================================== -->
+    <g id="usb-connection" transform="translate(68, 290)">
+      <!-- Sombra de la USB en el Suelo Claro -->
+      <ellipse cx="40" cy="20" rx="36" ry="6" fill="rgba(60,15,22,0.2)"/>
+
+      <!-- Puerto USB en el Lateral del Portátil (Azul USB 3.0) -->
+      <rect x="67" y="4" width="8" height="13" rx="1.5" fill="#0056B3"/>
+      
+      <!-- Conector Metálico Insertado -->
+      <rect x="60" y="6" width="9" height="9" rx="1" fill="#C4C4C4"/>
+
+      <!-- CUERPO METÁLICO SANDISK ULTRA FLAIR PROTAGÓNICO -->
+      <!-- Cuerpo Plateado Cromado Pulido -->
+      <path d="M 12 3 
+               L 62 3 
+               L 62 18 
+               L 12 18 
+               C 4 18, 0 14, 0 10.5 
+               C 0 7, 4 3, 12 3 Z" 
+            fill="url(#usbMetalBody)" 
+            stroke="#161314" 
+            stroke-width="1.8"/>
+
+      <!-- Reflejo Superior Metálico -->
+      <path d="M 14 5 L 60 5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+
+      <!-- Inserto Ergonómico Posterior en Rojo SanDisk LoxTIC -->
+      <path d="M 2 6 C 6 6, 9 8, 9 10.5 C 9 13, 6 15, 2 15 Z" 
+            fill="url(#usbRedAccent)"/>
+
+      <!-- Indicador LED Azul de Transferencia de Datos Activa -->
+      <circle cx="36" cy="10.5" r="2" fill="#00A4EF"/>
+      <circle cx="36" cy="10.5" r="4" fill="#00A4EF" opacity="0.4"/>
+
+      <!-- Grabado USB 3.0 en Español -->
+      <text x="49" y="13.5" font-family="'JetBrains Mono', monospace" font-size="6.5" font-weight="900" fill="#240508">USB</text>
+    </g>
+
+  </g>
+</svg>

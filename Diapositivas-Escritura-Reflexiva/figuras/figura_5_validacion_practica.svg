@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 840" width="100%" height="100%">
+<rect width="1560" height="840" fill="#FFFFFF"/>
+<text x="60" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2C0509">PRUEBAS DE ESCRITORIO: RESPUESTA DE LA MEDIACIÓN ANTE TRES PERFILES</text>
+<text x="60" y="85" font-family="Arial, sans-serif" font-size="18" fill="#5D4A4D">Simulaciones con Novato, Competente y Experto: adaptabilidad al punto de partida y no sustitución</text>
+<line x1="60" y1="102" x2="1500" y2="102" stroke="#EAE0E1" stroke-width="2"/>
+<rect x="60" y="125" width="160" height="50" fill="#32060D"/>
+<text x="140" y="157" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PERFIL</text>
+<rect x="220" y="125" width="220" height="50" fill="#460811" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="330.0" y="149" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#F5C21B" text-anchor="middle">P3</text>
+<text x="330.0" y="167" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Generar ideas</text>
+<rect x="440" y="125" width="220" height="50" fill="#460811" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="550.0" y="149" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#F5C21B" text-anchor="middle">P4</text>
+<text x="550.0" y="167" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Organizar</text>
+<rect x="660" y="125" width="220" height="50" fill="#460811" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="770.0" y="149" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#F5C21B" text-anchor="middle">P5</text>
+<text x="770.0" y="167" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Definir metas</text>
+<rect x="880" y="125" width="220" height="50" fill="#460811" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="990.0" y="149" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#F5C21B" text-anchor="middle">P6</text>
+<text x="990.0" y="167" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Redactar</text>
+<rect x="1100" y="125" width="220" height="50" fill="#460811" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="1210.0" y="149" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#F5C21B" text-anchor="middle">P7</text>
+<text x="1210.0" y="167" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Releer / Evaluar</text>
+<rect x="1320" y="125" width="220" height="50" fill="#460811" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="1430.0" y="149" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#F5C21B" text-anchor="middle">P8</text>
+<text x="1430.0" y="167" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Integración</text>
+<rect x="60" y="185" width="160" height="180" fill="#FAF5F5" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="60" y="185" width="6" height="180" fill="#460811"/>
+<text x="140" y="250" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2C0509" text-anchor="middle">Novato</text>
+<text x="140" y="280" font-family="Courier New, monospace" font-size="13" fill="#C9101B" text-anchor="middle">Recorrido</text>
+<text x="140" y="300" font-family="Courier New, monospace" font-size="13" fill="#C9101B" text-anchor="middle">Completo</text>
+<rect x="220" y="185" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="236" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Se traba repitiendo pala</text>
+<text x="236" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">bras.</text>
+<rect x="236" y="270" width="32" height="20" fill="#460811"/>
+<text x="252" y="285" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="236" y="310" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Devuelve sus términos sin</text>
+<text x="236" y="330" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D"> sugerir ideas.</text>
+<rect x="440" y="185" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="456" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Siente que sus notas dic</text>
+<text x="456" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">en lo mismo.</text>
+<rect x="456" y="270" width="32" height="20" fill="#460811"/>
+<text x="472" y="285" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="456" y="310" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Junta todo en un solo blo</text>
+<text x="456" y="330" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">que estructurado.</text>
+<rect x="660" y="185" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="676" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Fija meta simple: 'el ce</text>
+<text x="676" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">lular distrae'.</text>
+<rect x="676" y="270" width="32" height="20" fill="#460811"/>
+<text x="692" y="285" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="676" y="310" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Pide ideas y meta antes d</text>
+<text x="676" y="330" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">e redactar.</text>
+<rect x="880" y="185" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="896" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Escribe un borrador brev</text>
+<text x="896" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">e.</text>
+<rect x="896" y="270" width="32" height="20" fill="#460811"/>
+<text x="912" y="285" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="896" y="310" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Guarda silencio para no i</text>
+<text x="896" y="330" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">nterrumpir.</text>
+<rect x="1100" y="185" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="1116" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Relee y lo ve suficiente</text>
+<text x="1116" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">.</text>
+<rect x="1116" y="270" width="32" height="20" fill="#460811"/>
+<text x="1132" y="285" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="1116" y="310" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Respeta su cierre sin ins</text>
+<text x="1116" y="330" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">istir.</text>
+<rect x="1320" y="185" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="1330" y="195" width="200" height="160" fill="#FAF5F5" stroke="#8D7A7D" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1430" y="270" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#8D7A7D" text-anchor="middle">NO REQUERIDO</text>
+<text x="1430" y="295" font-family="Arial, sans-serif" font-size="12" fill="#5D4A4D" text-anchor="middle">Cierra el proceso en P7 </text>
+<text x="1430" y="313" font-family="Arial, sans-serif" font-size="12" fill="#5D4A4D" text-anchor="middle">por decisión propia.</text>
+<rect x="60" y="375" width="160" height="180" fill="#FAF5F5" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="60" y="375" width="6" height="180" fill="#C9101B"/>
+<text x="140" y="440" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2C0509" text-anchor="middle">Competente</text>
+<text x="140" y="470" font-family="Courier New, monospace" font-size="13" fill="#460811" text-anchor="middle">Recorrido</text>
+<text x="140" y="490" font-family="Courier New, monospace" font-size="13" fill="#460811" text-anchor="middle">Acotado</text>
+<rect x="220" y="375" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="230" y="385" width="200" height="160" fill="#FAF5F5" stroke="#8D7A7D" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="330" y="460" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#8D7A7D" text-anchor="middle">NO REQUERIDO</text>
+<text x="330" y="485" font-family="Arial, sans-serif" font-size="12" fill="#5D4A4D" text-anchor="middle">Llega con ideas ya estru</text>
+<text x="330" y="503" font-family="Arial, sans-serif" font-size="12" fill="#5D4A4D" text-anchor="middle">cturadas.</text>
+<rect x="440" y="375" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="456" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Pide evaluar sus ideas.</text>
+<text x="456" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509"></text>
+<rect x="456" y="460" width="32" height="20" fill="#C9101B"/>
+<text x="472" y="475" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="456" y="500" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Rehúsa calificar; valida </text>
+<text x="456" y="520" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">utilidad.</text>
+<rect x="660" y="375" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="676" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Fija meta: autonomía con</text>
+<text x="676" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509"> disciplina.</text>
+<rect x="676" y="460" width="32" height="20" fill="#C9101B"/>
+<text x="692" y="475" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="676" y="500" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Solicita insumos previos </text>
+<text x="676" y="520" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">al texto.</text>
+<rect x="880" y="375" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="896" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Redacta 2 párrafos fluid</text>
+<text x="896" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">os.</text>
+<rect x="896" y="460" width="32" height="20" fill="#C9101B"/>
+<text x="912" y="475" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="896" y="500" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Guarda silencio durante r</text>
+<text x="896" y="520" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">edacción.</text>
+<rect x="1100" y="375" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="1116" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Nota contradicción en §2</text>
+<text x="1116" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">.</text>
+<rect x="1116" y="460" width="32" height="20" fill="#C9101B"/>
+<text x="1132" y="475" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="1116" y="500" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Muestra el choque; autor </text>
+<text x="1116" y="520" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">reescribe.</text>
+<rect x="1320" y="375" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="1330" y="385" width="200" height="160" fill="#FAF5F5" stroke="#8D7A7D" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1430" y="460" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#8D7A7D" text-anchor="middle">NO REQUERIDO</text>
+<text x="1430" y="485" font-family="Arial, sans-serif" font-size="12" fill="#5D4A4D" text-anchor="middle">Cierra satisfecho tras r</text>
+<text x="1430" y="503" font-family="Arial, sans-serif" font-size="12" fill="#5D4A4D" text-anchor="middle">eescritura.</text>
+<rect x="60" y="565" width="160" height="180" fill="#FAF5F5" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="60" y="565" width="6" height="180" fill="#B38600"/>
+<text x="140" y="630" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2C0509" text-anchor="middle">Experto</text>
+<text x="140" y="660" font-family="Courier New, monospace" font-size="13" fill="#B38600" text-anchor="middle">Revisión</text>
+<text x="140" y="680" font-family="Courier New, monospace" font-size="13" fill="#B38600" text-anchor="middle">Avanzada</text>
+<rect x="220" y="565" width="880" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="240" y="585" width="840" height="140" fill="#FAF5F5" stroke="#8D7A7D" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="660.0" y="645" font-family="Courier New, monospace" font-size="18" font-weight="bold" fill="#460811" text-anchor="middle">FASES PREVIAS YA ELABORADAS (P3 A P6 SUPERADOS)</text>
+<text x="660.0" y="680" font-family="Arial, sans-serif" font-size="16" fill="#5D4A4D" text-anchor="middle">El escritor llega directamente con un borrador avanzado terminado; el asistente se acopla de inmediato.</text>
+<rect x="1100" y="565" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="1116" y="600" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Al releer, su texto</text>
+<text x="1116" y="620" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">contradice su tesis.</text>
+<rect x="1116" y="650" width="32" height="20" fill="#B38600"/>
+<text x="1132" y="665" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="1116" y="690" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Pregunta qué descubrió</text>
+<text x="1116" y="710" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">de nuevo en la relectura.</text>
+<rect x="1320" y="565" width="220" height="180" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="1336" y="600" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">Cambia su marco</text>
+<text x="1336" y="620" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509">conceptual previo.</text>
+<rect x="1336" y="650" width="32" height="20" fill="#460811"/>
+<text x="1352" y="665" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">IA</text>
+<text x="1336" y="690" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Cierra reconociendo</text>
+<text x="1336" y="710" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">la plena autoría.</text>
+<text x="60" y="805" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Fig. 5. Prueba de escritorio con tres perfiles simulados.</text>
+<text x="490" y="805" font-family="Arial, sans-serif" font-size="15" font-style="italic" fill="#8D7A7D">Demuestra adaptabilidad al vocabulario, respeto al cierre voluntario y no sustitución. Fuente: Autores.</text>
+</svg>

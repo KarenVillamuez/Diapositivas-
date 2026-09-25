@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 960" width="100%" height="100%">
+<rect width="1560" height="960" fill="#FFFFFF"/>
+<text x="60" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2C0509">DIAGRAMA DE ACTIVIDADES: LÓGICA OPERATIVA DEL AGENTE</text>
+<text x="60" y="85" font-family="Arial, sans-serif" font-size="18" fill="#5D4A4D">Árbol de decisión, disparadores semánticos, bucles reflexivos y ruta pragmática de salida directa</text>
+<line x1="60" y1="102" x2="1500" y2="102" stroke="#EAE0E1" stroke-width="2"/>
+<defs>
+<marker id="f4-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#460811"/></marker>
+<marker id="f4-gold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0 0, 8 4, 0 8" fill="#B38600"/></marker>
+</defs>
+<rect x="60" y="440" width="180" height="70" fill="#FAF5F5" stroke="#460811" stroke-width="2.5"/>
+<rect x="60" y="440" width="180" height="6" fill="#460811"/>
+<text x="150" y="472" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509" text-anchor="middle">El escritor inicia</text>
+<text x="150" y="494" font-family="Arial, sans-serif" font-size="15" fill="#5D4A4D" text-anchor="middle">o comparte texto</text>
+<line x1="240" y1="475" x2="300" y2="475" stroke="#460811" stroke-width="2.5" marker-end="url(#f4-arrow)"/>
+<polygon points="370,430 440,475 370,520 300,475" fill="#FAF5F5" stroke="#460811" stroke-width="2.5"/>
+<text x="370" y="469" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509" text-anchor="middle">¿Detecta</text>
+<text x="370" y="489" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509" text-anchor="middle">señal?</text>
+<line x1="370" y1="520" x2="370" y2="580" stroke="#8D7A7D" stroke-width="2" stroke-dasharray="4,3"/>
+<rect x="300" y="580" width="140" height="40" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1"/>
+<text x="370" y="605" font-family="Arial, sans-serif" font-size="13" fill="#8D7A7D" text-anchor="middle">Espera pasiva</text>
+<line x1="440" y1="475" x2="500" y2="475" stroke="#460811" stroke-width="2.5" marker-end="url(#f4-arrow)"/>
+<text x="465" y="465" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#C9101B">SÍ</text>
+<path d="M 500 475 L 530 475 L 530 210 L 560 210" fill="none" stroke="#460811" stroke-width="2"/>
+<rect x="560" y="180" width="310" height="60" fill="#FAF5F5" stroke="#460811" stroke-width="1.8"/>
+<text x="575" y="204" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#C9101B">[SEÑAL] Bloqueo / Repetición</text>
+<text x="575" y="226" font-family="Arial, sans-serif" font-size="13" fill="#2C0509">Activar I1 o I2: Ensanchar o estructur...</text>
+<path d="M 870 210 L 900 210 L 900 475 L 930 475" fill="none" stroke="#460811" stroke-width="2"/>
+<path d="M 500 475 L 530 475 L 530 330 L 560 330" fill="none" stroke="#460811" stroke-width="2"/>
+<rect x="560" y="300" width="310" height="60" fill="#FAF5F5" stroke="#460811" stroke-width="1.8"/>
+<text x="575" y="324" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#C9101B">[SEÑAL] Desajuste con meta</text>
+<text x="575" y="346" font-family="Arial, sans-serif" font-size="13" fill="#2C0509">Activar I3: Devolver fragmento conflic...</text>
+<path d="M 870 330 L 900 330 L 900 475 L 930 475" fill="none" stroke="#460811" stroke-width="2"/>
+<path d="M 500 475 L 530 475 L 530 450 L 560 450" fill="none" stroke="#460811" stroke-width="2"/>
+<rect x="560" y="420" width="310" height="60" fill="#FAF5F5" stroke="#460811" stroke-width="1.8"/>
+<text x="575" y="444" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#C9101B">[SEÑAL] Sorpresa / Duda</text>
+<text x="575" y="466" font-family="Arial, sans-serif" font-size="13" fill="#2C0509">Activar I4: Preguntar qué cambió en su...</text>
+<path d="M 870 450 L 900 450 L 900 475 L 930 475" fill="none" stroke="#460811" stroke-width="2"/>
+<path d="M 500 475 L 530 475 L 530 570 L 560 570" fill="none" stroke="#460811" stroke-width="2"/>
+<rect x="560" y="540" width="310" height="60" fill="#FAF5F5" stroke="#460811" stroke-width="1.8"/>
+<text x="575" y="564" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#C9101B">[SEÑAL] Consulta directa</text>
+<text x="575" y="586" font-family="Arial, sans-serif" font-size="13" fill="#2C0509">Orientar sobre el paso actual sin suge...</text>
+<path d="M 870 570 L 900 570 L 900 475 L 930 475" fill="none" stroke="#460811" stroke-width="2"/>
+<rect x="930" y="430" width="220" height="90" fill="#460811"/>
+<text x="1040" y="462" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#F5C21B" text-anchor="middle">REGLA FUNDAMENTAL</text>
+<text x="1040" y="488" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Devolver palabras del</text>
+<text x="1040" y="508" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">autor como pregunta</text>
+<line x1="1150" y1="475" x2="1200" y2="475" stroke="#460811" stroke-width="2.5" marker-end="url(#f4-arrow)"/>
+<path d="M 1200 475 L 1220 475 L 1220 280 L 1260 280" fill="none" stroke="#460811" stroke-width="2.5" marker-end="url(#f4-arrow)"/>
+<rect x="1260" y="245" width="240" height="70" fill="#FAF5F5" stroke="#460811" stroke-width="2"/>
+<text x="1380" y="272" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#460811" text-anchor="middle">¿Cumple condición?</text>
+<text x="1380" y="296" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9101B" text-anchor="middle">SÍ → Ofrecer avance a P+1</text>
+<line x1="1200" y1="475" x2="1260" y2="475" stroke="#B38600" stroke-width="3" marker-end="url(#f4-gold)"/>
+<rect x="1260" y="440" width="240" height="70" fill="#FDF8E8" stroke="#B38600" stroke-width="2.5"/>
+<text x="1380" y="468" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#B38600" text-anchor="middle">RUTA PRAGMÁTICA</text>
+<text x="1380" y="492" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C0509" text-anchor="middle">Permitir saltar reflexión</text>
+<path d="M 1200 475 L 1220 475 L 1220 670 L 1260 670" fill="none" stroke="#8D7A7D" stroke-width="2.5" marker-end="url(#f4-arrow)"/>
+<rect x="1260" y="635" width="240" height="70" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="2"/>
+<text x="1380" y="662" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#5D4A4D" text-anchor="middle">SILENCIO / NO RESPUESTA</text>
+<text x="1380" y="686" font-family="Arial, sans-serif" font-size="14" fill="#8D7A7D" text-anchor="middle">No insistir; guardar silencio</text>
+<path d="M 1500 280 L 1530 280 L 1530 840 L 370 840 L 370 520" fill="none" stroke="#460811" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#f4-arrow)"/>
+<text x="950" y="830" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#460811" text-anchor="middle">BUCLE DE ACOMPAÑAMIENTO HASTA CONFRONTACIÓN O CIERRE DEL BORRADOR</text>
+<text x="60" y="925" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Fig. 4. Diagrama de actividades de la lógica de mediación del agente conversacional.</text>
+<text x="730" y="925" font-family="Arial, sans-serif" font-size="15" font-style="italic" fill="#8D7A7D">Las intervenciones I1–I4 se activan a demanda del autor; la ruta pragmática garantiza fluidez. Fuente: Autores.</text>
+</svg>

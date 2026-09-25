@@ -1,0 +1,170 @@
+<!-- ====================================================================
+     SLIDE 12: 03 · RESULTADOS / DECONSTRUCCION FORMULA (ARQUETIPO D)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-12">
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 · RESULTADOS · DECONSTRUCCIÓN DE LA ECUACIÓN 1</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 10px;">
+    
+    <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; margin: 0 0 32px 0; line-height: 1.2;">
+      Anatom&iacute;a de la f&oacute;rmula: la m&eacute;trica califica al modelo sin leer su respuesta
+    </h2>
+
+    <!-- CONTENEDOR VERTICAL EQUILIBRADO (655px de altura, sin espacio muerto) -->
+    <div style="height: 655px; display: flex; flex-direction: column; justify-content: space-between;">
+
+      <!-- BLOQUE 1: Punteros Superiores + Barra Segmentada Oficial (100% Ortogonal) -->
+      <div>
+        <!-- Punteros descriptivos superiores (K2.4 original) -->
+        <div style="display: flex; width: 100%; margin-bottom: 12px; align-items: flex-end;">
+          <div style="width: 40%; font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: var(--c-wine-dark); padding-left: 6px;">
+            ● 40% Eval&uacute;a fidelidad sem&aacute;ntica
+          </div>
+
+          <div style="width: 40%; font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: var(--c-red-accent); text-align: center;">
+            ▼ &iexcl;Aqu&iacute; la respuesta NO es dato de entrada!
+          </div>
+
+          <div style="width: 20%; font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #7A5000; text-align: center;">
+            ▼ Solo caracteres
+          </div>
+        </div>
+
+        <!-- Barra Segmentada Oficial (158px de alto, 100% ortogonal, marcas de agua internas) -->
+        <div class="formula-segmented-bar" style="margin: 0; height: 158px; border: 2.5px solid #2C0509; display: flex;">
+          
+          <!-- Segmento 1: Grounding (40%) -->
+          <div class="formula-segment" style="width: 40%; background-color: var(--c-wine-primary); justify-content: center; padding: 16px 24px; position: relative; overflow: hidden;">
+            <!-- Marca de agua libro cotejado interna -->
+            <svg width="125" height="125" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); opacity: 0.12; color: #FFFFFF; pointer-events: none;">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              <polyline points="9 11 12 14 17 9"></polyline>
+            </svg>
+
+            <div style="position: relative; z-index: 1;">
+              <div class="formula-seg-pct" style="font-size: 58px; color: var(--c-gold); line-height: 1; font-weight: 800;">40%</div>
+              <div class="formula-seg-label" style="font-size: 25px; letter-spacing: 0.5px; margin-top: 6px; font-weight: 800;">GROUNDING (r, C)</div>
+              <div style="font-size: 21px; opacity: 0.95; font-weight: 400; margin-top: 4px;">
+                &Uacute;nico t&eacute;rmino que eval&uacute;a la respuesta generada
+              </div>
+            </div>
+          </div>
+
+          <!-- Segmento 2: Relevance (40%) -->
+          <div class="formula-segment" style="width: 40%; background-color: var(--c-red-accent); border-left: 2.5px solid #FFFFFF; justify-content: center; padding: 16px 24px; position: relative; overflow: hidden;">
+            <!-- Marca de agua alerta interna -->
+            <svg width="125" height="125" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); opacity: 0.14; color: #FFFFFF; pointer-events: none;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+
+            <div style="position: relative; z-index: 1;">
+              <div class="formula-seg-pct" style="font-size: 58px; line-height: 1; font-weight: 800;">40%</div>
+              <div class="formula-seg-label" style="font-size: 25px; letter-spacing: 0.5px; margin-top: 6px; font-weight: 800;">RELEVANCE (q, C)</div>
+              <div style="font-size: 21px; opacity: 0.95; font-weight: 400; margin-top: 4px;">
+                Pregunta vs. contexto &middot; &iexcl;Ignora la respuesta!
+              </div>
+            </div>
+          </div>
+
+          <!-- Segmento 3: Longitud (20%) -->
+          <div class="formula-segment" style="width: 20%; background-color: #B38600; border-left: 2.5px solid #FFFFFF; justify-content: center; padding: 16px 20px; position: relative; overflow: hidden;">
+            <!-- Marca de agua regla interna -->
+            <svg width="115" height="115" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); opacity: 0.14; color: #FFFFFF; pointer-events: none;">
+              <path d="M21.3 15.3l-8.6-8.6a1 1 0 0 0-1.4 0l-8.6 8.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l8.6-8.6"></path>
+              <line x1="8" y1="14" x2="10" y2="12"></line>
+              <line x1="11" y1="17" x2="13" y2="15"></line>
+              <line x1="14" y1="14" x2="16" y2="12"></line>
+            </svg>
+
+            <div style="position: relative; z-index: 1;">
+              <div class="formula-seg-pct" style="font-size: 58px; line-height: 1; font-weight: 800;">20%</div>
+              <div class="formula-seg-label" style="font-size: 25px; letter-spacing: 0.5px; margin-top: 6px; font-weight: 800;">LONGITUD (r)</div>
+              <div style="font-size: 21px; opacity: 0.95; font-weight: 400; margin-top: 4px;">
+                Conteo de caracteres
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BLOQUE 2: Dos Tarjetas de Anomalía en Código (K2.2 / P2 Aprobadas) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 26px;">
+        
+        <!-- Tarjeta 1: Coseno Reescalado -->
+        <div style="background: #FAF5F5; border: 2.5px solid var(--c-wine-primary); display: flex; align-items: stretch; height: 156px; position: relative; overflow: hidden;">
+          <!-- Marca de agua matemática sutil -->
+          <svg width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); opacity: 0.07; color: var(--c-wine-primary); pointer-events: none;">
+            <path d="M2 12h2l3-9 6 18 3-9h6"></path>
+          </svg>
+
+          <div style="flex: 0 0 235px; background: #FFFFFF; border-right: 2.5px solid var(--c-wine-primary); color: var(--c-wine-primary); font-family: var(--font-mono); font-size: 30px; font-weight: 800; display: flex; align-items: center; justify-content: center; white-space: nowrap; padding: 14px; z-index: 1;">
+            0.00 &rarr; 0.50
+          </div>
+          <div style="flex: 1; padding: 18px 26px; display: flex; flex-direction: column; justify-content: center; z-index: 1;">
+            <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 5px;">
+              Coseno Reescalado: (x + 1)/2
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; font-weight: 400; line-height: 1.38;">
+              Respuestas desconectadas del libro obtienen <strong>0.50 aprobado</strong> como piso garantizado.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Premio al Rechazo -->
+        <div style="background: #FAF5F5; border: 2.5px solid var(--c-red-accent); display: flex; align-items: stretch; height: 156px; position: relative; overflow: hidden;">
+          <!-- Marca de agua escudo sutil -->
+          <svg width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); opacity: 0.07; color: var(--c-red-accent); pointer-events: none;">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+
+          <div style="flex: 0 0 235px; background: #FFFFFF; border-right: 2.5px solid var(--c-red-accent); color: var(--c-red-accent); font-family: var(--font-mono); font-size: 30px; font-weight: 800; display: flex; align-items: center; justify-content: center; white-space: nowrap; padding: 14px; z-index: 1;">
+            Nota = 0.80
+          </div>
+          <div style="flex: 1; padding: 18px 26px; display: flex; flex-direction: column; justify-content: center; z-index: 1;">
+            <div style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 5px;">
+              Premio al Rechazo (9 Frases)
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; font-weight: 400; line-height: 1.38;">
+              Nueve frases fijas reciben <strong>0.80 directo</strong>, premiando a modelos que reh&uacute;yen responder.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BLOQUE 3: Fila de Conclusión y Veredicto Integrado (Agrandado para Alta Visibilidad en Auditorio) -->
+      <div style="background: #FAF5F5; border-left: 10px solid var(--c-wine-primary); border-top: 1.5px solid #E2D6D8; border-right: 1.5px solid #E2D6D8; border-bottom: 1.5px solid #E2D6D8; padding: 24px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px;">
+        <div style="display: flex; align-items: center; gap: 14px; flex-shrink: 0;">
+          <span style="display: inline-block; width: 14px; height: 14px; background: var(--c-red-accent);"></span>
+          <span style="font-family: var(--font-mono); font-size: 26px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 0.5px; white-space: nowrap;">
+            HALLAZGO CLAVE:
+          </span>
+        </div>
+        <div style="flex: 1; font-family: var(--font-sans); font-size: 26px; color: #110103; font-weight: 500; line-height: 1.4;">
+          Un puntaje cuantitativo de <strong>Q &approx; 0.80</strong> no certifica calidad pedag&oacute;gica: la m&eacute;trica num&eacute;rica exige auditor&iacute;a cualitativa en c&oacute;digo para detectar distorsiones y abstenciones.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="slide-footer-rule"></div>
+  <footer class="slide-footer">
+    <span class="sf-left">VI CONGRESO CARTAGENA · 2026</span>
+    <span class="sf-right">LOHACEMOSXTIC.COM · SLM OFFLINE</span>
+  </footer>
+</section>

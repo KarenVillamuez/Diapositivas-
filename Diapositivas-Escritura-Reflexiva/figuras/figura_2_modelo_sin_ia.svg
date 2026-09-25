@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 920" width="100%" height="100%">
+<rect width="1500" height="920" fill="#FFFFFF"/>
+<text x="60" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2C0509">MODELO DE ESCRITURA REFLEXIVA SIN MEDIACIÓN DE IA</text>
+<text x="60" y="85" font-family="Arial, sans-serif" font-size="18" fill="#5D4A4D">Proceso cíclico y recursivo de 8 fases: momentos de avance, duda analítica y reajuste</text>
+<line x1="60" y1="102" x2="1440" y2="102" stroke="#EAE0E1" stroke-width="2"/>
+<defs>
+<marker id="arrow-forward" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><polygon points="0 0, 9 4.5, 0 9" fill="#460811"/></marker>
+<marker id="arrow-recursive" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><polygon points="0 0, 9 4.5, 0 9" fill="#C9101B"/></marker>
+</defs>
+<rect x="570.0" y="350.0" width="360" height="220" fill="#FAF5F5" stroke="#460811" stroke-width="3"/>
+<rect x="570.0" y="350.0" width="360" height="8" fill="#460811"/>
+<text x="750" y="415" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#C9101B" text-anchor="middle" letter-spacing="1">PROCESO AUTÓNOMO</text>
+<text x="750" y="448" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#32060D" text-anchor="middle">Modelo de Escritura</text>
+<text x="750" y="478" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#32060D" text-anchor="middle">Reflexiva</text>
+<line x1="620" y1="496" x2="880" y2="496" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="750" y="518" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D" text-anchor="middle">El escritor va y viene entre fases</text>
+<text x="750" y="538" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9101B" text-anchor="middle">Puntos de duda detienen la rutina</text>
+<path d="M 314.02020253553343 685.0609665440988 Q 750 650 1350.0 480.0" fill="none" stroke="#C9101B" stroke-width="3" stroke-dasharray="6,4" marker-end="url(#arrow-recursive)"/>
+<text x="750" y="640" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#C9101B" text-anchor="middle">RECURSIVIDAD: Ajuste ante desajuste detectado</text>
+<rect x="221.52020253553343" y="204.9390334559012" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="221.52020253553343" y="204.9390334559012" width="7" height="100" fill="#460811"/>
+<rect x="235.52020253553343" y="216.9390334559012" width="36" height="26" fill="#460811"/>
+<text x="253.52020253553343" y="234.9390334559012" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P1</text>
+<text x="279.52020253553343" y="234.9390334559012" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Actuación inicial</text>
+<text x="237.52020253553343" y="262.9390334559012" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Escritura fluida desde el</text>
+<text x="237.52020253553343" y="280.9390334559012" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">repertorio tácito sin juicio</text>
+<rect x="617.5" y="120.0" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="617.5" y="120.0" width="7" height="100" fill="#460811"/>
+<rect x="631.5" y="132.0" width="36" height="26" fill="#460811"/>
+<text x="649.5" y="150.0" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P2</text>
+<text x="675.5" y="150.0" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Giro de Sorpresa</text>
+<text x="633.5" y="178.0" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Interrupción de la rutina por</text>
+<text x="633.5" y="196.0" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">un desajuste percibido en el</text>
+<rect x="792.5" y="130.0" width="82" height="18" fill="#FAF5F5" stroke="#C9101B" stroke-width="1"/>
+<text x="833.5" y="143.0" font-family="Courier New, monospace" font-size="11" font-weight="bold" fill="#C9101B" text-anchor="middle">QUIEBRE</text>
+<rect x="1013.4797974644666" y="204.9390334559012" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="1013.4797974644666" y="204.9390334559012" width="7" height="100" fill="#C9101B"/>
+<rect x="1027.4797974644666" y="216.9390334559012" width="36" height="26" fill="#C9101B"/>
+<text x="1045.4797974644666" y="234.9390334559012" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P3</text>
+<text x="1071.4797974644666" y="234.9390334559012" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Generación de Ideas</text>
+<text x="1029.4797974644666" y="262.9390334559012" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Ideación libre y sin censura</text>
+<text x="1029.4797974644666" y="280.9390334559012" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">para producir material bruto.</text>
+<rect x="1177.5" y="410.0" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="1177.5" y="410.0" width="7" height="100" fill="#C9101B"/>
+<rect x="1191.5" y="422.0" width="36" height="26" fill="#C9101B"/>
+<text x="1209.5" y="440.0" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P4</text>
+<text x="1235.5" y="440.0" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Organización</text>
+<text x="1193.5" y="468.0" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Jerarquización y estructura</text>
+<text x="1193.5" y="486.0" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">lógica del material generado.</text>
+<rect x="1013.4797974644666" y="615.0609665440988" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="1013.4797974644666" y="615.0609665440988" width="7" height="100" fill="#C9101B"/>
+<rect x="1027.4797974644666" y="627.0609665440988" width="36" height="26" fill="#C9101B"/>
+<text x="1045.4797974644666" y="645.0609665440988" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P5</text>
+<text x="1071.4797974644666" y="645.0609665440988" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Definición de Metas</text>
+<text x="1029.4797974644666" y="673.0609665440988" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Establecimiento de objetivos</text>
+<text x="1029.4797974644666" y="691.0609665440988" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">claros de contenido y de</text>
+<rect x="617.5" y="700.0" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="617.5" y="700.0" width="7" height="100" fill="#C9101B"/>
+<rect x="631.5" y="712.0" width="36" height="26" fill="#C9101B"/>
+<text x="649.5" y="730.0" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P6</text>
+<text x="675.5" y="730.0" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Traducción</text>
+<text x="633.5" y="758.0" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Transformación de ideas en</text>
+<text x="633.5" y="776.0" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">lenguaje tolerando la</text>
+<rect x="221.52020253553343" y="615.0609665440988" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="221.52020253553343" y="615.0609665440988" width="7" height="100" fill="#B38600"/>
+<rect x="235.52020253553343" y="627.0609665440988" width="36" height="26" fill="#B38600"/>
+<text x="253.52020253553343" y="645.0609665440988" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P7</text>
+<text x="279.52020253553343" y="645.0609665440988" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Evaluación / Relectura</text>
+<text x="237.52020253553343" y="673.0609665440988" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Contraste con metas iniciales y</text>
+<text x="237.52020253553343" y="691.0609665440988" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">detección de discrepancias.</text>
+<rect x="396.52020253553343" y="625.0609665440988" width="82" height="18" fill="#FAF5F5" stroke="#C9101B" stroke-width="1"/>
+<text x="437.52020253553343" y="638.0609665440988" font-family="Courier New, monospace" font-size="11" font-weight="bold" fill="#C9101B" text-anchor="middle">QUIEBRE</text>
+<rect x="57.5" y="410.00000000000006" width="265" height="100" fill="#FFFFFF" stroke="#EAE0E1" stroke-width="1.5"/>
+<rect x="57.5" y="410.00000000000006" width="7" height="100" fill="#460811"/>
+<rect x="71.5" y="422.00000000000006" width="36" height="26" fill="#460811"/>
+<text x="89.5" y="440.00000000000006" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">P8</text>
+<text x="115.5" y="440.00000000000006" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">Integración</text>
+<text x="73.5" y="468.00000000000006" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">Reconstrucción del quiebre y</text>
+<text x="73.5" y="486.00000000000006" font-family="Arial, sans-serif" font-size="13" fill="#5D4A4D">ajuste de la estrategia futura.</text>
+<line x1="486.0" y1="243.4" x2="613.1" y2="181.5" stroke="#460811" stroke-width="2.5" marker-end="url(#arrow-forward)"/>
+<line x1="882.0" y1="181.5" x2="1009.1" y2="243.4" stroke="#460811" stroke-width="2.5" marker-end="url(#arrow-forward)"/>
+<line x1="1230.3" y1="297.9" x2="1222.6" y2="417.0" stroke="#460811" stroke-width="2.5" marker-end="url(#arrow-forward)"/>
+<line x1="1225.7" y1="503.0" x2="1233.4" y2="622.1" stroke="#460811" stroke-width="2.5" marker-end="url(#arrow-forward)"/>
+<line x1="1014.0" y1="676.6" x2="886.9" y2="738.5" stroke="#460811" stroke-width="2.5" marker-end="url(#arrow-forward)"/>
+<line x1="618.0" y1="738.5" x2="490.9" y2="676.6" stroke="#460811" stroke-width="2.5" marker-end="url(#arrow-forward)"/>
+<line x1="269.7" y1="622.1" x2="277.4" y2="503.0" stroke="#460811" stroke-width="2.5" marker-end="url(#arrow-forward)"/>
+<text x="60" y="885" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2C0509">Fig. 2. Modelo de escritura reflexiva sin mediación por la inteligencia artificial.</text>
+<text x="690" y="885" font-family="Arial, sans-serif" font-size="15" font-style="italic" fill="#8D7A7D">Puntos P2 y P7 identifican los momentos exactos de duda donde se activa la mediación posterior. Fuente: Autores.</text>
+</svg>

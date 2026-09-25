@@ -1,0 +1,571 @@
+Artículo de investigación
+
+Selección de modelos compactos para tutoría de inglés mediante un benchmark RAG sin conexión
+
+Selecting Compact Models for English Tutoring through an Offline RAG Benchmark
+
+Seleção de modelos compactos para tutoria de inglês por meio de um benchmark RAG offline
+
+10Fabián Armando Hoyos Cerón  
+
+Yeison Javier Muñoz Gómez  
+
+Juan José Caiza Narváez  
+
+10
+
+RESUMEN
+
+Los tutores educativos con inteligencia artificial suelen depender de internet y de servicios de pago, lo que excluye a instituciones con conectividad o presupuesto limitados. Instalar el modelo en el computador del aula es una alternativa, pero obliga a usar modelos pequeños y abre dos preguntas prácticas, la de cuál escoger y la de cómo saber si responde bien antes de llevarlo ante estudiantes.
+
+La prueba se hizo en laboratorio, sin estudiantes. Se formularon catorce preguntas sobre un libro de inglés de licencia abierta, cada una anclada a las páginas donde está su respuesta, y se ejecutaron bajo siete configuraciones en dos modelos compactos, lo que da 196 combinaciones únicas más una serie repetida en otra máquina. Todo corrió desde una memoria USB en un computador común sin tarjeta gráfica. Se aplicaron dos criterios automáticos; uno cuenta coincidencia de palabras y el otro compara el significado de la respuesta con el fragmento del libro que la originó. Ninguno contrasta contra una respuesta redactada por un docente, de modo que ambos miden apego al material y no si el sistema enseña bien.
+
+Los dos modelos quedaron casi empatados bajo el criterio semántico (0,795), aunque con catorce preguntas no cabe afirmar equivalencia. El empate exige cautela, porque al partir ambos de los mismos fragmentos el criterio tiende a producir valores parecidos por construcción. Lo más revelador es que los dos criterios ordenan las preguntas de manera casi independiente; no son versiones más o menos estrictas de una misma medida, sino medidas de cosas distintas. La velocidad varió más entre máquinas que entre modelos.
+
+Queda un procedimiento de prueba reproducible y una advertencia. Los indicadores automáticos de uso habitual miden apego al material fuente, no aprendizaje. Los resultados son preliminares y se limitan a un dominio y un libro.
+
+Palabras clave:  tutoría con inteligencia artificial; modelos de lenguaje locales; educación sin conectividad; evaluación automática de respuestas; enseñanza de inglés; estudio preliminar.
+
+ABSTRACT
+
+AI-based educational tutors usually depend on internet access and paid services, which excludes institutions with limited connectivity or budgets. Installing the model on the classroom computer is an alternative, but it forces the use of small models and raises two practical questions, that of which one to choose and that of how to tell whether it answers well before placing it in front of students.
+
+The test was carried out in laboratory conditions, without students. Fourteen questions were written about an openly licensed English textbook, each anchored to the pages where its answer lies, and run under seven settings on two compact models, giving 196 unique combinations plus one series repeated on a second machine. Everything ran from a USB drive on an ordinary computer with no graphics card. Two automatic criteria were applied; one counts word overlap and the other compares the meaning of the answer with the textbook passage it came from. Neither is checked against an answer written by a teacher, so both measure adherence to the source material rather than whether the system teaches well.
+
+The two models came out almost even under the semantic criterion (0.795), although with fourteen questions equivalence cannot be claimed. The tie calls for caution, because since both start from the same passages the criterion tends to yield similar values by construction. More revealing is that the two criteria rank the questions almost independently; they are not stricter or looser versions of a single measure, but measures of different things. Speed varied more across machines than across models.
+
+What remains is a reproducible testing procedure and a caveat. The automatic indicators in common use measure adherence to source material, not learning. The results are preliminary and confined to a single domain and a single textbook. 
+
+Keywords: AI tutoring; local language models; offline education; automatic answer scoring; English language teaching; preliminary study.
+
+RESUMO
+
+Os tutores educacionais com inteligência artificial costumam depender da internet e de serviços pagos, o que exclui instituições com conectividade ou orçamento limitados. Instalar o modelo no computador da sala de aula é uma alternativa, mas obriga ao uso de modelos pequenos e abre duas questões práticas, a de qual escolher e a de como saber se ele responde bem antes de colocá-lo diante dos estudantes.
+
+O teste foi realizado em laboratório, sem estudantes. Foram formuladas catorze perguntas sobre um livro de inglês de licença aberta, cada uma ancorada nas páginas onde está sua resposta, e executadas sob sete configurações em dois modelos compactos, o que resulta em 196 combinações únicas mais uma série repetida em outra máquina. Tudo rodou a partir de um pendrive em um computador comum, sem placa gráfica. Foram aplicados dois critérios automáticos; um conta a coincidência de palavras e o outro compara o significado da resposta com o trecho do livro que a originou. Nenhum deles é confrontado com uma resposta redigida por um docente, de modo que ambos medem a fidelidade ao material e não se o sistema ensina bem.
+
+Os dois modelos ficaram quase empatados sob o critério semântico (0,795), embora com catorze perguntas não seja possível afirmar equivalência. O empate exige cautela, pois, ao partirem ambos dos mesmos trechos, o critério tende a produzir valores parecidos por construção. O mais revelador é que os dois critérios ordenam as perguntas de maneira quase independente; não são versões mais ou menos rígidas de uma mesma medida, mas medidas de coisas distintas. A velocidade variou mais entre máquinas do que entre modelos.
+
+Resta um procedimento de teste reprodutível e uma advertência. Os indicadores automáticos de uso habitual medem a fidelidade ao material-fonte, não a aprendizagem. Os resultados são preliminares e se limitam a um domínio e um livro. 
+
+Palavras-chave: tutoria com inteligência artificial; modelos de linguagem locais; educação sem conectividade; avaliação automática de respostas; ensino de inglês; estudo preliminar.
+
+INTRODUCCIÓN
+
+Los tutores basados en modelos de lenguaje suelen depender de internet y servicios comerciales, lo que restringe su uso con conectividad o presupuesto limitados. Al cierre de 2023, cerca de un tercio de la población mundial seguía sin internet y solo 41.4 % de los hogares rurales colombianos tenía conexión (Departamento Administrativo Nacional de Estadística [DANE], 2024; International Telecommunication Union [ITU], 2023). La ejecución local reduce esa dependencia, pero exige evaluar los modelos antes de usarlos con estudiantes (Gerganov, 2023).
+
+El tutor portátil funciona desde una memoria USB, sin conexión ni tarjeta gráfica, y usa documentos del docente mediante generación aumentada por recuperación (RAG). Su arquitectura se publicó previamente (Muñoz-Gómez et al., 2026). Aquí se examina qué mide el evaluador y si permite escoger entre dos modelos.
+
+Se reconstruyó la expresión implementada, se compararon los criterios léxico y semántico, se midió la variación y se contrastó una submuestra con dos docentes. El procedimiento separa el efecto del modelo, la recuperación y el indicador. Las pruebas fueron de laboratorio, sin estudiantes.
+
+MARCO CONCEPTUAL
+
+Los sistemas de tutoría inteligente articulan dominio, estudiante, estrategia pedagógica e interfaz (Woolf, 2009). Los modelos de lenguaje ampliaron el diálogo, pero añadieron riesgos de precisión, privacidad y acceso (Kasneci et al., 2023; Yan et al., 2024). RAG condiciona la respuesta con fragmentos recuperados (Lewis et al., 2020; Gao et al., 2023), comparables por coincidencia léxica o proximidad semántica (Lin, 2004; Reimers y Gurevych, 2019). Ninguna medida demuestra corrección pedagógica.
+
+Cuando una métrica se presenta como calificación, deben conocerse su fórmula, sus insumos y las excepciones del código. RAGAS separa fidelidad y relevancia del contexto (Es et al., 2024), y otras evaluaciones muestran que las métricas no siempre conservan el juicio humano (Zhang et al., 2020). En modelos locales también intervienen corpus, reformulación, recuperación y latencia (Barnett et al., 2024; Merino Peralta et al., 2026; Valdés-Souto et al., 2026).
+
+METODOLOGÍA
+
+Sistema y evaluador
+
+El sistema combina búsqueda vectorial con BM25, fusiona rangos (0.60 y 0.40) y aplica un CrossEncoder (Cormack et al., 2009; Nogueira y Cho, 2019; Robertson y Zaragoza, 2009). Antes de recuperar, el modelo traduce la consulta al inglés y genera una variante; la comparación puede quedar confundida desde esa etapa.
+
+El evaluador ofrece un modo léxico basado en Jaccard y otro semántico basado en incrustaciones. En este último, la puntuación se calcula mediante la Ecuación 1:
+
+Q(r,q,C)=0.40·grounding(r,C)+0.40·relevance(q,C)+0.20·level_coherence(r,profile)      (1)
+
+Grounding compara respuesta y contexto, relevance compara pregunta y contexto, y level coherence usa la longitud. Cada coseno se transforma mediante (x + 1) / 2. Nueve expresiones de negativa activan un valor de 0.80. Los términos y ramas se reconstruyeron desde registros y código.
+
+El corpus produjo 339 fragmentos hijo y 299 padre. Los hijos alcanzaron 512 palabras por un multiplicador del código; luego, el contexto se recorta a 1200 caracteres. Esta mezcla de unidades se mantuvo como limitación.
+
+Banco de pruebas
+
+El corpus fue College ESL Writers (Hall y Wallace, 2018), un libro abierto de 299 páginas. Se formularon doce preguntas de contenido y dos sondas fuera de alcance, vinculadas con páginas o con la ausencia del tema. La Table 1 resume la cobertura; el registro conserva enunciado, nivel y anclaje.
+
+Tabla 1. Cobertura del banco de preguntas por área. Fuente: autores.
+
+Table 1. Coverage of the question bank by area. Source: authors.
+
+ [TABLA FILA] Area | Questions | Pages | Role | Count
+
+Area
+
+Questions
+
+Pages
+
+Role
+
+Count
+
+ [TABLA FILA] Grammar | G1-G4 | 191-235 | content | 4
+
+Grammar
+
+G1-G4
+
+191-235
+
+content
+
+4
+
+ [TABLA FILA] Vocabulary | V1-V3 | 36-150 | content | 3
+
+Vocabulary
+
+V1-V3
+
+36-150
+
+content
+
+3
+
+ [TABLA FILA] Writing | W1-W3 | 68-138 | content | 3
+
+Writing
+
+W1-W3
+
+68-138
+
+content
+
+3
+
+ [TABLA FILA] Reading | R1-R2 | 15-60 | content | 2
+
+Reading
+
+R1-R2
+
+15-60
+
+content
+
+2
+
+El banco cubre gramática, vocabulario, escritura y lectura; F1 y F2 prueban el rechazo de consultas sin respaldo documental.
+
+Cada pregunta se ejecutó con Phi-4-mini-instruct (3.8B) y Qwen2.5-3B-Instruct (3B), en GGUF Q4_K_M (Abouelenin et al., 2025; Yang et al., 2024). Siete configuraciones produjeron 196 combinaciones; la Table 2 resume el contraste entre la familia léxica y cfg_eval_full.
+
+Tabla 2. Configuraciones experimentales resumidas por modo de evaluación. Fuente: autores.
+
+Table 2. Experimental settings summarized by evaluation mode. Source: authors.
+
+ [TABLA FILA] Mode | Configurations | Temperature | Top-K | Evaluator
+
+Mode
+
+Configurations
+
+Temperature
+
+Top-K
+
+Evaluator
+
+ [TABLA FILA] Lexical | 6 settings | 0.10-0.70 | 3-10 | Jaccard
+
+Lexical
+
+6 settings
+
+0.10-0.70
+
+3-10
+
+Jaccard
+
+ [TABLA FILA] Semantic | cfg_eval_full | 0.30 | 5 | embeddings
+
+Semantic
+
+cfg_eval_full
+
+0.30
+
+5
+
+embeddings
+
+Las seis configuraciones léxicas variaron temperatura, recuperación y salida. cfg_eval_full conservó cfg_balanced y sustituyó solo el evaluador por el criterio semántico.
+
+Las ejecuciones principales se realizaron desde la memoria USB en un Intel Core i5 con 8 GB de RAM, SSD SATA, ventana de 4096 tokens y sin GPU. Otra máquina solo se usó para describir velocidad. cfg_eval_full se ejecutó con las semillas 42, 7, 123 y 2026; la semilla 42 se repitió como control. El registro adicional comprende 140 ejecuciones.
+
+Análisis y valoración docente
+
+El análisis verificó la Ecuación 1, comparó rangos con rho de Spearman, resumió la variación y aplicó Wilcoxon pareado entre modelos. Los rechazos se separaron porque reciben una constante. Las inferencias se interpretaron como exploratorias por el tamaño del banco.
+
+Cinco preguntas seleccionadas por muestreo aleatorio estratificado aportaron diez respuestas, una por modelo. Dos docentes de inglés, sin conocer modelo ni puntaje, valoraron corrección, claridad y adecuación al nivel (1 a 5), e indicaron si usarían cada respuesta sin modificar. Participaron voluntariamente, conocieron el propósito y autorizaron el uso de sus calificaciones y nombres. No hubo intervención educativa ni datos de estudiantes. El acuerdo se estimó con rho de Spearman y kappa de Cohen.
+
+ 
+
+RESULTADOS
+
+Composición del puntaje
+
+La reconstrucción de cfg_eval_full tuvo un error máximo inferior a 0.001. La Figure 1 muestra los pesos del índice: grounding (0.40) examina el significado de la respuesta, relevance (0.40) compara la pregunta con los fragmentos y level coherence (0.20) considera la longitud. Aunque 60 % cambia con la salida, solo 40 % examina su contenido semántico.
+
+Figura 1. Términos, pesos e insumos de la puntuación reportada. Fuente: autores.
+
+Figure 1. Terms, weights and inputs of the reported score. Source: authors.
+
+La figura distingue los insumos: relevance no lee la respuesta y level coherence solo considera su extensión.
+
+Relevance no recibe la respuesta, pero depende del modelo porque este reformula la consulta. Coincidió al tercer decimal en 11 de 12 preguntas en esta ejecución; no es una garantía, pues otra expansión o semilla puede recuperar fragmentos distintos.
+
+Figura 2. Descomposición de la puntuación según cfg_eval_full para las doce preguntas de contenido. Fuente: autores.
+
+Figure 2. Score decomposition under cfg_eval_full for the twelve content questions. Source: authors.
+
+La Figure 2 confirma que puntajes semejantes pueden provenir de combinaciones distintas de grounding, relevance y longitud.
+
+Cada coseno se traslada de [-1, 1] a [0, 1] mediante (x + 1) / 2. Un coseno de 0 se vuelve 0.50 y uno de 0.20 se vuelve 0.60. El umbral global de 0.60 combina dos cosenos transformados y la longitud, por lo que no equivale a un coseno directo de 0.20.
+
+Rechazos y respuestas inadecuadas
+
+El detector asignó 0.80 al reconocer una negativa: 4 de 98 celdas de Phi-4-mini y 18 de 98 de Qwen2.5-3B. La Table 3 separa rechazos correctos y falsos. Una tasa baja tampoco implica mejor discriminación: Phi respondió diez veces a sondas ajenas y Qwen rechazó seis preguntas con respaldo.
+
+Tabla 3. Comportamiento ante sondeos y preguntas de contenido fuera del alcance. Fuente: autores.
+
+Table 3. Behaviour on out-of-scope probes and content questions. Source: authors.
+
+ [TABLA FILA] Model | Correct rejection | False rejection | Fallback rate
+
+Model
+
+Correct rejection
+
+False rejection
+
+Fallback rate
+
+ [TABLA FILA] Phi-4-mini | 4 / 14 (28.6 %) | 0 / 84 (0.0 %) | 4 / 98 (4.1 %)
+
+Phi-4-mini
+
+4 / 14 (28.6 %)
+
+0 / 84 (0.0 %)
+
+4 / 98 (4.1 %)
+
+ [TABLA FILA] Qwen2.5-3B | 12 / 14 (85.7 %) | 6 / 84 (7.1 %) | 18 / 98 (18.4 %)
+
+Qwen2.5-3B
+
+12 / 14 (85.7 %)
+
+6 / 84 (7.1 %)
+
+18 / 98 (18.4 %)
+
+Los fallos difieren: Phi responde con mayor frecuencia fuera del corpus y Qwen rechaza preguntas con evidencia.
+
+Dos casos muestran el límite del índice. Ante F2, fuera del corpus, Phi produjo una salida casi vacía y obtuvo 0.698 (grounding = 0.597, relevance = 0.646 y level coherence = 1.000). En R1, Qwen devolvió otra pregunta y obtuvo 0.806, apenas 0.020 menos que la explicación de Phi. La salida vacía no reapareció en las réplicas, pero el código no impide respuestas degeneradas.
+
+Criterios, modelos y variación
+
+Los criterios léxico y semántico ordenaron las preguntas casi de forma independiente: rho = −0.273 (p = 0.390) en Phi y rho = −0.066 (p = 0.839) en Qwen. El promedio original redondeó a 0.795, pero incluye las sondas y no demuestra equivalencia.
+
+Al excluir sondas y constantes y promediar doce preguntas sobre cuatro semillas, Phi obtuvo 0.8030 y Qwen 0.8010. La diferencia fue 0.0021 (IC 95 % [−0.0222, +0.0263]); Wilcoxon dio W = 31.0 y p = 0.569. La desviación interna media fue 0.037 y la diferencia absoluta entre modelos, 0.025 (Figure 3).
+
+Figura 3. Variación dentro del modelo y diferencias absolutas entre las medias del modelo para cuatro semillas. Fuente: autores.
+
+Figure 3. Within-model variation and absolute differences between model means across four seeds. Source: authors.
+
+La dispersión interna supera la diferencia media entre modelos; una corrida no permite ordenarlos de forma estable.
+
+La semilla 42 reprodujo texto y puntaje en el entorno observado, aunque el uso normal no fija semilla. En el equipo principal, Phi promedió 1.82 tokens/s y Qwen 1.96 tokens/s. La variación entre máquinas superó la diferencia entre modelos, por lo que la velocidad se informa como rango, no como ventaja estable.
+
+Valoración docente
+
+Los docentes usaron la escala de forma distinta (medias de 3.33 y 1.93) y usarían tres respuestas sin modificar, pero no las mismas. Coincidieron en cuatro decisiones; kappa fue −0.429. La asociación entre sus calificaciones fue rho = −0.501 (p = 0.140), y la del indicador con cada docente fue rho = +0.137 (p = 0.706) y +0.259 (p = 0.469).
+
+Tabla 4. Submuestra evaluada por docentes (T1/T2 = docentes; Phi/Qwen = modelos; C = corrección; Cl = claridad; L = adecuación del nivel; Use = uso en el aula sin modificaciones). Fuente: elaboración propia.
+
+Table 4. Teacher-rated subsample (T1/T2 = teachers; Phi/Qwen = models; C = correctness; Cl = clarity; L = level fit; Use = unmodified classroom use). Source: authors.
+
+ [TABLA FILA] Code | Model | Item | Automatic | T1 C/Cl/L | Use | T2 C/Cl/L | Use
+
+Code
+
+Model
+
+Item
+
+Automatic
+
+T1 C/Cl/L
+
+Use
+
+T2 C/Cl/L
+
+Use
+
+ [TABLA FILA] R01 | Qwen2.5-3B | V2 | 0.839 | 3 / 3 / 3 | no | 3 / 1 / 1 | no
+
+R01
+
+Qwen2.5-3B
+
+V2
+
+0.839
+
+3 / 3 / 3
+
+no
+
+3 / 1 / 1
+
+no
+
+ [TABLA FILA] R02 | Phi-4-mini | G2 | 0.844 | 4 / 4 / 3 | yes | 1 / 2 / 1 | no
+
+R02
+
+Phi-4-mini
+
+G2
+
+0.844
+
+4 / 4 / 3
+
+yes
+
+1 / 2 / 1
+
+no
+
+ [TABLA FILA] R03 | Qwen2.5-3B | W3 | 0.856 | 4 / 3 / 3 | yes | 1 / 1 / 1 | no
+
+R03
+
+Qwen2.5-3B
+
+W3
+
+0.856
+
+4 / 3 / 3
+
+yes
+
+1 / 1 / 1
+
+no
+
+ [TABLA FILA] R04 | Qwen2.5-3B | G2 | 0.653 | 3 / 3 / 3 | no | 1 / 1 / 1 | no
+
+R04
+
+Qwen2.5-3B
+
+G2
+
+0.653
+
+3 / 3 / 3
+
+no
+
+1 / 1 / 1
+
+no
+
+ [TABLA FILA] R05 | Qwen2.5-3B | R1 | 0.806 | 4 / 4 / 4 | yes | 1 / 1 / 1 | no
+
+R05
+
+Qwen2.5-3B
+
+R1
+
+0.806
+
+4 / 4 / 4
+
+yes
+
+1 / 1 / 1
+
+no
+
+ [TABLA FILA] R06 | Phi-4-mini | R1 | 0.826 | 4 / 4 / 4 | no | 1 / 1 / 2 | no
+
+R06
+
+Phi-4-mini
+
+R1
+
+0.826
+
+4 / 4 / 4
+
+no
+
+1 / 1 / 2
+
+no
+
+ [TABLA FILA] R07 | Phi-4-mini | V2 | 0.766 | 3 / 3 / 3 | no | 3 / 2 / 2 | yes
+
+R07
+
+Phi-4-mini
+
+V2
+
+0.766
+
+3 / 3 / 3
+
+no
+
+3 / 2 / 2
+
+yes
+
+ [TABLA FILA] R08 | Qwen2.5-3B | G3 | 0.859 | 3 / 3 / 3 | no | 4 / 4 / 2 | yes
+
+R08
+
+Qwen2.5-3B
+
+G3
+
+0.859
+
+3 / 3 / 3
+
+no
+
+4 / 4 / 2
+
+yes
+
+ [TABLA FILA] R09 | Phi-4-mini | W3 | 0.814 | 3 / 3 / 3 | no | 4 / 3 / 3 | yes
+
+R09
+
+Phi-4-mini
+
+W3
+
+0.814
+
+3 / 3 / 3
+
+no
+
+4 / 3 / 3
+
+yes
+
+ [TABLA FILA] R10 | Phi-4-mini | G3 | 0.842 | 4 / 3 / 3 | no | 4 / 3 / 2 | no
+
+R10
+
+Phi-4-mini
+
+G3
+
+0.842
+
+4 / 3 / 3
+
+no
+
+4 / 3 / 2
+
+no
+
+ [TABLA FILA] Mean |  |  | 0.810 | 3.33 | 3 / 10 | 1.93 | 3 / 10
+
+Mean
+
+0.810
+
+3.33
+
+3 / 10
+
+1.93
+
+3 / 10
+
+La Table 4 muestra que los evaluadores también discrepan sobre cuáles respuestas usarían sin modificar.
+
+Con dos evaluadores y diez respuestas, el piloto no ofrece un patrón humano estable para calibrar el índice. La Figure 4 resume el desacuerdo. Los comentarios añadieron requisitos no cubiertos: ejemplos en inglés, usos reales y correspondencia con el modo pedagógico.
+
+Figura 4. Calificaciones asignadas de forma independiente por dos profesores de inglés. Fuente: autores.
+
+Figure 4. Ratings assigned independently by two English teachers. Source: authors.
+
+Las líneas muestran bajo acuerdo entre docentes, no una jerarquía fiable entre respuestas.
+
+DISCUSIÓN Y CONCLUSIONES
+
+Los modelos alcanzaron 0.795, sin que ello demuestre equivalencia. El índice mezcla respuesta, recuperación y longitud; los criterios ordenan las preguntas casi de forma independiente y la variación interna supera la diferencia entre modelos. No puede declararse superioridad.
+
+El índice debe presentarse por componentes: relevance para recuperación, grounding para respuesta y contexto y, tras validación, la longitud. Los rechazos requieren otra medida. Deben registrarse semilla, consulta, fragmentos y versión del modelo.
+
+El estudio se limita a un evaluador, un libro, un dominio, catorce preguntas y cuatro semillas. No prueba equivalencia ni atribuye la velocidad al equipo. El piloto revela ambigüedad en la rúbrica. No midió aprendizaje ni incluyó estudiantes.
+
+El puntaje mide apego al material, no aprendizaje. El trabajo posterior ampliará evaluadores, corpus y modelos, y revisará la longitud en código, notación y procedimientos breves.
+
+AGRADECIMIENTOS
+
+Los autores agradecen a la Institución Universitaria Colegio Mayor del Cauca, al grupo I+D Informática, al semillero BETABIT y a Juan Pablo Machado Vélez y Stevens Álvarez Domínguez, quienes participaron voluntariamente y autorizaron el uso de sus calificaciones y nombres.
+
+Referencias
+
+Abouelenin, A., Ashfaq, A., Atkinson, A., Awadalla, H., Bach, N., Bao, J., Benhaim, A., Cai, M., Chaudhary, V., Chen, C., Chen, D., Chen, D., Chen, J., Chen, W., Chen, Y.-C., Chen, Y.-L., Dai, Q., Dai, X., Fan, R., . . . Zhou, X. (2025). Phi-4-Mini technical report: Compact yet powerful multimodal language models via Mixture-of-LoRAs [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2503.01743
+
+Barnett, S., Kurniawan, S., Thudumu, S., Brannelly, Z. y Abdelrazek, M. (2024). Seven failure points when engineering a retrieval augmented generation system. En J. Cleland-Huang, J. Bosch, H. Muccini y G. A. Lewis (Eds.), Proceedings of the IEEE/ACM 3rd International Conference on AI Engineering: Software Engineering for AI (pp. 194–199). Association for Computing Machinery. https://doi.org/10.1145/3644815.3644945
+
+Cormack, G. V., Clarke, C. L. A. y Büttcher, S. (2009). Reciprocal rank fusion outperforms Condorcet and individual rank learning methods. En J. Allan, J. A. Aslam, M. Sanderson, C. Zhai y J. Zobel (Eds.), Proceedings of the 32nd International ACM SIGIR Conference on Research and Development in Information Retrieval (pp. 758–759). Association for Computing Machinery. https://doi.org/10.1145/1571941.1572114
+
+Departamento Administrativo Nacional de Estadística. (2024). Indicadores básicos de tenencia y uso de tecnologías de la información y las comunicaciones (TIC) en hogares y personas de 5 y más años de edad: Departamental 2023 [Boletín técnico]. https://www.dane.gov.co/files/operaciones/TICH/bol-TICH-2023.pdf
+
+Es, S., James, J., Espinosa Anke, L. y Schockaert, S. (2024). RAGAs: Automated evaluation of retrieval augmented generation. En N. Aletras y O. De Clercq (Eds.), Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations (pp. 150–158). Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.eacl-demo.16
+
+Gao, Y., Xiong, Y., Gao, X., Jia, K., Pan, J., Bi, Y., Dai, Y., Sun, J., Wang, M. y Wang, H. (2023). Retrieval-augmented generation for large language models: A survey [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2312.10997
+
+Gerganov, G. (2023). llama.cpp: LLM inference in C/C++ [Software]. GitHub. https://github.com/ggml-org/llama.cpp
+
+Hall, B. y Wallace, E. (2018). College ESL writers: Applied grammar and composing strategies for success. University System of Georgia. https://oer.galileo.usg.edu/english-textbooks/14/
+
+International Telecommunication Union. (2023). Facts and figures 2023: Internet use. https://www.itu.int/itu-d/reports/statistics/2023/10/10/ff23-internet-use/
+
+Kasneci, E., Sessler, K., Küchemann, S., Bannert, M., Dementieva, D., Fischer, F., Gasser, U., Groh, G., Günnemann, S., Hüllermeier, E., Krusche, S., Kutyniok, G., Michaeli, T., Nerdel, C., Pfeffer, J., Poquet, O., Sailer, M., Schmidt, A., Seidel, T., . . . Kasneci, G. (2023). ChatGPT for good? On opportunities and challenges of large language models for education. Learning and Individual Differences, 103, 102274. https://doi.org/10.1016/j.lindif.2023.102274
+
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W.-T., Rocktäschel, T., Riedel, S. y Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. En H. Larochelle, M. Ranzato, R. Hadsell, M. F. Balcan y H. Lin (Eds.), Advances in Neural Information Processing Systems (Vol. 33, pp. 9459–9474). Curran Associates, Inc. https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html
+
+Lin, C.-Y. (2004). ROUGE: A package for automatic evaluation of summaries. En Text Summarization Branches Out (pp. 74–81). Association for Computational Linguistics. https://aclanthology.org/W04-1013/
+
+Merino Peralta, N., Cuevas Valencia, D. R. E. y Feliciano Morales, D. A. (2026). Evaluación comparativa de LLMs ejecutados en entorno local (Ollama) para RAG académico: Precisión, latencia y tasa de generación. Revista Vínculos, 22(2). https://revistas.udistrital.edu.co/index.php/vinculos/article/view/24606
+
+Muñoz-Gómez, Y. J., Hoyos-Cerón, F. A. y Caiza-Narváez, J. J. (2026). Design of a portable retrieval-augmented generation architecture for offline intelligent tutoring on resource-constrained hardware. Entramado, 22(2), e-13645. https://doi.org/10.18041/1900-3803/entramado.2.13645
+
+Nogueira, R. y Cho, K. (2019). Passage re-ranking with BERT [Preprint]. arXiv. https://doi.org/10.48550/arXiv.1901.04085
+
+Reimers, N. y Gurevych, I. (2019). Sentence-BERT: Sentence embeddings using Siamese BERT-networks. En K. Inui, J. Jiang, V. Ng y X. Wan (Eds.), Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (pp. 3982–3992). Association for Computational Linguistics. https://doi.org/10.18653/v1/D19-1410
+
+Robertson, S. y Zaragoza, H. (2009). The probabilistic relevance framework: BM25 and beyond. Foundations and Trends in Information Retrieval, 3(4), 333–389. https://doi.org/10.1561/1500000019
+
+Valdés-Souto, F., Richard-Ramírez, D., Domínguez-Valenzuela, E., Rodríguez-Flores, M. y Mejía-Bautista, N. E. (2026). Analysis of vector chunk and overlap sizes in optimizing vector databases in artificial intelligence agent automation. Revista Científica, 53(1), e24600. https://doi.org/10.14483/23448350.24600
+
+Woolf, B. P. (2009). Building intelligent interactive tutors: Student-centered strategies for revolutionizing e-learning. Morgan Kaufmann. https://doi.org/10.1016/B978-0-12-373594-2.X0001-9
+
+Yan, L., Sha, L., Zhao, L., Li, Y., Martínez-Maldonado, R., Chen, G., Li, X., Jin, Y. y Gašević, D. (2024). Practical and ethical challenges of large language models in education: A systematic scoping review. British Journal of Educational Technology, 55(1), 90–112. https://doi.org/10.1111/bjet.13370
+
+Yang, A., Yang, B., Zhang, B., Hui, B., Zheng, B., Yu, B., Li, C., Liu, D., Huang, F., Wei, H., Lin, H., Yang, J., Tu, J., Zhang, J., Yang, J., Yang, J., Zhou, J., Lin, J., Dang, K., . . . Qiu, Z. (2024). Qwen2.5 technical report [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2412.15115
+
+Zhang, T., Kishore, V., Wu, F., Weinberger, K. Q. y Artzi, Y. (2020). BERTScore: Evaluating text generation with BERT. En 8th International Conference on Learning Representations. OpenReview. https://openreview.net/forum?id=SkeHuCVFDr

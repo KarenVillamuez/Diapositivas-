@@ -1,0 +1,111 @@
+<!-- ====================================================================
+     SLIDE 10: 02 · METODOLOGÍA / LA GUÍA EN MARKDOWN
+     ==================================================================== -->
+<section class="slide s-white" id="slide-10" data-notes="Para materializar estos principios, construimos una guía en Markdown que cualquier asistente de IA puede interpretar como system prompt. No requiere código propietario ni arquitecturas complejas: son reglas condicionales y disparadores semánticos que obligan al modelo a guardar silencio cuando debe, preguntar cuando hay duda y respetar la voluntad del autor. Diseñamos el modelo; ahora había que probar si se sostenía.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">02 &middot; METODOLOG&Iacute;A &middot; FORMALIZACI&Oacute;N EN MARKDOWN</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    
+    <h2 class="s-lead-question" style="font-size: 42px; font-weight: 800; color: var(--c-text-dark); margin-bottom: 20px; line-height: 1.2;">
+      Una gu&iacute;a en Markdown: reglas condicionales y disparadores sem&aacute;nticos
+    </h2>
+
+    <div style="display: flex; gap: 28px; align-items: stretch; height: 535px;">
+      
+      <!-- Columna Izquierda: Visor del Sistema Prompt en Markdown (Mono) -->
+      <div style="flex: 1.1; background: #0E0305; border: 2px solid var(--c-wine-primary); padding: 22px 24px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--font-mono); box-shadow: 0 12px 32px rgba(44, 5, 9, 0.2);">
+        
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(245, 194, 27, 0.3); padding-bottom: 10px; margin-bottom: 14px;">
+            <span style="color: var(--c-gold); font-size: 15px; font-weight: 800; letter-spacing: 1px;">
+              SYSTEM_PROMPT &middot; MEDIACION_REFLEXIVA.MD
+            </span>
+            <span style="color: #FAF5F5; font-size: 13px; opacity: 0.6;">
+              Interpretable por cualquier LLM
+            </span>
+          </div>
+
+          <pre style="margin: 0; font-size: 18px; line-height: 1.5; color: #FAF5F5; white-space: pre-wrap;">
+<span style="color: var(--c-gold);"># ROL Y LÍMITES</span>
+Eres un espejo dialógico. <strong style="color: var(--c-red-accent);">NO redactes</strong> párrafos ni corrijas estilo.
+
+<span style="color: var(--c-gold);"># REGLAS CONDICIONALES DE DISPARO</span>
+<span style="color: #64B5F6;">SI</span> autor presenta [BORRADOR] con incoherencia o duda:
+   &rarr; Formular pregunta mayéutica usando sus mismos términos.
+
+<span style="color: #64B5F6;">SI</span> autor solicita <span style="color: var(--c-red-accent);">"Redáctalo tú"</span>:
+   &rarr; Declinar cortésmente: "¿Qué idea clave quieres destacar?"
+
+<span style="color: #64B5F6;">SI</span> autor invoca [RUTA_PRAGMÁTICA] (prisa / cierre):
+   &rarr; Suspender cuestionamiento y validar cierre del texto.
+          </pre>
+        </div>
+
+        <div style="background: rgba(245, 194, 27, 0.1); border-left: 4px solid var(--c-gold); padding: 8px 14px; font-size: 14px; color: var(--c-gold);">
+          Universal: Funciona en modelos locales (Llama, Gemma) y propietarios (Claude, GPT).
+        </div>
+      </div>
+
+      <!-- Columna Derecha: 3 Pilares Operativos de la Guía -->
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 14px;">
+        
+        <!-- Pilar 1 -->
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 16px 20px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 4px;">
+            01 &middot; INDEPENDENCIA DE PLATAFORMA
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+            Sin Código Propietario ni Vendor Lock-in
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.35;">
+            Cualquier docente o estudiante puede inyectar la gu&iacute;a en una ventana de chat est&aacute;ndar sin necesidad de APIs pagas ni extensiones.
+          </div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 16px 20px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-red-accent); margin-bottom: 4px;">
+            02 &middot; DISPARADORES SEM&Aacute;NTICOS
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 4px;">
+            Monitoreo de Se&ntilde;ales en Tiempo Real
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.35;">
+            Detecta vacilaci&oacute;n (&ldquo;no s&eacute; si&rdquo;), contradicciones l&oacute;gicas o bloqueos para activar la intervenci&oacute;n justa sin abrumar.
+          </div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 16px 20px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
+          <div style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: #9A7200; margin-bottom: 4px;">
+            03 &middot; GOBERNANZA DEL AVANCE
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: #9A7200; margin-bottom: 4px;">
+            Transici&oacute;n Epistemol&oacute;gica de Fase
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 18px; color: #110103; line-height: 1.35;">
+            No permite avanzar a redacci&oacute;n formal hasta que el autor resuelva su prop&oacute;sito comunicativo b&aacute;sico.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Franja Puente de Salida hacia el Acto 3 -->
+    <div style="background: #32060D; color: #FFFFFF; padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; border-left: 6px solid var(--c-gold); margin-top: 16px;">
+      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 700;">
+        <span style="color: var(--c-gold);">FRASE-PUENTE:</span> &ldquo;Dise&ntilde;amos el modelo y sus reglas; ahora hab&iacute;a que probar si se sosten&iacute;a en la pr&aacute;ctica.&rdquo;
+      </div>
+    </div>
+
+  </div>
+</section>

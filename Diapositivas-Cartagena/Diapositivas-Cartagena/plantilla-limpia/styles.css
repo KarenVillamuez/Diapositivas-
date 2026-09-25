@@ -1,0 +1,1251 @@
+/* ==========================================================================
+   VI CONGRESO INTERNACIONAL DE INVESTIGACIÓN INTERDISCIPLINAR
+   LHXT26 - PLANTILLA OFICIAL CARTAGENA 2026
+   Traducción Exacta 1:1 de PowerPoint a HTML/CSS
+   ========================================================================== */
+
+:root {
+  /* Paleta Oficial PPTX */
+  --c-wine-dark: #32060D;
+  --c-wine-primary: #460811;
+  --c-text-dark: #2C0509;
+  --c-red-accent: #C9101B;
+  --c-red-dark: #C00D1A;
+  --c-gold: #F5C21B;
+  --c-pink-bg: #FAF5F5;
+  --c-border-subtle: #EAE0E1;
+  --c-line-rule: #E4DADB;
+  --c-gray-text: #5D4A4D;
+  --c-gray-muted: #8D7A7D;
+  --c-gray-header: #A08D90;
+  --c-gray-closing: #7C6A6D;
+
+  /* Fuentes oficiales de la plantilla PPTX */
+  --font-sans: Arial, Helvetica, -apple-system, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+
+  /* Canvas 16:9 */
+  --canvas-w: 1920px;
+  --canvas-h: 1080px;
+  --canvas-scale: 1;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #0b0103;
+  overflow: hidden;
+  user-select: none;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Viewport centrado */
+#presentation-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b0103;
+}
+
+/* Barra de progreso superior */
+#progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--c-red-accent), var(--c-gold));
+  transition: width 0.3s ease;
+}
+
+/* Escenario 16:9 bloqueado y escalable */
+#slides-stage {
+  position: absolute;
+  width: var(--canvas-w);
+  height: var(--canvas-h);
+  transform-origin: center center;
+  transform: scale(var(--canvas-scale));
+  overflow: hidden;
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE CADA DIAPOSITIVA
+   ========================================================================== */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+/* ==========================================================================
+   SLIDE 1: PORTADA (FONDO VINOTINTO)
+   ========================================================================== */
+.s-cover {
+  background-color: var(--c-wine-dark);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.s1-tower-bg {
+  position: absolute;
+  right: -20px;
+  bottom: -40px;
+  height: 105%;
+  width: auto;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.s1-header {
+  position: absolute;
+  left: 5.7%;
+  top: 7.4%;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  z-index: 5;
+}
+
+.s1-logo-loxtic {
+  height: 88px;
+  width: auto;
+}
+
+.s1-vsep {
+  width: 1.5px;
+  height: 85px;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.s1-congress-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.s1-congress-title {
+  font-family: var(--font-sans);
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+}
+
+.s1-congress-date {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  margin-top: 6px;
+}
+
+.s1-title-block {
+  position: absolute;
+  left: 5.7%;
+  top: 37.5%;
+  z-index: 5;
+}
+
+.s1-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.s1-red-pill {
+  width: 50px;
+  height: 6px;
+  background-color: var(--c-red-accent);
+}
+
+.s1-tag-label {
+  font-family: var(--font-mono);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--c-gold);
+  letter-spacing: 2.5px;
+}
+
+.s1-main-title {
+  font-family: var(--font-sans);
+  font-size: 78px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.s1-sub-title {
+  font-family: var(--font-sans);
+  font-size: 34px;
+  font-style: italic;
+  color: #FFFFFF;
+  opacity: 0.88;
+  margin-bottom: 36px;
+}
+
+.s1-authors-list {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  color: #FFFFFF;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.s1-footer-logos {
+  position: absolute;
+  left: 5.7%;
+  bottom: 6%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  z-index: 5;
+}
+
+.s1-uni-logo {
+  object-fit: contain;
+}
+
+.s1-distrital {
+  height: 62px;
+}
+
+.s1-utb {
+  height: 48px;
+}
+
+.s1-unicartagena {
+  height: 65px;
+}
+
+/* ==========================================================================
+   HEADER Y FOOTER COMÚN (SLIDES BLANCAS: 2, 3, 5, 6, 7, 8, 9, 10, 11)
+   ========================================================================== */
+.s-white {
+  background-color: #FFFFFF;
+  color: var(--c-text-dark);
+  position: relative;
+}
+
+.slide-header {
+  position: absolute;
+  left: 5.7%;
+  top: 5.9%;
+  width: 88.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sh-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sh-red-bar {
+  width: 5px;
+  height: 36px;
+  background-color: var(--c-red-accent);
+}
+
+.sh-category {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--c-gray-header);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sh-loxtic {
+  height: 54px;
+  width: auto;
+}
+
+.sh-divider {
+  position: absolute;
+  left: 5.7%;
+  top: 14.1%;
+  width: 88.5%;
+  height: 2px;
+  background-color: var(--c-wine-primary);
+}
+
+.slide-footer-rule {
+  position: absolute;
+  left: 5.7%;
+  top: 90.0%;
+  width: 88.5%;
+  height: 1px;
+  background-color: var(--c-line-rule);
+}
+
+.slide-footer {
+  position: absolute;
+  left: 5.7%;
+  top: 92.0%;
+  width: 88.5%;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 24px;
+}
+
+.sf-left {
+  color: var(--c-gray-header);
+}
+
+.sf-right {
+  color: var(--c-wine-primary);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Título de página estándar */
+.s-page-title {
+  font-family: var(--font-sans);
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+  line-height: 1.15;
+}
+
+/* ==========================================================================
+   SLIDE 2: RESUMEN
+   ========================================================================== */
+.s2-body {
+  position: absolute;
+  left: 5.7%;
+  top: 20.6%;
+  width: 88.5%;
+}
+
+.s2-red-accent-line {
+  width: 330px;
+  height: 5px;
+  background-color: var(--c-red-accent);
+  margin-bottom: 50px;
+}
+
+.s2-title {
+  font-family: var(--font-mono);
+  font-size: 54px;
+  font-weight: 700;
+  color: var(--c-wine-primary);
+  letter-spacing: 1.5px;
+  margin-bottom: 45px;
+}
+
+.s2-abstract-text {
+  font-family: var(--font-sans);
+  font-size: 36px;
+  line-height: 1.6;
+  color: var(--c-text-dark);
+  max-width: 1550px;
+  margin-bottom: 55px;
+}
+
+.s2-keywords-row {
+  font-family: var(--font-sans);
+  font-size: 30px;
+}
+
+.s2-kw-label {
+  color: var(--c-red-accent);
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.s2-kw-text {
+  color: var(--c-text-dark);
+}
+
+/* ==========================================================================
+   SLIDE 3: ESTRUCTURA DEL ARTÍCULO
+   ========================================================================== */
+.s3-loxtic {
+  height: 52px;
+}
+
+.s3-vsep {
+  width: 1px;
+  height: 30px;
+  background-color: #DED3D5;
+}
+
+.s3-body {
+  position: absolute;
+  left: 5.7%;
+  top: 35%;
+  width: 88.5%;
+  display: flex;
+  gap: 90px;
+}
+
+.s3-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.s3-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.s3-item-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.s3-num {
+  font-family: var(--font-mono);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--c-red-accent);
+  width: 54px;
+}
+
+.s3-name {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+}
+
+.s3-desc {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  color: var(--c-gray-closing);
+  padding-left: 70px;
+}
+
+/* ==========================================================================
+   SLIDE 4: SEPARADOR 01 INTRODUCCIÓN
+   ========================================================================== */
+.s4-towers-row {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none;
+  opacity: 0.18;
+}
+
+.s4-tower {
+  width: auto;
+  object-fit: contain;
+}
+
+.s4-t1 { height: 280px; }
+.s4-t2 { height: 240px; margin-left: 80px; }
+.s4-t3 { height: 310px; margin-left: 90px; }
+
+.s4-content {
+  position: absolute;
+  left: 5.7%;
+  top: 32%;
+  width: 80%;
+  z-index: 5;
+}
+
+.s4-number-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+.s4-number {
+  font-family: var(--font-mono);
+  font-size: 108px;
+  font-weight: 700;
+  color: var(--c-gold);
+  line-height: 1;
+}
+
+.s4-red-bar {
+  width: 90px;
+  height: 6px;
+  background-color: var(--c-red-accent);
+}
+
+.s4-title {
+  font-family: var(--font-sans);
+  font-size: 88px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.s4-desc {
+  font-family: var(--font-sans);
+  font-size: 34px;
+  color: #FFFFFF;
+  opacity: 0.9;
+  max-width: 1300px;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   SLIDE 5: 01 · INTRODUCCIÓN / PLANTEAMIENTO
+   ========================================================================== */
+.s5-body {
+  position: absolute;
+  left: 5.7%;
+  top: 26%;
+  width: 88.5%;
+}
+
+.s5-lead {
+  font-family: var(--font-sans);
+  font-size: 34px;
+  color: var(--c-gray-text);
+  margin-top: 25px;
+  margin-bottom: 45px;
+  max-width: 1500px;
+  line-height: 1.45;
+}
+
+.s5-bullets-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.s5-bullet-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.s5-bullet-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--c-red-accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.s5-bullet-text {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  color: var(--c-text-dark);
+}
+
+/* ==========================================================================
+   SLIDE 6: 02 · METODOLOGÍA
+   ========================================================================== */
+.s6-body {
+  position: absolute;
+  left: 5.7%;
+  top: 26%;
+  width: 88.5%;
+}
+
+.s6-blocks-row {
+  display: flex;
+  gap: 45px;
+  margin-top: 35px;
+}
+
+.s6-block {
+  flex: 1;
+  background-color: var(--c-pink-bg);
+  padding: 42px 46px;
+}
+
+.s6-block-wine {
+  border-top: 6px solid var(--c-wine-primary);
+}
+
+.s6-block-red {
+  border-top: 6px solid var(--c-red-accent);
+}
+
+.s6-block-tag {
+  font-family: var(--font-mono);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--c-red-dark);
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.s6-block-title {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+  margin-bottom: 20px;
+}
+
+.s6-block-desc {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  color: var(--c-gray-text);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   SLIDE 7: 03 · RESULTADOS (TABLA)
+   ========================================================================== */
+.s7-body {
+  position: absolute;
+  left: 5.7%;
+  top: 29%;
+  width: 88.5%;
+}
+
+.s7-title-es {
+  font-family: var(--font-sans);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+  margin-bottom: 6px;
+}
+
+.s7-title-en {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  font-style: italic;
+  color: var(--c-gray-muted);
+  margin-bottom: 25px;
+}
+
+.s7-native-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.s7-native-table th {
+  background-color: var(--c-wine-primary);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 18px 24px;
+}
+
+.s7-native-table td {
+  padding: 18px 24px;
+  font-family: var(--font-sans);
+  font-size: 28px;
+  color: var(--c-gray-text);
+  border-bottom: 1px solid var(--c-border-subtle);
+}
+
+.s7-native-table .td-var {
+  font-weight: 700;
+  color: var(--c-text-dark);
+}
+
+.s7-native-table .tr-pink td {
+  background-color: var(--c-pink-bg);
+}
+
+.s7-native-table .tr-last td {
+  border-bottom: 3.5px solid var(--c-wine-primary);
+}
+
+.s7-footnote {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-style: italic;
+  color: var(--c-gray-muted);
+  margin-top: 15px;
+}
+
+/* ==========================================================================
+   SLIDE 8: 03 · RESULTADOS (FIGURA & HALLAZGOS)
+   ========================================================================== */
+.s8-body {
+  position: absolute;
+  left: 5.7%;
+  top: 22%;
+  width: 88.5%;
+  display: flex;
+  gap: 65px;
+  height: 65%;
+}
+
+.s8-figure-col {
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+}
+
+.s8-figure-container {
+  flex: 1;
+  background-color: var(--c-pink-bg);
+  border: 1px dashed #D8CDCF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 480px;
+}
+
+.s8-figure-placeholder {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  color: var(--c-gray-header);
+  letter-spacing: 2px;
+}
+
+.s8-caption {
+  margin-top: 14px;
+}
+
+.s8-cap-es {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+}
+
+.s8-cap-en {
+  font-family: var(--font-sans);
+  font-size: 26px;
+  font-style: italic;
+  color: var(--c-gray-muted);
+  margin-top: 2px;
+}
+
+.s8-findings-col {
+  flex: 1;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.s8-findings-title {
+  font-family: var(--font-sans);
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+  margin-bottom: 35px;
+}
+
+.s8-metric-item {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.s8-metric-bar {
+  width: 5px;
+  flex-shrink: 0;
+}
+
+.s8-bar-wine { background-color: var(--c-wine-primary); }
+.s8-bar-red { background-color: var(--c-red-accent); }
+.s8-bar-gold { background-color: var(--c-gold); }
+
+.s8-metric-value {
+  font-family: var(--font-sans);
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--c-wine-primary);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.s8-metric-label {
+  font-family: var(--font-sans);
+  font-size: 30px;
+  color: var(--c-gray-text);
+}
+
+/* ==========================================================================
+   SLIDE 9: 04 · DISCUSIÓN Y CONCLUSIONES
+   ========================================================================== */
+.s9-body {
+  position: absolute;
+  left: 5.7%;
+  top: 21%;
+  width: 88.5%;
+}
+
+.s9-cols-row {
+  display: flex;
+  gap: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.s9-col {
+  flex: 1;
+}
+
+.s9-col-topbar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--c-wine-primary);
+  margin-bottom: 16px;
+}
+
+.s9-col-tag {
+  font-family: var(--font-mono);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--c-red-dark);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.s9-col-text {
+  font-family: var(--font-sans);
+  font-size: 26px;
+  color: var(--c-text-dark);
+  line-height: 1.5;
+}
+
+.s9-ack-banner {
+  background-color: var(--c-pink-bg);
+  display: flex;
+  align-items: center;
+  border-left: 5px solid var(--c-red-accent);
+  padding: 20px 28px;
+  font-family: var(--font-sans);
+  font-size: 24px;
+}
+
+.s9-ack-title {
+  color: var(--c-wine-primary);
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.s9-ack-text {
+  color: var(--c-gray-text);
+}
+
+/* ==========================================================================
+   SLIDE 10: 05 · REFERENCIAS · APA VII
+   ========================================================================== */
+.s10-body {
+  position: absolute;
+  left: 5.73%;
+  top: 26%;
+  width: 88.5%;
+}
+
+.s10-title {
+  margin-bottom: 24px;
+}
+
+.s10-refs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-left: 44px;
+  max-width: 1563px;
+}
+
+.s10-ref-item {
+  font-family: var(--font-sans);
+  font-size: 31px;
+  color: var(--c-gray-text);
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+.s10-ref-item em {
+  font-style: italic;
+  color: var(--c-gray-text);
+}
+
+.s10-ref-item a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.s10-ref-item a:hover {
+  text-decoration: underline;
+}
+
+.s10-notice {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  color: var(--c-gray-muted);
+  margin-top: 36px;
+  margin-left: 0;
+}
+
+/* ==========================================================================
+   SLIDE 11: CIERRE (GRACIAS & PREGUNTAS)
+   ========================================================================== */
+.s11-loxtic {
+  height: 54px;
+}
+
+.s11-body {
+  position: absolute;
+  left: 5.73%;
+  top: 34%;
+  width: 88.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s11-left {
+  max-width: 1050px;
+}
+
+.s11-main-title {
+  font-family: var(--font-sans);
+  font-size: 88px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.s11-authors {
+  font-family: var(--font-sans);
+  font-size: 38px;
+  color: var(--c-gray-text);
+  margin-bottom: 45px;
+}
+
+.s11-questions-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.s11-btn-questions {
+  background-color: var(--c-wine-primary);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 16px 42px;
+}
+
+.s11-date-text {
+  font-family: var(--font-sans);
+  font-size: 34px;
+  color: var(--c-gray-closing);
+}
+
+.s11-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s11-qr-img {
+  width: 280px;
+  height: 298px;
+  display: block;
+  object-fit: contain;
+}
+
+.s11-url-caption {
+  font-family: var(--font-mono);
+  font-size: 32px;
+  color: var(--c-gray-closing);
+  letter-spacing: 1.5px;
+  margin-top: 15px;
+}
+
+.s11-footer {
+  position: absolute;
+  left: 5.73%;
+  bottom: 4.5%;
+  width: 88.5%;
+}
+
+.s11-unis-logos {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.s11-uni-logo {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   BARRA DE PRESENTACIÓN (ORADOR)
+   ========================================================================== */
+#presenter-toolbar {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(22, 3, 6, 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 16px;
+  border-radius: 40px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  opacity: 0.25;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#presenter-toolbar:hover,
+#presenter-toolbar.active-hover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-2px);
+  background: rgba(22, 3, 6, 0.96);
+}
+
+#presenter-toolbar.hidden {
+  display: none !important;
+}
+
+.tool-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.tool-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+}
+
+.tool-btn.active {
+  background: var(--c-red-accent);
+  color: #FFFFFF;
+}
+
+.slide-counter-badge {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--c-gold);
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.speaker-timer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.speaker-timer.warning { color: var(--c-gold); }
+.speaker-timer.danger { color: #ff4757; }
+
+#laser-pointer {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff0033;
+  box-shadow: 0 0 16px #ff0033, 0 0 30px #ff0033, inset 0 0 6px #ffffff;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+/* Modal overview */
+#overview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(13, 1, 3, 0.95);
+  backdrop-filter: blur(20px);
+  z-index: 3000;
+  display: none;
+  flex-direction: column;
+  padding: 40px 60px;
+  overflow-y: auto;
+}
+
+#overview-modal.open { display: flex; }
+
+.overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.overview-title {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.overview-thumb {
+  aspect-ratio: 16/9;
+  background: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.overview-thumb:hover {
+  transform: scale(1.04);
+  border-color: var(--c-red-accent);
+}
+
+.overview-thumb.active {
+  border-color: var(--c-gold);
+}
+
+.overview-thumb.dark {
+  background-color: var(--c-wine-dark);
+  color: #FFFFFF;
+}
+
+.thumb-num {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--c-red-accent);
+}
+
+.overview-thumb.dark .thumb-num {
+  color: var(--c-gold);
+}
+
+.thumb-title {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--c-text-dark);
+}
+
+
+.overview-thumb.dark .thumb-title {
+  color: #FFFFFF;
+}
+
+@media print {
+  @page {
+    size: 16in 9in;
+    margin: 0;
+  }
+
+  html, body {
+    width: 100%;
+    height: auto;
+    overflow: visible !important;
+    background: transparent !important;
+  }
+
+  #presentation-viewport, #slides-stage {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .slide {
+    position: relative !important;
+    width: 16in !important;
+    height: 9in !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    display: block !important;
+  }
+
+  #presenter-toolbar, #progress-bar, #laser-pointer, #overview-modal {
+    display: none !important;
+  }
+}

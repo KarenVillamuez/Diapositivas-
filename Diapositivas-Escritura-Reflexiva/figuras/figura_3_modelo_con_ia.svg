@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 960" width="100%" height="100%">
+<rect width="1560" height="960" fill="#FFFFFF"/>
+<text x="60" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2C0509">MODELO INTEGRADO CON MEDIACIÓN CONVERSACIONAL DE IA</text>
+<text x="60" y="85" font-family="Arial, sans-serif" font-size="18" fill="#5D4A4D">El autor en el centro de control; la IA como espejo que devuelve preguntas sin redactar ni evaluar</text>
+<line x1="60" y1="102" x2="1500" y2="102" stroke="#EAE0E1" stroke-width="2"/>
+<circle cx="780" cy="480" r="290" fill="none" stroke="#EAE0E1" stroke-width="38"/>
+<circle cx="780" cy="480" r="290" fill="none" stroke="#460811" stroke-width="3" stroke-dasharray="10,6"/>
+<rect x="605.0" y="360.0" width="350" height="240" fill="#FAF5F5" stroke="#460811" stroke-width="4"/>
+<rect x="605.0" y="360.0" width="350" height="10" fill="#460811"/>
+<text x="780" y="425" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#C9101B" text-anchor="middle" letter-spacing="2">ROL CENTRAL EXCLUSIVO</text>
+<text x="780" y="462" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#32060D" text-anchor="middle">EL AUTOR</text>
+<text x="780" y="492" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C0509" text-anchor="middle">Control y Criterio Propio</text>
+<line x1="650" y1="510" x2="910" y2="510" stroke="#EAE0E1" stroke-width="1.5"/>
+<text x="780" y="534" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D" text-anchor="middle">• Decide metas y redacta el borrador</text>
+<text x="780" y="554" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D" text-anchor="middle">• Responde a las preguntas si lo desea</text>
+<text x="780" y="574" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9101B" text-anchor="middle">• Puede omitir la reflexión y cerrar</text>
+<circle cx="574.9390334559013" cy="274.9390334559012" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="574.9390334559013" y="281.9390334559012" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P1</text>
+<circle cx="780.0" cy="190.0" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="780.0" y="197.0" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P2</text>
+<circle cx="985.0609665440988" cy="274.9390334559012" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="985.0609665440988" y="281.9390334559012" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P3</text>
+<circle cx="1070.0" cy="480.0" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="1070.0" y="487.0" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P4</text>
+<circle cx="985.0609665440988" cy="685.0609665440988" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="985.0609665440988" y="692.0609665440988" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P5</text>
+<circle cx="780.0" cy="770.0" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="780.0" y="777.0" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P6</text>
+<circle cx="574.9390334559013" cy="685.0609665440988" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="574.9390334559013" y="692.0609665440988" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P7</text>
+<circle cx="490.0" cy="480.00000000000006" r="26" fill="#FFFFFF" stroke="#460811" stroke-width="3"/>
+<text x="490.0" y="487.00000000000006" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#460811" text-anchor="middle">P8</text>
+<rect x="1070" y="140" width="430" height="160" fill="#FAF5F5" stroke="#460811" stroke-width="2"/>
+<rect x="1070" y="140" width="430" height="6" fill="#460811"/>
+<rect x="1086" y="158" width="34" height="26" fill="#460811"/>
+<text x="1103" y="176" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">I1</text>
+<text x="1130" y="176" font-family="Courier New, monospace" font-size="15" font-weight="bold" fill="#460811">Fase P2 → P3: Ideación</text>
+<text x="1086" y="210" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">"¿Qué otros ángulos no has considerado aún?"</text>
+<line x1="1086" y1="232" x2="1484" y2="232" stroke="#EAE0E1" stroke-width="1"/>
+<text x="1086" y="256" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">Ensancha el espacio de ideación sin sugerir cont</text>
+<text x="1086" y="278" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">enido ni introducir términos ajenos.</text>
+<line x1="1070" y1="220.0" x2="780.0" y2="190.0" stroke="#460811" stroke-width="2.5" stroke-dasharray="5,4"/>
+<circle cx="780.0" cy="190.0" r="6" fill="#460811"/>
+<rect x="1070" y="660" width="430" height="160" fill="#FAF5F5" stroke="#C9101B" stroke-width="2"/>
+<rect x="1070" y="660" width="430" height="6" fill="#C9101B"/>
+<rect x="1086" y="678" width="34" height="26" fill="#C9101B"/>
+<text x="1103" y="696" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">I2</text>
+<text x="1130" y="696" font-family="Courier New, monospace" font-size="15" font-weight="bold" fill="#C9101B">Fase P3 → P4: Organización</text>
+<text x="1086" y="730" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">"Representación jerárquica con el vocabulario del usuario"</text>
+<line x1="1086" y1="752" x2="1484" y2="752" stroke="#EAE0E1" stroke-width="1"/>
+<text x="1086" y="776" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">Propuesta estructural basada exclusivamente en l</text>
+<text x="1086" y="798" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">os conceptos anotados por el autor.</text>
+<line x1="1070" y1="740.0" x2="1070.0" y2="480.0" stroke="#C9101B" stroke-width="2.5" stroke-dasharray="5,4"/>
+<circle cx="1070.0" cy="480.0" r="6" fill="#C9101B"/>
+<rect x="60" y="660" width="430" height="160" fill="#FAF5F5" stroke="#B38600" stroke-width="2"/>
+<rect x="60" y="660" width="430" height="6" fill="#B38600"/>
+<rect x="76" y="678" width="34" height="26" fill="#B38600"/>
+<text x="93" y="696" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">I3</text>
+<text x="120" y="696" font-family="Courier New, monospace" font-size="15" font-weight="bold" fill="#B38600">Fase P6 → P7: Evaluación</text>
+<text x="76" y="730" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">"Tu meta era persuadir sobre... ¿En qué parte se aborda?"</text>
+<line x1="76" y1="752" x2="474" y2="752" stroke="#EAE0E1" stroke-width="1"/>
+<text x="76" y="776" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">Contraste objetivo entre la intención inicial de</text>
+<text x="76" y="798" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">clarada y el borrador redactado.</text>
+<line x1="490" y1="740.0" x2="780.0" y2="770.0" stroke="#B38600" stroke-width="2.5" stroke-dasharray="5,4"/>
+<circle cx="780.0" cy="770.0" r="6" fill="#B38600"/>
+<rect x="60" y="140" width="430" height="160" fill="#FAF5F5" stroke="#460811" stroke-width="2"/>
+<rect x="60" y="140" width="430" height="6" fill="#460811"/>
+<rect x="76" y="158" width="34" height="26" fill="#460811"/>
+<text x="93" y="176" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">I4</text>
+<text x="120" y="176" font-family="Courier New, monospace" font-size="15" font-weight="bold" fill="#460811">Fase P7 → P8: Integración</text>
+<text x="76" y="210" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2C0509">"¿Qué esperabas que ocurriera al escribir esa frase?"</text>
+<line x1="76" y1="232" x2="474" y2="232" stroke="#EAE0E1" stroke-width="1"/>
+<text x="76" y="256" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">Sostiene el espacio narrativo de la reflexión y </text>
+<text x="76" y="278" font-family="Arial, sans-serif" font-size="14" fill="#5D4A4D">consolida lo aprendido.</text>
+<line x1="490" y1="220.0" x2="490.0" y2="480.00000000000006" stroke="#460811" stroke-width="2.5" stroke-dasharray="5,4"/>
+<circle cx="490.0" cy="480.00000000000006" r="6" fill="#460811"/>
+<rect x="60" y="865" width="1440" height="45" fill="#460811"/>
+<text x="780.0" y="894" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PRINCIPIO DE NO SUSTITUCIÓN: La IA nunca redacta borradores ni califica; solo formula preguntas basadas en las palabras del autor.</text>
+</svg>

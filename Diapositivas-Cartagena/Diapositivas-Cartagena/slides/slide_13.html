@@ -1,0 +1,178 @@
+<!-- ====================================================================
+     SLIDE 13: 03 · RESULTADOS / EL FALSO EMPATE ESTADÍSTICO (ARQUETIPO E - FIGURA 3)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-13">
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 · RESULTADOS · EL FALSO EMPATE ESTADÍSTICO</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: space-between; padding: 14px 0 6px 0;">
+    
+    <h2 class="s-lead-question" style="font-size: 38px; font-weight: 800; margin: 0; line-height: 1.2;">
+      La ilusión del 0.795: la variación por semilla supera la diferencia entre modelos
+    </h2>
+
+    <!-- HERO CENTRAL: Gráfica de Dispersión Curricular Ancha (Figura 3 del Paper) -->
+    <div style="background: #FAF5F5; border: 2.5px solid var(--c-wine-primary); padding: 18px 28px 14px 28px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: var(--c-wine-dark);">
+          DISPERSIÓN EN 12 PREGUNTAS CURRICULARES
+        </div>
+        <div style="display: flex; gap: 32px; font-family: var(--font-sans); font-size: 22px; font-weight: 800;">
+          <span style="color: var(--c-wine-primary); display: flex; align-items: center; gap: 8px;">
+            <span style="display: inline-block; width: 16px; height: 16px; background: var(--c-wine-primary); border-radius: 0;"></span>
+            Phi-4-mini
+          </span>
+          <span style="color: var(--c-red-accent); display: flex; align-items: center; gap: 8px;">
+            <span style="display: inline-block; width: 16px; height: 16px; background: var(--c-red-accent); border-radius: 0;"></span>
+            Qwen2.5-3B
+          </span>
+        </div>
+      </div>
+
+      <svg viewBox="0 0 1560 300" style="width: 100%; height: auto; font-family: var(--font-sans);">
+        <!-- Eje Y con líneas de referencia -->
+        <line x1="80" y1="25" x2="1530" y2="25" stroke="#E2D6D8" stroke-dasharray="4,4" />
+        <text x="35" y="32" font-size="20" fill="#5D4A4D" font-weight="700">0.90</text>
+        
+        <line x1="80" y1="95" x2="1530" y2="95" stroke="#E2D6D8" stroke-dasharray="4,4" />
+        <text x="35" y="102" font-size="20" fill="#5D4A4D" font-weight="700">0.80</text>
+
+        <line x1="80" y1="165" x2="1530" y2="165" stroke="#E2D6D8" stroke-dasharray="4,4" />
+        <text x="35" y="172" font-size="20" fill="#5D4A4D" font-weight="700">0.70</text>
+
+        <line x1="80" y1="235" x2="1530" y2="235" stroke="#2C0509" stroke-width="2.5" />
+        <text x="35" y="242" font-size="20" fill="#5D4A4D" font-weight="700">0.60</text>
+
+        <!-- 12 Pares de Preguntas Curriculares con Bigotes de Dispersión Solapados -->
+        <!-- G1 -->
+        <line x1="148" y1="75" x2="148" y2="115" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="148" cy="95" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="172" y1="80" x2="172" y2="120" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="172" cy="100" r="8.5" fill="var(--c-red-accent)" />
+        <text x="160" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">G1</text>
+
+        <!-- G2 (Alta dispersión) -->
+        <line x1="268" y1="35" x2="268" y2="145" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="268" cy="85" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="292" y1="60" x2="292" y2="215" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="292" cy="138" r="8.5" fill="var(--c-red-accent)" />
+        <text x="280" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">G2</text>
+
+        <!-- G3 -->
+        <line x1="388" y1="45" x2="388" y2="68" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="388" cy="55" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="412" y1="55" x2="412" y2="130" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="412" cy="85" r="8.5" fill="var(--c-red-accent)" />
+        <text x="400" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">G3</text>
+
+        <!-- G4 -->
+        <line x1="508" y1="50" x2="508" y2="82" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="508" cy="65" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="532" y1="60" x2="532" y2="115" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="532" cy="80" r="8.5" fill="var(--c-red-accent)" />
+        <text x="520" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">G4</text>
+
+        <!-- V1 -->
+        <line x1="628" y1="105" x2="628" y2="185" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="628" cy="145" r="8.5" fill="var(--c-wine-primary)" />
+        <circle cx="652" cy="86" r="8.5" fill="var(--c-red-accent)" />
+        <text x="640" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">V1</text>
+
+        <!-- V2 -->
+        <line x1="748" y1="70" x2="748" y2="125" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="748" cy="92" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="772" y1="75" x2="772" y2="120" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="772" cy="95" r="8.5" fill="var(--c-red-accent)" />
+        <text x="760" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">V2</text>
+
+        <!-- V3 -->
+        <line x1="868" y1="80" x2="868" y2="140" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="868" cy="110" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="892" y1="75" x2="892" y2="160" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="892" cy="115" r="8.5" fill="var(--c-red-accent)" />
+        <text x="880" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">V3</text>
+
+        <!-- W1 (Alta dispersión) -->
+        <line x1="988" y1="25" x2="988" y2="175" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="988" cy="95" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="1012" y1="55" x2="1012" y2="110" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1012" cy="78" r="8.5" fill="var(--c-red-accent)" />
+        <text x="1000" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">W1</text>
+
+        <!-- W2 -->
+        <line x1="1108" y1="35" x2="1108" y2="95" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1108" cy="65" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="1132" y1="45" x2="1132" y2="105" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1132" cy="72" r="8.5" fill="var(--c-red-accent)" />
+        <text x="1120" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">W2</text>
+
+        <!-- W3 -->
+        <line x1="1228" y1="70" x2="1228" y2="115" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1228" cy="95" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="1252" y1="65" x2="1252" y2="130" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1252" cy="98" r="8.5" fill="var(--c-red-accent)" />
+        <text x="1240" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">W3</text>
+
+        <!-- R1 -->
+        <line x1="1348" y1="60" x2="1348" y2="75" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1348" cy="68" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="1372" y1="65" x2="1372" y2="85" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1372" cy="76" r="8.5" fill="var(--c-red-accent)" />
+        <text x="1360" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">R1</text>
+
+        <!-- R2 -->
+        <line x1="1468" y1="110" x2="1468" y2="155" stroke="var(--c-wine-primary)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1468" cy="135" r="8.5" fill="var(--c-wine-primary)" />
+        <line x1="1492" y1="100" x2="1492" y2="195" stroke="var(--c-red-accent)" stroke-width="5.5" stroke-linecap="round" />
+        <circle cx="1492" cy="142" r="8.5" fill="var(--c-red-accent)" />
+        <text x="1480" y="278" font-size="24" font-weight="800" fill="#2C0509" text-anchor="middle">R2</text>
+      </svg>
+    </div>
+
+    <!-- TARJETAS ESTILO PLANTILLA (OPCIÓN L3: Balance Minimalista en 2 Líneas Limpias) -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 8px 14px;">
+      
+      <!-- Métrica 1: Wilcoxon -->
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <div style="width: 7px; height: 75px; background-color: var(--c-wine-primary); flex-shrink: 0;"></div>
+        <div>
+          <div style="display: flex; align-items: baseline; gap: 12px;">
+            <span style="font-family: var(--font-mono); font-size: 50px; font-weight: 800; color: var(--c-wine-primary); line-height: 1;">p = 0.569</span>
+            <span style="font-family: var(--font-sans); font-size: 25px; font-weight: 800; color: var(--c-wine-dark);">Empate Real</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; font-weight: 600; margin-top: 5px;">
+            Wilcoxon pareado (W = 31.0) &middot; Brecha global de apenas <strong>0.002</strong> (0.8030 frente a 0.8010).
+          </div>
+        </div>
+      </div>
+
+      <!-- Métrica 2: Varianza Semillas vs Diferencia entre Modelos -->
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <div style="width: 7px; height: 75px; background-color: var(--c-red-accent); flex-shrink: 0;"></div>
+        <div>
+          <div style="display: flex; align-items: baseline; gap: 12px;">
+            <span style="font-family: var(--font-mono); font-size: 46px; font-weight: 800; color: var(--c-red-accent); line-height: 1;">0.037 vs 0.025</span>
+            <span style="font-family: var(--font-sans); font-size: 25px; font-weight: 800; color: var(--c-wine-dark);">Ruido Estoc&aacute;stico</span>
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; font-weight: 600; margin-top: 5px;">
+            Varianza por semilla (<strong>0.037</strong>) supera la diferencia entre modelos (<strong>0.025</strong>) &middot; Brecha 18&times; menor.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="slide-footer-rule"></div>
+  <footer class="slide-footer">
+    <span class="sf-left">VI CONGRESO CARTAGENA · 2026</span>
+    <span class="sf-right">LOHACEMOSXTIC.COM · SLM OFFLINE</span>
+  </footer>
+</section>

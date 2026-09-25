@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <defs>
+    <!-- Fondo Minimalista en Modo Oscuro LoxTIC -->
+    <linearGradient id="usbCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180306"/>
+      <stop offset="50%" stop-color="#24050A"/>
+      <stop offset="100%" stop-color="#120103"/>
+    </linearGradient>
+
+    <!-- Iluminación de Estudio Suave -->
+    <radialGradient id="studioSpotlight" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#4A0B13" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#180306" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Metal Pulido Cromado / Aluminio SanDisk Ultra Flair -->
+    <linearGradient id="bodySilver" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#EBEBEB"/>
+      <stop offset="50%" stop-color="#C2C2C2"/>
+      <stop offset="80%" stop-color="#9C9C9C"/>
+      <stop offset="100%" stop-color="#B8B8B8"/>
+    </linearGradient>
+
+    <!-- Brillo Superior Metálico -->
+    <linearGradient id="metalSpecular" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#999999"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#ECECEC"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </linearGradient>
+
+    <!-- Acabado Ergonómico Posterior en Rojo LoxTIC / SanDisk -->
+    <linearGradient id="loopRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E3E"/>
+      <stop offset="50%" stop-color="#C51625"/>
+      <stop offset="100%" stop-color="#6E0911"/>
+    </linearGradient>
+
+    <!-- Conector de Acero Inoxidable -->
+    <linearGradient id="connectorMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2F2F2"/>
+      <stop offset="50%" stop-color="#D0D0D0"/>
+      <stop offset="100%" stop-color="#AAAAAA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo Limpio -->
+  <rect width="600" height="350" fill="url(#usbCanvasBg)"/>
+  <rect width="600" height="350" fill="url(#studioSpotlight)"/>
+
+  <!-- Sombra Suave de la Memoria USB Flotante -->
+  <ellipse cx="300" cy="245" rx="195" ry="18" fill="rgba(0,0,0,0.65)"/>
+  <ellipse cx="300" cy="245" rx="130" ry="10" fill="rgba(0,0,0,0.45)"/>
+
+  <!-- GRUPO PRINCIPAL: MEMORIA USB 3.0 CENTRADA -->
+  <g id="usb-flash-drive" transform="translate(100, 115)">
+    
+    <!-- 1. CONECTOR USB 3.0 METÁLICO (LADO DERECHO) -->
+    <!-- Caja del Conector Tipo A -->
+    <rect x="290" y="22" width="76" height="58" rx="2" fill="url(#connectorMetal)" stroke="#222" stroke-width="2"/>
+    
+    <!-- Bisel Interior del Conector -->
+    <rect x="294" y="26" width="68" height="50" fill="#E8E8E8" stroke="#888" stroke-width="1"/>
+    
+    <!-- Ventanas Estándar Tipo A con Lengüeta Azul USB 3.0 -->
+    <rect x="312" y="32" width="16" height="15" rx="2" fill="#0056B3" stroke="#110103" stroke-width="1.5"/>
+    <rect x="312" y="55" width="16" height="15" rx="2" fill="#0056B3" stroke="#110103" stroke-width="1.5"/>
+    
+    <!-- Contactos Dorados Internos Visibles -->
+    <rect x="316" y="35" width="8" height="3" fill="#D4AF37"/>
+    <rect x="316" y="58" width="8" height="3" fill="#D4AF37"/>
+
+    <!-- 2. CUERPO DE ALUMINIO PULIDO (SAN DISK ULTRA FLAIR) -->
+    <!-- Contorno Aerodinámico Clásico -->
+    <path d="M 45 10 
+             L 292 10 
+             L 292 92 
+             L 45 92 
+             C 16 92, 0 76, 0 51 
+             C 0 26, 16 10, 45 10 Z" 
+          fill="url(#bodySilver)" 
+          stroke="#110103" 
+          stroke-width="3"/>
+
+    <!-- Reflejo Superior de Luz Metálica (Specular Highlight) -->
+    <path d="M 45 13 L 288 13" stroke="url(#metalSpecular)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- 3. INSERTO ERGONÓMICO / PASADOR POSTERIOR EN ROJO -->
+    <path d="M 8 28 
+             C 24 28, 34 38, 34 51 
+             C 34 64, 24 74, 8 74 
+             C 3 67, 0 59, 0 51 
+             C 0 43, 3 35, 8 28 Z" 
+          fill="url(#loopRed)" 
+          stroke="#55070D" 
+          stroke-width="1.5"/>
+    
+    <!-- Ojal / Orificio para Llavero Escolar -->
+    <ellipse cx="14" cy="51" rx="5" ry="11" fill="#180306" stroke="#40070B" stroke-width="1.5"/>
+
+    <!-- 4. TIPOGRAFÍA Y GRABADOS DEL DISPOSITIVO -->
+    <!-- Logotipo Grabado en Relieve: SanDisk -->
+    <text x="82" y="59" 
+          font-family="'JetBrains Mono', monospace" 
+          font-size="28" 
+          font-weight="900" 
+          fill="#1A0205" 
+          letter-spacing="2">SanDisk</text>
+
+    <!-- Insignia USB 3.0 Limpia y Elegante -->
+    <g transform="translate(222, 38)">
+      <rect x="0" y="0" width="56" height="26" rx="4" fill="#240508" stroke="#D4AF37" stroke-width="1.5"/>
+      <text x="28" y="17" 
+            font-family="'JetBrains Mono', monospace" 
+            font-size="11.5" 
+            font-weight="900" 
+            fill="#F5C21B" 
+            text-anchor="middle" 
+            letter-spacing="1">USB 3.0</text>
+    </g>
+
+    <!-- Indicador LED Azul de Transferencia Local -->
+    <circle cx="282" cy="51" r="3.5" fill="#00A4EF"/>
+    <circle cx="282" cy="51" r="5" fill="#00A4EF" opacity="0.35"/>
+  </g>
+</svg>
