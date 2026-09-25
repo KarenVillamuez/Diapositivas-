@@ -1,125 +1,250 @@
 <!-- ====================================================================
      SLIDE 06: 01 · CONTEXTO Y PROBLEMA / CAMBIO DE PARADIGMA
+     Arquetipo: Graficación de Procesos y Ciclos de Interacción (Opción B)
      ==================================================================== -->
-<section class="slide s-white" id="slide-6" data-notes="Si el problema es la delegación, la pregunta que guía esta investigación es cómo acompañar sin sustituir. La solución no pasa por pedirle a la IA que redacte mejor o con más estilo, sino por transformar radicalmente su rol: pasar de un generador que entrega respuestas a un espejo que formula preguntas para que el autor piense.">
+<!-- ALCANCE: la fila inferior representa el propósito de diseño del modelo. No presentarla como un efecto comprobado en aula, pues el artículo solo reporta simulaciones de escritorio. -->
+<section class="slide s-white" id="slide-6" data-notes="Si el problema es la delegación acrítica, la pregunta de investigación es cómo acompañar la escritura sin sustituir el razonamiento. La fila superior representa el riesgo descrito por la literatura. La fila inferior muestra el propósito de diseño: el autor aporta el borrador, la IA formula preguntas y el autor decide cómo reescribir. El estudio no midió efectos de aprendizaje en aula.">
   
   <header class="slide-header">
     <div class="sh-left">
       <span class="sh-red-bar"></span>
-      <span class="sh-category">01 &middot; CONTEXTO Y PROBLEMA &middot; CAMBIO DE PARADIGMA</span>
+      <span class="sh-category">01 &middot; CONTEXTO Y PROBLEMA &middot; DOS FORMAS DE USAR LA IA</span>
     </div>
     <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
   </header>
   <div class="sh-divider"></div>
 
-  <div class="slide-content-area" style="justify-content: space-between; padding-top: 16px; padding-bottom: 16px;">
+  <div class="slide-content-area" style="justify-content: space-between; padding-top: 18px; padding-bottom: 18px;">
     
+    <!-- Lead Question contundente en 1 sola línea -->
     <div>
-      <h2 class="s-lead-question" style="font-size: 44px; font-weight: 800; color: #2C0509; margin-bottom: 6px; line-height: 1.2;">
+      <h2 class="s-lead-question" style="font-size: 42px; font-weight: 800; color: #2C0509; margin-bottom: 0; line-height: 1.15;">
         &iquest;C&oacute;mo acompa&ntilde;ar la escritura sin reemplazar el razonamiento del autor?
       </h2>
-      <div style="font-family: var(--font-sans); font-size: 24px; color: var(--c-gray-text); font-weight: 600;">
-        Transformar radicalmente el rol de la IA: de un or&aacute;culo que redacta a un espejo dial&oacute;gico may&eacute;utico.
-      </div>
     </div>
 
-    <!-- Contraste de Paradigmas - Estilo Suizo 100% Plano y sin Cajas Anidadas -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; align-items: stretch; margin-top: 14px; margin-bottom: 14px;">
+    <!-- Dos Grandes Filas Horizontales: Diagrama de Flujo Comparativo -->
+    <div style="display: flex; flex-direction: column; gap: 28px; margin-top: 16px; margin-bottom: 16px; flex: 1; justify-content: center;">
       
-      <!-- Enfoque Convencional -->
-      <div style="position: relative; background: #FAF5F5; border-left: 8px solid #7A1B28; border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 28px 30px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
+      <!-- ================= FILA 1: PARADIGMA ORÁCULO ================= -->
+      <div style="background: #FAF5F5; border-left: 9px solid #7A1B28; border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 30px 38px; display: grid; grid-template-columns: 350px 2px 1fr 2px 410px; gap: 26px; align-items: center;">
         
-        <!-- Marca de agua icono robot / automatismo -->
-        <div style="position: absolute; right: -15px; bottom: 20px; opacity: 0.06; color: #7A1B28; pointer-events: none;">
-          <svg width="260" height="260" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="11" width="18" height="10" rx="2"/>
-            <circle cx="12" cy="5" r="2"/>
-            <path d="M12 7v4"/>
-            <line x1="8" y1="16" x2="8" y2="16"/>
-            <line x1="16" y1="16" x2="16" y2="16"/>
-          </svg>
-        </div>
-
-        <div style="position: relative; z-index: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-            <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: #7A1B28; letter-spacing: 1.5px;">
-              PARADIGMA CONVENCIONAL
+        <!-- Columna 1: Identidad de Paradigma -->
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: #7A1B28; letter-spacing: 1.5px;">
+              USO 01
             </span>
-            <span style="background: #EAE0E1; color: #460811; font-family: var(--font-mono); font-size: 16px; font-weight: 800; padding: 3px 12px; letter-spacing: 1px;">
-              OR&Aacute;CULO
+            <span style="background: #EAE0E1; color: #460811; font-family: var(--font-mono); font-size: 14px; font-weight: 800; padding: 3px 12px; letter-spacing: 1px;">
+              GENERADOR
             </span>
           </div>
-          
-          <h3 style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 16px 0; line-height: 1.2;">
-            La IA como Productor y Sustituto
+          <h3 style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: #2C0509; margin: 0 0 6px 0; line-height: 1.15; white-space: nowrap;">
+            Sustituir al Autor
           </h3>
-
-          <div style="display: flex; flex-direction: column; gap: 14px; font-family: var(--font-sans); font-size: 24px; color: #110103; line-height: 1.4; font-weight: 600;">
-            <div>&times; <strong>Entrega de respuestas:</strong> La m&aacute;quina produce el texto terminado a partir de una instrucci&oacute;n breve.</div>
-            <div>&times; <strong>Rol subordinado:</strong> El autor pasa a ser un revisor pasivo que solo acepta o retoca la prosa generada.</div>
-            <div>&times; <strong>Supresi&oacute;n de esfuerzo:</strong> Elimina las pausas reflexivas indispensables para madurar el juicio personal.</div>
+          <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 700; color: #7A1B28;">
+            Texto Inmediato
           </div>
         </div>
 
-        <!-- Remate integrado sin caja anidada -->
-        <div style="border-top: 2px solid #EAE0E1; padding-top: 14px; position: relative; z-index: 1;">
-          <div style="font-family: var(--font-mono); font-size: 16px; color: #7A1B28; font-weight: 800; letter-spacing: 1px; margin-bottom: 4px;">SOLICITUD HABITUAL:</div>
-          <div style="font-family: var(--font-sans); font-size: 23px; color: var(--c-red-accent); font-style: italic; font-weight: 700; line-height: 1.3;">
-            &ldquo;Escr&iacute;beme la introducci&oacute;n y conclusiones de mi ensayo argumentativo...&rdquo;
+        <!-- Espinazo Divisorio 1 -->
+        <div style="background: #EAE0E1; height: 125px; width: 2px;"></div>
+
+        <!-- Columna 2: Pasos de Flujo Horizontal con Flechas -->
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px;">
+          
+          <!-- Paso 1 -->
+          <div style="flex: 1; text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #7A1B28; margin-bottom: 4px; letter-spacing: 1px;">
+              1. ENTRADA
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #2C0509; line-height: 1.2; margin-bottom: 4px;">
+              Prompt Breve
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 20px; color: #7A1B28; font-style: italic; font-weight: 700; line-height: 1.25;">
+              &ldquo;Escribe mi ensayo&rdquo;
+            </div>
+          </div>
+
+          <!-- Flecha 1 -->
+          <div style="color: #7A1B28; flex-shrink: 0;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <polyline points="13 5 20 12 13 19"></polyline>
+            </svg>
+          </div>
+
+          <!-- Paso 2 -->
+          <div style="flex: 1; text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #7A1B28; margin-bottom: 4px; letter-spacing: 1px;">
+              2. GENERACI&Oacute;N
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #2C0509; line-height: 1.2; margin-bottom: 4px;">
+              Texto Generado
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 20px; color: #5D4A4D; font-weight: 600; line-height: 1.25;">
+              La IA redacta todo el texto
+            </div>
+          </div>
+
+          <!-- Flecha 2 -->
+          <div style="color: #7A1B28; flex-shrink: 0;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <polyline points="13 5 20 12 13 19"></polyline>
+            </svg>
+          </div>
+
+          <!-- Paso 3 -->
+          <div style="flex: 1; text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #7A1B28; margin-bottom: 4px; letter-spacing: 1px;">
+              3. RECEPCI&Oacute;N
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #2C0509; line-height: 1.2; margin-bottom: 4px;">
+              Adopci&oacute;n sin Elaboraci&oacute;n
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 20px; color: #5D4A4D; font-weight: 600; line-height: 1.25;">
+              El alumno no reflexiona
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Espinazo Divisorio 2 -->
+        <div style="background: #EAE0E1; height: 125px; width: 2px;"></div>
+
+        <!-- Columna 3: Consecuencia e Impacto en Aula -->
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #7A1B28; letter-spacing: 1px; margin-bottom: 4px;">
+            RIESGO DESCRITO:
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: var(--c-red-accent); line-height: 1.15; margin-bottom: 6px;">
+            Riesgo de Delegaci&oacute;n
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; font-weight: 600; line-height: 1.3; margin-bottom: 4px;">
+            Puede reducir el esfuerzo mental y debilitar el criterio propio al escribir.
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #7A1B28;">
+            Stadler et al. (2024) &middot; Fan et al. (2025)
           </div>
         </div>
+
       </div>
 
-      <!-- Enfoque Propuesto -->
-      <div style="position: relative; background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 28px 30px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
+      <!-- ================= FILA 2: PARADIGMA MEDIADOR ================= -->
+      <div style="background: #FAF5F5; border-left: 9px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 30px 38px; display: grid; grid-template-columns: 350px 2px 1fr 2px 410px; gap: 26px; align-items: center;">
         
-        <!-- Marca de agua icono diálogo / espejo socrático -->
-        <div style="position: absolute; right: -15px; bottom: 20px; opacity: 0.06; color: var(--c-wine-primary); pointer-events: none;">
-          <svg width="260" height="260" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            <path d="M8 10h.01M12 10h.01M16 10h.01"/>
-          </svg>
-        </div>
-
-        <div style="position: relative; z-index: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-            <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">
-              PARADIGMA PROPUESTO
+        <!-- Columna 1: Identidad de Paradigma -->
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">
+              USO 02
             </span>
-            <span style="background: var(--c-wine-primary); color: #FFFFFF; font-family: var(--font-mono); font-size: 16px; font-weight: 800; padding: 3px 12px; letter-spacing: 1px;">
+            <span style="background: var(--c-wine-primary); color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 800; padding: 3px 12px; letter-spacing: 1px;">
               MEDIADOR
             </span>
           </div>
-
-          <h3 style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 16px 0; line-height: 1.2;">
-            La IA como Espejo Dial&oacute;gico y May&eacute;utico
+          <h3 style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: #2C0509; margin: 0 0 6px 0; line-height: 1.15; white-space: nowrap;">
+            Acompa&ntilde;ar al Autor
           </h3>
-
-          <div style="display: flex; flex-direction: column; gap: 14px; font-family: var(--font-sans); font-size: 24px; color: #110103; line-height: 1.4; font-weight: 600;">
-            <div>&#10003; <strong>Preguntas socr&aacute;ticas:</strong> Devuelve interrogantes elaborados a partir de las mismas palabras del autor.</div>
-            <div>&#10003; <strong>Autor al centro:</strong> El escritor toma cada decisi&oacute;n, defiende sus premisas y conserva el control total.</div>
-            <div>&#10003; <strong>Fricci&oacute;n productiva:</strong> Introduce pausas oportunas para revisar lo pensado sin paralizar el avance.</div>
+          <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 700; color: var(--c-wine-primary);">
+            Preguntas sobre el Borrador
           </div>
         </div>
 
-        <!-- Remate integrado sin caja anidada -->
-        <div style="border-top: 2px solid #EAE0E1; padding-top: 14px; position: relative; z-index: 1;">
-          <div style="font-family: var(--font-mono); font-size: 16px; color: var(--c-wine-primary); font-weight: 800; letter-spacing: 1px; margin-bottom: 4px;">RESPUESTA DE LA MEDIACI&Oacute;N:</div>
-          <div style="font-family: var(--font-sans); font-size: 23px; color: var(--c-wine-primary); font-style: italic; font-weight: 700; line-height: 1.3;">
-            &ldquo;Mencionas que la premisa A contradice a B. &iquest;C&oacute;mo se concilian en tu argumento?&rdquo;
+        <!-- Espinazo Divisorio 1 -->
+        <div style="background: #EAE0E1; height: 125px; width: 2px;"></div>
+
+        <!-- Columna 2: Pasos de Flujo Horizontal con Flechas -->
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px;">
+          
+          <!-- Paso 1 -->
+          <div style="flex: 1; text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 4px; letter-spacing: 1px;">
+              1. ENTRADA
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #2C0509; line-height: 1.2; margin-bottom: 4px;">
+              Borrador Propio
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 20px; color: var(--c-wine-primary); font-style: italic; font-weight: 700; line-height: 1.25;">
+              El autor expone premisas
+            </div>
+          </div>
+
+          <!-- Flecha 1 -->
+          <div style="color: var(--c-wine-primary); flex-shrink: 0;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <polyline points="13 5 20 12 13 19"></polyline>
+            </svg>
+          </div>
+
+          <!-- Paso 2 -->
+          <div style="flex: 1; text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 4px; letter-spacing: 1px;">
+              2. MEDIACI&Oacute;N
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #2C0509; line-height: 1.2; margin-bottom: 4px;">
+              Pregunta sobre el Texto
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 20px; color: #5D4A4D; font-weight: 600; line-height: 1.25;">
+              La IA formula preguntas
+            </div>
+          </div>
+
+          <!-- Flecha 2 -->
+          <div style="color: var(--c-wine-primary); flex-shrink: 0;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <polyline points="13 5 20 12 13 19"></polyline>
+            </svg>
+          </div>
+
+          <!-- Paso 3 -->
+          <div style="flex: 1; text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 4px; letter-spacing: 1px;">
+              3. REESCRITURA
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #2C0509; line-height: 1.2; margin-bottom: 4px;">
+              Decisi&oacute;n del Autor
+            </div>
+            <div style="font-family: var(--font-sans); font-size: 20px; color: #5D4A4D; font-weight: 600; line-height: 1.25;">
+              El autor reescribe y aprende
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Espinazo Divisorio 2 -->
+        <div style="background: #EAE0E1; height: 125px; width: 2px;"></div>
+
+        <!-- Columna 3: Consecuencia e Impacto en Aula -->
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1px; margin-bottom: 4px;">
+            PROP&Oacute;SITO DEL MODELO:
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: var(--c-wine-primary); line-height: 1.15; margin-bottom: 6px;">
+            Autor&iacute;a y Reflexi&oacute;n
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; font-weight: 600; line-height: 1.3; margin-bottom: 4px;">
+            Preguntas basadas en el texto del autor para sostener la reflexi&oacute;n durante la escritura.
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary);">
+            El autor conserva el control del texto
           </div>
         </div>
+
       </div>
 
     </div>
 
-    <!-- Doble Regla Remate Editorial (100% Plano, Cero Fondos Oscuros) -->
-    <div style="background: #FAF5F5; border-top: 3.5px solid var(--c-wine-primary); border-bottom: 3.5px solid var(--c-wine-primary); padding: 18px 34px; display: flex; align-items: center; gap: 24px;">
-      <span style="font-family: var(--font-mono); font-size: 20px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; white-space: nowrap;">
-        CAMBIO DE PARADIGMA:
+    <!-- Doble Regla Remate Editorial en 1 sola línea continua -->
+    <div style="background: #FAF5F5; border-top: 4px solid var(--c-wine-primary); border-bottom: 4px solid var(--c-wine-primary); padding: 22px 36px; display: flex; align-items: center; gap: 24px;">
+      <span style="font-family: var(--font-mono); font-size: 20px; font-weight: 900; color: var(--c-wine-primary); letter-spacing: 2px; white-space: nowrap;">
+        PROPUESTA DEL MODELO:
       </span>
       <span style="font-family: var(--font-sans); font-size: 25px; font-weight: 700; color: #110103; line-height: 1.3;">
-        Pasar de un generador que entrega respuestas terminadas a un <strong>espejo que formula preguntas</strong> para que el autor piense.
+        La IA acompa&ntilde;a con preguntas basadas en las palabras del autor, sin redactar por &eacute;l.
       </span>
     </div>
 

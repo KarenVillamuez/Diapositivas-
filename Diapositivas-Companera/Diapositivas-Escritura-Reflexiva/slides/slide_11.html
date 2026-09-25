@@ -1,7 +1,8 @@
 <!-- ====================================================================
      SLIDE 11: 02 · METODOLOGÍA / LA GUÍA EN MARKDOWN
      ==================================================================== -->
-<section class="slide s-white" id="slide-11" data-notes="Para materializar estos principios, construimos una guía en Markdown que cualquier asistente de IA puede interpretar como system prompt. No requiere código propietario ni arquitecturas complejas: son reglas condicionales y disparadores semánticos que obligan al modelo a guardar silencio cuando debe, preguntar cuando hay duda y respetar la voluntad del autor. Diseñamos el modelo; ahora correspondía verificar si se sostenía.">
+<!-- ALCANCE DE LA PRUEBA: la guía se probó en DeepSeek. La portabilidad es una característica propuesta; no afirmar que fue validada en todos los modelos, chats o entornos locales. -->
+<section class="slide s-white" id="slide-11" data-notes="Para materializar estos principios, construimos una guía en Markdown con reglas condicionales y disparadores semánticos. La guía indica cuándo preguntar, cuándo guardar silencio y cómo respetar la decisión del autor de avanzar. La prueba de escritorio documentada se realizó en DeepSeek; otros entornos requieren validación posterior.">
   
   <header class="slide-header">
     <div class="sh-left">
@@ -19,7 +20,7 @@
         Una gu&iacute;a en Markdown: reglas condicionales y disparadores sem&aacute;nticos
       </h2>
       <div style="font-family: var(--font-sans); font-size: 24px; color: var(--c-gray-text); font-weight: 600;">
-        Instrucciones portables para que cualquier modelo de lenguaje andamie sin redactar por el autor.
+        Reglas condicionales para orientar una mediaci&oacute;n conversacional sin redactar por el autor.
       </div>
     </div>
 
@@ -32,10 +33,10 @@
         <div>
           <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(245, 194, 27, 0.35); padding-bottom: 10px; margin-bottom: 16px;">
             <span style="color: var(--c-gold); font-size: 18px; font-weight: 800; letter-spacing: 1px;">
-              SYSTEM_PROMPT &middot; GUIA_MEDIACION.MD
+              GU&Iacute;A EN MARKDOWN &middot; GUIA_MEDIACION.MD
             </span>
             <span style="color: #FAF5F5; font-size: 16px; font-weight: 700; opacity: 0.85;">
-              FORMATO PORTABLE .MD
+              FORMATO .MD
             </span>
           </div>
 
@@ -45,18 +46,18 @@ Eres un espejo dialógico. <strong style="color: var(--c-red-accent);">NO redact
 
 <span style="color: var(--c-gold);"># DISPARADORES SEMÁNTICOS Y CONDICIONES</span>
 <span style="color: #64B5F6;">SI</span> autor presenta [BORRADOR] con duda o contradicción:
-   &rarr; Formular pregunta mayéutica con sus propios términos.
+   &rarr; Formular una pregunta con sus propios términos.
 
 <span style="color: #64B5F6;">SI</span> autor solicita <span style="color: var(--c-red-accent);">"Redáctalo tú"</span>:
    &rarr; Declinar cortésmente: "¿Qué idea central buscas defender?"
 
-<span style="color: #64B5F6;">SI</span> autor activa [RUTA_PRAGMÁTICA] (prisa / cierre):
-   &rarr; Suspender cuestionamiento y validar cierre del texto.
+<span style="color: #64B5F6;">SI</span> autor desea continuar sin detenerse (prisa / cierre):
+   &rarr; Permitir avanzar o cerrar el texto.
           </pre>
         </div>
 
         <div style="background: rgba(245, 194, 27, 0.12); border-left: 4px solid var(--c-gold); padding: 12px 18px; font-size: 18px; color: var(--c-gold); font-weight: 700; margin-top: 14px;">
-          Universal: Ejecutable en modelos locales (Llama, Gemma) y propietarios (DeepSeek, Claude, GPT).
+          Prueba documentada: gu&iacute;a cargada en DeepSeek para las simulaciones de escritorio.
         </div>
       </div>
 
@@ -66,13 +67,13 @@ Eres un espejo dialógico. <strong style="color: var(--c-red-accent);">NO redact
         <!-- Pilar 1 -->
         <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 24px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
           <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 4px; letter-spacing: 1px;">
-            01 &middot; INDEPENDENCIA TECNOL&Oacute;GICA
+            01 &middot; FORMATO DE LA GU&Iacute;A
           </div>
           <h3 style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 8px 0; line-height: 1.2;">
-            Sin C&oacute;digo Propietario ni Dependencias
+            Reglas Expl&iacute;citas en Markdown
           </h3>
           <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; font-weight: 600;">
-            Cualquier docente puede cargar la gu&iacute;a en un chat est&aacute;ndar sin necesidad de APIs comerciales ni software cerrado.
+            La gu&iacute;a organiza el rol, los l&iacute;mites, las condiciones y los disparadores de la mediaci&oacute;n.
           </div>
         </div>
 
@@ -82,23 +83,23 @@ Eres un espejo dialógico. <strong style="color: var(--c-red-accent);">NO redact
             02 &middot; DISPARADORES SEM&Aacute;NTICOS
           </div>
           <h3 style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 8px 0; line-height: 1.2;">
-            Detecci&oacute;n Oportuna en el Di&aacute;logo
+            Detecci&oacute;n en el Di&aacute;logo
           </h3>
           <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; font-weight: 600;">
-            Reconoce vacilaci&oacute;n, bloqueos o contradicciones para formular la pregunta justa en el momento oportuno.
+            Reconoce vacilaci&oacute;n, bloqueos o contradicciones para formular una pregunta a partir de las palabras del autor.
           </div>
         </div>
 
         <!-- Pilar 3 -->
         <div style="background: #FAF5F5; border-left: 8px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 24px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
           <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: #9A7200; margin-bottom: 4px; letter-spacing: 1px;">
-            03 &middot; GOBERNANZA DEL AVANCE
+            03 &middot; CONDICIONES DE AVANCE
           </div>
           <h3 style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: #9A7200; margin: 0 0 8px 0; line-height: 1.2;">
-            Condici&oacute;n Epistemol&oacute;gica de Paso
+            Paso entre Fases
           </h3>
           <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; font-weight: 600;">
-            No autoriza transitar de fase hasta constatar que el autor ha definido su prop&oacute;sito o resuelto el desajuste.
+            El avance depende de las condiciones de cada fase; la revisi&oacute;n puede activarse cuando el autor lo requiera.
           </div>
         </div>
 
@@ -109,10 +110,10 @@ Eres un espejo dialógico. <strong style="color: var(--c-red-accent);">NO redact
     <!-- Doble Regla Remate Editorial (100% Plano, Cero Fondos Oscuros) -->
     <div style="background: #FAF5F5; border-top: 3.5px solid var(--c-wine-primary); border-bottom: 3.5px solid var(--c-wine-primary); padding: 18px 34px; display: flex; align-items: center; gap: 24px;">
       <span style="font-family: var(--font-mono); font-size: 20px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; white-space: nowrap;">
-        GOBERNANZA T&Eacute;CNICA:
+        REGLAS DE LA GU&Iacute;A:
       </span>
       <span style="font-family: var(--font-sans); font-size: 25px; font-weight: 700; color: #110103; line-height: 1.3;">
-        El modelo no depende de infraestructura propietaria: <strong>las reglas en Markdown</strong> imponen silencio, pregunta y avance sobre cualquier asistente de chat.
+        Las <strong>reglas en Markdown</strong> orientan el silencio, la pregunta y el avance. Su comportamiento en otros entornos debe validarse.
       </span>
     </div>
 
