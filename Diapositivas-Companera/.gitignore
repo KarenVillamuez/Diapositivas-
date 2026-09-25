@@ -9,13 +9,6 @@ __pycache__/
 venv/
 env/
 
-# Build and dependencies
-node_modules/
-.codex-build/
-dist/
-build/
-.tempmediaStorage/
-
 # Operating System files
 Thumbs.db
 ehthumbs.db

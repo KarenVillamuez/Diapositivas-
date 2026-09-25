@@ -1,0 +1,173 @@
+<!-- ====================================================================
+     SLIDE 10: 02 · METODOLOGÍA / MATRIZ EXPERIMENTAL (LIMPIO Y ORTOGONAL)
+     ==================================================================== -->
+<section class="slide s-white" id="slide-10">
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">02 &middot; METODOLOG&Iacute;A &middot; MATRIZ EXPERIMENTAL</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
+
+  <div class="slide-content-area" style="justify-content: flex-start; padding-top: 14px; padding-bottom: 20px;">
+    <!-- Título conciso en una sola línea equilibrada -->
+    <h2 class="s-lead-question" style="font-size: 39px; font-weight: 800; margin-bottom: 22px; line-height: 1.25; white-space: nowrap;">
+      Protocolo comparativo: configuraciones, modelos y variaci&oacute;n entre semillas
+    </h2>
+
+    <!-- Banner Superior Centrado Blanco Neutro -->
+    <div style="background: #FFFFFF; border: 2px solid #2C0509; padding: 18px 32px 14px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; margin-bottom: 16px;">
+      
+      <!-- Columna 1: 196 -->
+      <div style="flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="display: flex; align-items: baseline; justify-content: center; gap: 14px;">
+          <span style="font-family: var(--font-mono); font-size: 56px; font-weight: 800; color: var(--c-wine-primary); line-height: 1;">196</span>
+          <span style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #110103; letter-spacing: 0.5px;">COMBINACIONES BASE &Uacute;NICAS</span>
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; font-weight: 600; margin-top: 6px;">
+          <strong style="color: var(--c-wine-primary);">14</strong> preguntas &times; <strong style="color: var(--c-wine-primary);">7</strong> esquemas RAG &times; <strong style="color: var(--c-wine-primary);">2</strong> modelos SLM
+        </div>
+      </div>
+
+      <!-- Divisor Vertical Neutro -->
+      <div style="width: 2px; height: 56px; background: #D5C8C9; flex-shrink: 0;"></div>
+
+      <!-- Columna 2: ejecuciones adicionales -->
+      <div style="flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="display: flex; align-items: baseline; justify-content: center; gap: 14px;">
+          <span style="font-family: var(--font-mono); font-size: 56px; font-weight: 800; color: var(--c-red-accent); line-height: 1;">140</span>
+          <span style="font-family: var(--font-sans); font-size: 24px; font-weight: 800; color: #110103; letter-spacing: 0.5px;">EJECUCIONES ADICIONALES</span>
+        </div>
+        <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; font-weight: 600; margin-top: 6px;">
+          <strong style="color: var(--c-red-accent);">cfg_eval_full</strong> &middot; 4 semillas y repetici&oacute;n de control
+        </div>
+      </div>
+
+      <div style="flex: 0 0 100%; border-top: 1px solid #E2D6D8; margin-top: 14px; padding-top: 10px; display: flex; align-items: center; justify-content: center; gap: 14px;">
+        <span style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1px;">ALCANCE DEL ESTUDIO</span>
+        <span style="font-family: var(--font-sans); font-size: 19px; font-weight: 700; color: #110103;">Laboratorio &middot; sin estudiantes &middot; sin medici&oacute;n de aprendizaje</span>
+      </div>
+    </div>
+
+    <!-- 4 Cuadrantes con 4 Colores Distintos, Cifras Rectoras y Marcas de Agua Bien Visibles -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; flex-grow: 1;">
+      
+      <!-- Cuadrante 1: BM25 (Vino Tinto - Búsqueda Léxica) -->
+      <div style="background: #FAF5F5; border: 2px solid var(--c-wine-primary); padding: 26px 30px; display: flex; align-items: center; gap: 26px; position: relative; overflow: hidden;">
+        <!-- Marca de agua búsqueda léxica más visible -->
+        <svg width="135" height="135" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 18px; top: 50%; transform: translateY(-50%); opacity: 0.13; color: var(--c-wine-primary); pointer-events: none;">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <line x1="8" y1="11" x2="14" y2="11"></line>
+          <line x1="8" y1="8" x2="12" y2="8"></line>
+        </svg>
+
+        <div style="font-family: var(--font-mono); font-size: 74px; font-weight: 800; color: var(--c-wine-primary); line-height: 1; flex-shrink: 0; width: 68px; text-align: center; z-index: 1;">
+          6
+        </div>
+        <div style="width: 2px; height: 90px; background: rgba(70, 8, 17, 0.25); flex-shrink: 0; z-index: 1;"></div>
+        <div style="z-index: 1;">
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: #110103;">
+             Configuraciones l&eacute;xicas
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 23px; font-weight: 800; color: var(--c-wine-primary); margin-top: 4px;">
+            top-k: 3 &ndash; 10 &nbsp;&bull;&nbsp; Temp: 0.1 &ndash; 0.7
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; margin-top: 6px; font-weight: 600;">
+            Evaluaci&oacute;n por coincidencia l&eacute;xica (Jaccard)
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadrante 2: Denso (Azul Marino Académico - Vectorial / Embeddings) -->
+      <div style="background: #F0F4FA; border: 2px solid #1E40AF; padding: 26px 30px; display: flex; align-items: center; gap: 26px; position: relative; overflow: hidden;">
+        <!-- Marca de agua red neuronal / embeddings más visible -->
+        <svg width="135" height="135" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 18px; top: 50%; transform: translateY(-50%); opacity: 0.13; color: #1E40AF; pointer-events: none;">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+
+        <div style="font-family: var(--font-mono); font-size: 74px; font-weight: 800; color: #1E40AF; line-height: 1; flex-shrink: 0; width: 68px; text-align: center; z-index: 1;">
+          1
+        </div>
+        <div style="width: 2px; height: 90px; background: rgba(30, 64, 175, 0.25); flex-shrink: 0; z-index: 1;"></div>
+        <div style="z-index: 1;">
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: #110103;">
+             Evaluador sem&aacute;ntico
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 23px; font-weight: 800; color: #1E40AF; margin-top: 4px;">
+             cfg_eval_full &nbsp;&bull;&nbsp; Embeddings
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; margin-top: 6px; font-weight: 600;">
+             Sustituye Jaccard por el criterio sem&aacute;ntico
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadrante 3: Semillas (Dorado / Ámbar - Control Estocástico) -->
+      <div style="background: #FFFDF0; border: 2px solid #D97706; padding: 26px 30px; display: flex; align-items: center; gap: 26px; position: relative; overflow: hidden;">
+        <!-- Marca de agua dado estocástico ortogonal más visible -->
+        <svg width="135" height="135" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 18px; top: 50%; transform: translateY(-50%); opacity: 0.13; color: #D97706; pointer-events: none;">
+          <rect x="3" y="3" width="18" height="18"></rect>
+          <circle cx="8" cy="8" r="1.5" fill="currentColor"></circle>
+          <circle cx="16" cy="8" r="1.5" fill="currentColor"></circle>
+          <circle cx="8" cy="16" r="1.5" fill="currentColor"></circle>
+          <circle cx="16" cy="16" r="1.5" fill="currentColor"></circle>
+          <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+        </svg>
+
+        <div style="font-family: var(--font-mono); font-size: 74px; font-weight: 800; color: #D97706; line-height: 1; flex-shrink: 0; width: 68px; text-align: center; z-index: 1;">
+          4
+        </div>
+        <div style="width: 2px; height: 90px; background: rgba(217, 119, 6, 0.25); flex-shrink: 0; z-index: 1;"></div>
+        <div style="z-index: 1;">
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: #110103;">
+            Semillas de R&eacute;plica
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 23px; font-weight: 800; color: #B45309; margin-top: 4px;">
+            42 &middot; 7 &middot; 123 &middot; 2026
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; margin-top: 6px; font-weight: 600;">
+            Control estoc&aacute;stico de varianza interna
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuadrante 4: Métricas (Rojo Carmesí - Auditoría) -->
+      <div style="background: #FFF5F5; border: 2px solid var(--c-red-accent); padding: 26px 30px; display: flex; align-items: center; gap: 26px; position: relative; overflow: hidden;">
+        <!-- Marca de agua auditoría / cotejo más visible -->
+        <svg width="135" height="135" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; right: 18px; top: 50%; transform: translateY(-50%); opacity: 0.13; color: var(--c-red-accent); pointer-events: none;">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <path d="M9 15l2 2 4-4"></path>
+        </svg>
+
+        <div style="font-family: var(--font-mono); font-size: 74px; font-weight: 800; color: var(--c-red-accent); line-height: 1; flex-shrink: 0; width: 68px; text-align: center; z-index: 1;">
+          2
+        </div>
+        <div style="width: 2px; height: 90px; background: rgba(201, 16, 27, 0.25); flex-shrink: 0; z-index: 1;"></div>
+        <div style="z-index: 1;">
+          <div style="font-family: var(--font-sans); font-size: 28px; font-weight: 800; color: #110103;">
+            M&eacute;tricas de Auditor&iacute;a
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 23px; font-weight: 800; color: var(--c-red-accent); margin-top: 4px;">
+             Jaccard + criterio sem&aacute;ntico
+          </div>
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; margin-top: 6px; font-weight: 600;">
+             Apego al material, no calidad pedag&oacute;gica
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="slide-footer-rule"></div>
+  <footer class="slide-footer">
+    <span class="sf-left">VI CONGRESO CARTAGENA &middot; 2026</span>
+    <span class="sf-right">LOHACEMOSXTIC.COM &middot; SLM OFFLINE</span>
+  </footer>
+</section>
