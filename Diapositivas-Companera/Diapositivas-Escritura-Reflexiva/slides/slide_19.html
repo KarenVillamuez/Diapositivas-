@@ -15,142 +15,128 @@
 
   <div class="slide-content-area" style="justify-content: space-between; padding-top: 14px; padding-bottom: 14px;">
     
-    <div>
+    <!-- Título Principal y Subtítulo (Sin punto y coma) -->
+    <div style="margin-bottom: 10px;">
       <h2 class="s-lead-question" style="font-size: 44px; font-weight: 800; color: #2C0509; margin-bottom: 6px; line-height: 1.18;">
         La respuesta: la IA no necesita redactar para ser una ayuda efectiva
       </h2>
-      <p style="font-family: var(--font-sans); font-size: 23px; color: var(--c-gray-text); margin: 0 0 16px 0; font-weight: 600;">
-        El aporte es un modelo con reglas claras; la evidencia procede de simulaciones de escritorio.
+      <p style="font-family: var(--font-sans); font-size: 23px; color: var(--c-gray-text); margin: 0 0 12px 0; font-weight: 600;">
+        El aporte es un modelo con reglas claras, respaldado por simulaciones de escritorio.
       </p>
     </div>
 
-    <!-- Díptico Aportes vs. Límites con Floating Icons y Watermarks (100% Plano, Cero Sombras) -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; align-items: stretch; margin-bottom: 14px;">
+    <!-- Díptico Aportes vs. Límites con Espaciado Generoso y Cero Recortes -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; flex: 1; align-items: stretch; margin-bottom: 12px; min-height: 0;">
       
       <!-- Columna Izquierda: Aportes -->
-      <div style="position: relative; background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 28px 22px 28px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
+      <div style="position: relative; background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 28px 32px 22px 32px; display: flex; flex-direction: column; justify-content: space-between;">
         
-        <!-- Watermark -->
-        <div style="position: absolute; right: -15px; bottom: 20px; opacity: 0.05; color: var(--c-wine-primary); pointer-events: none;">
-          <svg width="260" height="260" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-            <polyline points="22 4 12 14.01 9 11.01"/>
-          </svg>
-        </div>
-
-        <!-- Floating corner icon (100% Flat, Sin Drop-Shadow) -->
-        <div style="position: absolute; top: -12px; right: -6px; transform: rotate(10deg); pointer-events: none; z-index: 2;">
-          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--c-wine-primary)" stroke-width="2.3">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-            <polyline points="22 4 12 14.01 9 11.01"/>
-          </svg>
-        </div>
-
-        <div style="position: relative; z-index: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-right: 32px;">
-            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">
-              APORTE &middot; RESULTADOS DE SIMULACI&Oacute;N
-            </span>
-            <span style="background: #EAE0E1; color: var(--c-wine-primary); font-family: var(--font-mono); font-size: 15px; font-weight: 800; padding: 4px 12px; letter-spacing: 0.5px;">
+        <!-- Contenido Principal con Espaciado Cómodo -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #EAE0E1; color: var(--c-wine-primary); border-radius: 4px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px;">
+                APORTE &middot; RESULTADOS DE SIMULACI&Oacute;N
+              </span>
+            </div>
+            <span style="background: #EAE0E1; color: var(--c-wine-primary); font-family: var(--font-mono); font-size: 14px; font-weight: 800; padding: 4px 12px; letter-spacing: 0.5px;">
               APORTE DBR
             </span>
           </div>
           
-          <div style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+          <div style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 18px; line-height: 1.2;">
             Modelo con Reglas Claras
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 12px; font-family: var(--font-sans); font-size: 23px; color: #110103; line-height: 1.4;">
-            <div style="display: flex; gap: 12px; align-items: flex-start;">
-              <span style="color: var(--c-wine-primary); font-weight: 900; font-size: 24px; line-height: 1;">&#10003;</span>
+          <div style="display: flex; flex-direction: column; gap: 16px; font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.45;">
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 900; font-size: 24px; line-height: 1.1;">&#10003;</span>
               <span><strong>Coherencia en simulaci&oacute;n:</strong> La gu&iacute;a mantuvo el rol de espejo reflexivo durante los escenarios de prueba.</span>
             </div>
-            <div style="display: flex; gap: 12px; align-items: flex-start;">
-              <span style="color: var(--c-wine-primary); font-weight: 900; font-size: 24px; line-height: 1;">&#10003;</span>
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 900; font-size: 24px; line-height: 1.1;">&#10003;</span>
               <span><strong>Articulaci&oacute;n te&oacute;rica formal:</strong> Se integran los procesos cognitivos de Flower &amp; Hayes con la pr&aacute;ctica reflexiva de Sch&ouml;n.</span>
             </div>
-            <div style="display: flex; gap: 12px; align-items: flex-start;">
-              <span style="color: var(--c-wine-primary); font-weight: 900; font-size: 24px; line-height: 1;">&#10003;</span>
-              <span><strong>Gu&iacute;a en Markdown:</strong> Las reglas condicionales y los disparadores sem&aacute;nticos quedaron documentados para su aplicaci&oacute;n y evaluación futura.</span>
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="color: var(--c-wine-primary); font-weight: 900; font-size: 24px; line-height: 1.1;">&#10003;</span>
+              <span><strong>Gu&iacute;a en Markdown:</strong> Las reglas condicionales y los disparadores sem&aacute;nticos quedaron documentados para su aplicaci&oacute;n futura.</span>
             </div>
           </div>
         </div>
 
-        <!-- Remate integrado de columna (Sin cajas anidadas) -->
-        <div style="border-top: 2px solid var(--c-border-subtle); padding-top: 14px; margin-top: 16px; position: relative; z-index: 1; display: flex; align-items: baseline; gap: 12px;">
+        <!-- Remate integrado de columna -->
+        <div style="border-top: 2px solid var(--c-border-subtle); padding-top: 14px; margin-top: 18px; display: flex; align-items: baseline; gap: 12px;">
           <span style="font-family: var(--font-mono); font-size: 15px; color: var(--c-wine-primary); font-weight: 800; letter-spacing: 1px; white-space: nowrap;">VALOR FORMATIVO:</span>
           <span style="font-family: var(--font-sans); font-size: 21px; color: #110103; font-weight: 700;">El dise&ntilde;o mantiene al autor como responsable de su texto.</span>
         </div>
       </div>
 
       <!-- Columna Derecha: Límites -->
-      <div style="position: relative; background: #FAF5F5; border-left: 8px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 26px 28px 22px 28px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
+      <div style="position: relative; background: #FAF5F5; border-left: 8px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 28px 32px 22px 32px; display: flex; flex-direction: column; justify-content: space-between;">
         
-        <!-- Watermark -->
-        <div style="position: absolute; right: -15px; bottom: 20px; opacity: 0.05; color: var(--c-red-accent); pointer-events: none;">
-          <svg width="260" height="260" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="12" y1="8" x2="12" y2="12"/>
-            <line x1="12" y1="16" x2="12.01" y2="16"/>
-          </svg>
-        </div>
-
-        <!-- Floating corner icon (100% Flat, Sin Drop-Shadow) -->
-        <div style="position: absolute; top: -12px; right: -6px; transform: rotate(-8deg); pointer-events: none; z-index: 2;">
-          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--c-red-accent)" stroke-width="2.3">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="12" y1="8" x2="12" y2="12"/>
-            <line x1="12" y1="16" x2="12.01" y2="16"/>
-          </svg>
-        </div>
-
-        <div style="position: relative; z-index: 1;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-right: 32px;">
-            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px;">
-              L&Iacute;MITES &middot; HONESTIDAD ACAD&Eacute;MICA
-            </span>
-            <span style="background: #FDE8E9; color: var(--c-red-accent); font-family: var(--font-mono); font-size: 15px; font-weight: 800; padding: 4px 12px; letter-spacing: 0.5px;">
+        <!-- Contenido Principal con Espaciado Cómodo -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #FDE8E9; color: var(--c-red-accent); border-radius: 4px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1.5px;">
+                L&Iacute;MITES &middot; HONESTIDAD ACAD&Eacute;MICA
+              </span>
+            </div>
+            <span style="background: #FDE8E9; color: var(--c-red-accent); font-family: var(--font-mono); font-size: 14px; font-weight: 800; padding: 4px 12px; letter-spacing: 0.5px;">
               DELIMITACI&Oacute;N
             </span>
           </div>
           
-          <div style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 16px; line-height: 1.2;">
+          <div style="font-family: var(--font-sans); font-size: 32px; font-weight: 800; color: var(--c-wine-dark); margin-bottom: 18px; line-height: 1.2;">
             Alcance de las Simulaciones de Escritorio
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 12px; font-family: var(--font-sans); font-size: 23px; color: #110103; line-height: 1.4;">
-            <div style="display: flex; gap: 12px; align-items: flex-start;">
-              <span style="color: var(--c-red-accent); font-weight: 900; font-size: 24px; line-height: 1;">&times;</span>
+          <div style="display: flex; flex-direction: column; gap: 16px; font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.45;">
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 900; font-size: 24px; line-height: 1.1;">&times;</span>
               <span><strong>Fase pre-emp&iacute;rica:</strong> La evidencia proviene de simulaciones de escritorio en DeepSeek, no de escritores reales.</span>
             </div>
-            <div style="display: flex; gap: 12px; align-items: flex-start;">
-              <span style="color: var(--c-red-accent); font-weight: 900; font-size: 24px; line-height: 1;">&times;</span>
-              <span><strong>Validaci&oacute;n independiente:</strong> Falta contrastar el modelo con usuarios reales, otros entornos de IA y un procedimiento independiente.</span>
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 900; font-size: 24px; line-height: 1.1;">&times;</span>
+              <span><strong>Validaci&oacute;n independiente:</strong> Falta contrastar el modelo con usuarios en otros entornos de IA y con evaluaci&oacute;n externa.</span>
             </div>
-            <div style="display: flex; gap: 12px; align-items: flex-start;">
-              <span style="color: var(--c-red-accent); font-weight: 900; font-size: 24px; line-height: 1;">&times;</span>
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <span style="color: var(--c-red-accent); font-weight: 900; font-size: 24px; line-height: 1.1;">&times;</span>
               <span><strong>Consulta a especialistas:</strong> Las pautas requieren enriquecerse con la revisi&oacute;n de especialistas antes de nuevas iteraciones.</span>
             </div>
           </div>
         </div>
 
-        <!-- Remate integrado de columna (Sin cajas anidadas) -->
-        <div style="border-top: 2px solid var(--c-border-subtle); padding-top: 14px; margin-top: 16px; position: relative; z-index: 1; display: flex; align-items: baseline; gap: 12px;">
+        <!-- Remate integrado de columna (Sin la palabra educación) -->
+        <div style="border-top: 2px solid var(--c-border-subtle); padding-top: 14px; margin-top: 18px; display: flex; align-items: baseline; gap: 12px;">
           <span style="font-family: var(--font-mono); font-size: 15px; color: var(--c-red-accent); font-weight: 800; letter-spacing: 1px; white-space: nowrap;">HORIZONTE INELUDIBLE:</span>
-          <span style="font-family: var(--font-sans); font-size: 21px; color: #110103; font-weight: 700;">Validaci&oacute;n emp&iacute;rica en contexto educativo aut&eacute;ntico.</span>
+          <span style="font-family: var(--font-sans); font-size: 21px; color: #110103; font-weight: 700;">Validaci&oacute;n emp&iacute;rica con escritores en escenarios reales de producci&oacute;n.</span>
         </div>
       </div>
 
     </div>
 
-    <!-- Remate Editorial de Doble Regla Vinotinto (100% Plano, Cero Fondos Oscuros) -->
-    <div style="background: #FAF5F5; border-top: 3.5px solid var(--c-wine-primary); border-bottom: 3.5px solid var(--c-wine-primary); padding: 18px 34px; display: flex; align-items: center; justify-content: space-between;">
-      <div style="display: flex; align-items: center; gap: 24px;">
-        <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; flex-shrink: 0;">
+    <!-- Remate Editorial de Doble Regla Vinotinto (Sin punto y coma) -->
+    <div style="background: #FAF5F5; border-top: 3.5px solid var(--c-wine-primary); border-bottom: 3.5px solid var(--c-wine-primary); padding: 16px 30px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <span style="font-family: var(--font-mono); font-size: 17px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; flex-shrink: 0;">
           BALANCE METODOL&Oacute;GICO:
         </span>
-        <span style="font-family: var(--font-sans); font-size: 23px; font-weight: 700; color: #110103; line-height: 1.35;">
-          La simulaci&oacute;n indic&oacute; coherencia interna; el modelo requiere validaci&oacute;n con personas en situaciones reales de escritura.
+        <span style="font-family: var(--font-sans); font-size: 22px; font-weight: 700; color: #110103; line-height: 1.35;">
+          La simulaci&oacute;n indic&oacute; coherencia interna, y el modelo requiere validaci&oacute;n con personas en situaciones reales de escritura.
         </span>
       </div>
     </div>

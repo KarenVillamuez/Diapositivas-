@@ -1,80 +1,76 @@
 <!-- ====================================================================
-     SLIDE 16: SEPARADOR 04 DISCUSIÓN Y CONCLUSIONES (HERO DARK CON INDICADOR DE RUTA)
+     SLIDE 16: 03 · RESULTADOS / DIAGRAMA DE ACTIVIDADES DEL AGENTE (FIGURA 4)
      ==================================================================== -->
-<section class="slide s-cover" id="slide-16">
-  <!-- Silueta sutil de la Torre de Cartagena a la derecha -->
-  <img src="assets/image1.png" alt="Torre" class="s1-tower-bg" style="opacity: 0.16;">
+<!-- ALCANCE: el diagrama representa la lógica del modelo. La prueba documentada se realizó en DeepSeek; no afirmar que el funcionamiento se comprobó en plataformas distintas. -->
+<section class="slide s-white" id="slide-16" data-notes="La Figura 4 traduce los principios de diseño en decisiones de mediación. La guía responde al contenido de la interacción, no a tiempos predeterminados: guarda silencio si el autor escribe sin bloqueos, interviene ante dudas y permite continuar o cerrar el texto si la persona así lo decide.">
+  
+  <header class="slide-header">
+    <div class="sh-left">
+      <span class="sh-red-bar"></span>
+      <span class="sh-category">03 &middot; RESULTADOS &middot; DIAGRAMA DE ACTIVIDADES</span>
+    </div>
+    <img src="assets/image6.png" alt="#LoxTIC" class="sh-loxtic">
+  </header>
+  <div class="sh-divider"></div>
 
-  <!-- Contenido central -->
-  <div style="position: absolute; left: 5.7%; top: 24%; max-width: 1300px; z-index: 5;">
+  <div class="slide-content-area" style="padding-top: 10px; padding-bottom: 14px; justify-content: flex-start;">
     
-    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
-      <div style="width: 44px; height: 6px; background-color: var(--c-red-accent);"></div>
-      <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700; color: var(--c-gold); letter-spacing: 2px;">
-        FASE 4 DE 4
-      </span>
+    <!-- Título Principal y Subtítulo -->
+    <div style="margin-bottom: 6px;">
+      <h2 class="s-lead-question" style="font-size: 38px; font-weight: 800; color: #2C0509; margin-bottom: 2px; line-height: 1.18;">
+        Diagrama de actividades: decisiones, silencios y salida directa (Figura 4)
+      </h2>
+      <div style="font-family: var(--font-sans); font-size: 21px; color: var(--c-gray-text); font-weight: 600;">
+        Estructura de decisi&oacute;n del mediador conversacional ante bloqueos, dudas expl&iacute;citas y solicitudes de salida.
+      </div>
     </div>
 
-    <h1 style="font-family: var(--font-sans); font-size: 74px; font-weight: 800; color: #FFFFFF; line-height: 1.15; margin-bottom: 20px;">
-      Discusión y Conclusiones
-    </h1>
+    <!-- Contenedor Principal: Gran Escaparate de la Imagen md.png (HERO MAXIMIZADO) -->
+    <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; align-items: center; margin-bottom: 8px; min-height: 0;">
+      
+      <!-- Epígrafe superior discreto -->
+      <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #EAE0E1; padding-bottom: 4px; margin-bottom: 8px; flex-shrink: 0;">
+        <span style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1px;">
+          FIGURA 4 &middot; DIAGRAMA DE ACTIVIDADES DEL AGENTE CONVERSACIONAL
+        </span>
+        <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #8D7A7D;">
+          FLUJO CONDICIONAL &middot; SILENCIO, PREGUNTA Y RUTA PRAGM&Aacute;TICA
+        </span>
+      </div>
 
-    <p style="font-family: var(--font-sans); font-size: 30px; line-height: 1.4; color: rgba(255, 255, 255, 0.85); margin: 0;">
-      Alcance del evaluador, patrones de fallo y trabajo posterior antes de cualquier despliegue.
-    </p>
+      <!-- Imagen md.png en Gran Tamaño para Proyector -->
+      <div style="width: 100%; flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0; padding: 4px 0;">
+        <img src="assets/md.png" alt="Figura 4: Diagrama de actividades de la mediación conversacional" style="max-height: 550px; max-width: 100%; width: auto; object-fit: contain; display: block;">
+      </div>
+
+    </div>
+
+    <!-- Párrafo Síntesis Unificado (Al igual que Slide 13) -->
+    <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 8px 18px; display: flex; align-items: center; gap: 18px; flex-shrink: 0;">
+      
+      <!-- Indicador de Ramas -->
+      <div style="display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; border-right: 2px solid var(--c-border-subtle); padding-right: 14px;">
+        <div style="font-family: var(--font-mono); font-size: 12px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1px;">
+          L&Oacute;GICA OPERATIVA
+        </div>
+        <div style="display: flex; gap: 5px;">
+          <span style="background: #EAE0E1; color: var(--c-wine-primary); font-family: var(--font-mono); font-size: 11px; font-weight: 800; padding: 1px 6px;">SILENCIO ACTIVO</span>
+          <span style="background: #FDE8E9; color: var(--c-red-accent); font-family: var(--font-mono); font-size: 11px; font-weight: 800; padding: 1px 6px;">PREGUNTA DIAL&Oacute;GICA</span>
+          <span style="background: #FFF9E6; color: #9A7200; font-family: var(--font-mono); font-size: 11px; font-weight: 800; padding: 1px 6px;">RUTA DIRECTA</span>
+        </div>
+      </div>
+
+      <!-- Párrafo Integrador Fluido -->
+      <div style="font-family: var(--font-sans); font-size: 19px; color: #110103; line-height: 1.32; font-weight: 600;">
+        La gu&iacute;a <strong>guarda silencio</strong> si la escritura es fluida. Ante bloqueos o desajustes declarados, <strong>formula preguntas sin sugerir contenido</strong>, y si el autor decide continuar sin pausar, <strong>habilita la transici&oacute;n inmediata</strong> sin penalizaciones.
+      </div>
+
+    </div>
 
   </div>
 
-  <!-- Mini-Roadmap / Stepper en la parte inferior (GPS Visual) -->
-  <div style="position: absolute; left: 5.7%; bottom: 8%; width: 88.5%; display: flex; gap: 24px; z-index: 5;">
-    
-    <!-- Paso 1: Completado / Ya visto -->
-    <div style="flex: 1; border-top: 4px solid rgba(255, 255, 255, 0.7); padding-top: 14px;">
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-        <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: rgba(255, 255, 255, 0.9);">01</span>
-        <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: rgba(255, 255, 255, 0.95); background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 2px 10px; border-radius: 0; display: inline-flex; align-items: center; gap: 5px; letter-spacing: 1px;">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          VISTO
-        </span>
-      </div>
-      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 600; color: rgba(255, 255, 255, 0.85);">Contexto Rural</div>
-    </div>
-
-    <!-- Paso 2: Completado / Ya visto -->
-    <div style="flex: 1; border-top: 4px solid rgba(255, 255, 255, 0.7); padding-top: 14px;">
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-        <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: rgba(255, 255, 255, 0.9);">02</span>
-        <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: rgba(255, 255, 255, 0.95); background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 2px 10px; border-radius: 0; display: inline-flex; align-items: center; gap: 5px; letter-spacing: 1px;">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          VISTO
-        </span>
-      </div>
-      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 600; color: rgba(255, 255, 255, 0.85);">Metodología RAG</div>
-    </div>
-
-    <!-- Paso 3: Completado / Ya visto -->
-    <div style="flex: 1; border-top: 4px solid rgba(255, 255, 255, 0.7); padding-top: 14px;">
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-        <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: rgba(255, 255, 255, 0.9);">03</span>
-        <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: rgba(255, 255, 255, 0.95); background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 2px 10px; border-radius: 0; display: inline-flex; align-items: center; gap: 5px; letter-spacing: 1px;">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          VISTO
-        </span>
-      </div>
-      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 600; color: rgba(255, 255, 255, 0.85);">Resultados</div>
-    </div>
-
-    <!-- Paso 4: Activo (Fase Final) -->
-    <div style="flex: 1; border-top: 4px solid var(--c-gold); padding-top: 14px;">
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-        <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: var(--c-gold);">04</span>
-        <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: #1C0507; background: var(--c-gold); padding: 2px 10px; border-radius: 0; display: inline-flex; align-items: center; gap: 6px; letter-spacing: 1px;">
-          <span style="width: 6px; height: 6px; background: #1C0507;"></span>
-          EN CURSO
-        </span>
-      </div>
-      <div style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: #FFFFFF;">Discusión</div>
-    </div>
-
-  </div>
+  <div class="slide-footer-rule"></div>
+  <footer class="slide-footer">
+    <span class="sf-left">VI CONGRESO INTERNACIONAL &middot; CARTAGENA 2026</span>
+    <span class="sf-right">ESCRITURA REFLEXIVA ASISTIDA POR IA &middot; ACTO 03</span>
 </section>

@@ -24,89 +24,90 @@
       </div>
     </div>
 
-    <!-- Layout Dividido: Figura 3 a la Izquierda y 4 Intervenciones a la Derecha (100% Plano) -->
-    <div style="display: flex; gap: 32px; align-items: stretch; flex: 1; margin-top: 14px; margin-bottom: 14px;">
+    <!-- Layout Dividido: Figura 3 a la Izquierda (HERO EXPANDIDO) y 4 Intervenciones a la Derecha -->
+    <div style="display: flex; gap: 26px; align-items: stretch; flex: 1; margin-top: 8px; margin-bottom: 6px; height: 645px;">
       
-      <!-- Columna Principal: Marco de Ventana con Figura 3 -->
-      <div style="flex: 0 0 820px; border: 2px solid var(--c-wine-primary); background: #FFFFFF; display: flex; flex-direction: column; justify-content: space-between;">
+      <!-- Columna Principal: Escaparate de la Figura 3 (ModeloConIA MAXIMIZADO) -->
+      <div style="flex: 1.52; display: flex; flex-direction: column; justify-content: space-between; min-width: 0; padding: 2px 4px;">
         
-        <!-- Header del marco -->
-        <div style="background: var(--c-wine-primary); padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0;">
-          <span style="font-family: var(--font-mono); font-size: 18px; font-weight: 800; color: #FFFFFF; letter-spacing: 1px;">
-            FIGURA 3 &middot; MEDIACI&Oacute;N CONVERSACIONAL
+        <!-- Epígrafe superior de la figura -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #EAE0E1; padding-bottom: 4px; margin-bottom: 4px;">
+          <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1px;">
+            FIGURA 3 &middot; MODELO MEDIADO POR IA
           </span>
-          <span style="font-family: var(--font-sans); font-size: 18px; color: var(--c-gold); font-weight: 700;">
-            El Autor en el Centro &middot; I1 a I4
+          <span style="font-family: var(--font-mono); font-size: 14px; font-weight: 700; color: #8D7A7D;">
+            EL AUTOR EN EL CENTRO &middot; 4 INTERVENCIONES (I1&ndash;I4)
           </span>
         </div>
 
-        <!-- Imagen Figura 3 -->
-        <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 14px; background: #FFFFFF; overflow: hidden;">
-          <img src="assets/figura_3.png" alt="Figura 3: Modelo integrado con mediación conversacional de IA" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+        <!-- Imagen ModeloConIA en Gran Tamaño -->
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0; padding: 0;">
+          <img src="assets/ModeloConIA.png" alt="Figura 3: Modelo integrado con mediación conversacional de IA" style="max-height: 580px; max-width: 100%; width: auto; object-fit: contain; display: block;">
         </div>
 
-        <!-- Pie del marco -->
-        <div style="background: #FAF5F5; border-top: 1px solid var(--c-border-subtle); padding: 10px 18px; font-family: var(--font-mono); font-size: 20px; color: #4A3B3D; display: flex; justify-content: space-between; font-weight: 700;">
-          <span>Solicitud de metas previas antes de redactar</span>
+        <!-- Pie descriptivo editorial -->
+        <div style="border-top: 1px solid #EAE0E1; padding-top: 4px; font-family: var(--font-mono); font-size: 14px; color: #5D4A4D; display: flex; justify-content: space-between; font-weight: 700;">
+          <span>Espejo dial&oacute;gico: devuelve preguntas basadas en los t&eacute;rminos del autor</span>
           <span style="color: var(--c-wine-primary);">Fuente: Autores.</span>
         </div>
+
       </div>
 
       <!-- Columna Lateral: Desglose de las 4 intervenciones de acompañamiento -->
-      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px; justify-content: space-between;">
+      <div style="flex: 0.62; min-width: 0; display: flex; flex-direction: column; gap: 9px; justify-content: space-between;">
         
         <!-- I1 -->
-        <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 0.5px;">I1 &middot; IDEACI&Oacute;N (P2)</span>
-            <span style="font-size: 14px; background: #EAE0E1; color: var(--c-wine-primary); padding: 2px 8px; font-family: var(--font-mono); font-weight: 800;">PLANIFICACI&Oacute;N</span>
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 9px 13px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 0.5px;">I1 &middot; IDEACI&Oacute;N (P2)</span>
+            <span style="font-size: 12px; background: #EAE0E1; color: var(--c-wine-primary); padding: 1px 6px; font-family: var(--font-mono); font-weight: 800;">PLANIFICACI&Oacute;N</span>
           </div>
-          <h3 style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 4px 0;">
+          <h3 style="font-family: var(--font-sans); font-size: 18px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 2px 0; line-height: 1.2;">
             Ampliaci&oacute;n de Perspectivas
           </h3>
-          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; font-style: italic; line-height: 1.35; font-weight: 600;">
+          <div style="font-family: var(--font-sans); font-size: 16px; color: #110103; font-style: italic; line-height: 1.28; font-weight: 600;">
             &ldquo;&iquest;Qu&eacute; otros &aacute;ngulos no has considerado a&uacute;n?&rdquo;
           </div>
         </div>
 
         <!-- I2 -->
-        <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 0.5px;">I2 &middot; ORGANIZACI&Oacute;N (P4)</span>
-            <span style="font-size: 14px; background: #FDE8E9; color: var(--c-red-accent); padding: 2px 8px; font-family: var(--font-mono); font-weight: 800;">ESTRUCTURA</span>
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 9px 13px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 0.5px;">I2 &middot; ORGANIZACI&Oacute;N (P4)</span>
+            <span style="font-size: 12px; background: #FDE8E9; color: var(--c-red-accent); padding: 1px 6px; font-family: var(--font-mono); font-weight: 800;">ESTRUCTURA</span>
           </div>
-          <h3 style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 4px 0;">
-            Estructura con Vocabulario del Autor
+          <h3 style="font-family: var(--font-sans); font-size: 18px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 2px 0; line-height: 1.2;">
+            Estructura con Vocabulario Propio
           </h3>
-          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; font-style: italic; line-height: 1.35; font-weight: 600;">
+          <div style="font-family: var(--font-sans); font-size: 16px; color: #110103; font-style: italic; line-height: 1.28; font-weight: 600;">
             Representaci&oacute;n jer&aacute;rquica con los t&eacute;rminos que el autor ya introdujo.
           </div>
         </div>
 
         <!-- I3 -->
-        <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 0.5px;">I3 &middot; BORRADOR VS METAS (P7)</span>
-            <span style="font-size: 14px; background: #EAE0E1; color: var(--c-wine-primary); padding: 2px 8px; font-family: var(--font-mono); font-weight: 800;">REVISI&Oacute;N</span>
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 9px 13px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 0.5px;">I3 &middot; REVISI&Oacute;N (P7)</span>
+            <span style="font-size: 12px; background: #EAE0E1; color: var(--c-wine-primary); padding: 1px 6px; font-family: var(--font-mono); font-weight: 800;">BORRADOR VS METAS</span>
           </div>
-          <h3 style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 4px 0;">
+          <h3 style="font-family: var(--font-sans); font-size: 18px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 2px 0; line-height: 1.2;">
             Contraste con la Intenci&oacute;n Original
           </h3>
-          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; font-style: italic; line-height: 1.35; font-weight: 600;">
-            &ldquo;Tu meta era persuadir sobre&hellip; &iquest;en qu&eacute; parte del texto se aborda?&rdquo;
+          <div style="font-family: var(--font-sans); font-size: 16px; color: #110103; font-style: italic; line-height: 1.28; font-weight: 600;">
+            &ldquo;Tu meta era persuadir sobre&hellip; &iquest;d&oacute;nde se aborda en el texto?&rdquo;
           </div>
         </div>
 
         <!-- I4 -->
-        <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 14px 18px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-            <span style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: #9A7200; letter-spacing: 0.5px;">I4 &middot; REFLEXI&Oacute;N SOBRE EL PROCESO (P8)</span>
-            <span style="font-size: 14px; background: #FFF9E6; color: #9A7200; padding: 2px 8px; font-family: var(--font-mono); font-weight: 800;">CIERRE</span>
+        <div style="background: #FAF5F5; border-left: 6px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 9px 13px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 800; color: #9A7200; letter-spacing: 0.5px;">I4 &middot; REFLEXI&Oacute;N (P8)</span>
+            <span style="font-size: 12px; background: #FFF9E6; color: #9A7200; padding: 1px 6px; font-family: var(--font-mono); font-weight: 800;">CIERRE</span>
           </div>
-          <h3 style="font-family: var(--font-sans); font-size: 22px; font-weight: 800; color: #9A7200; margin: 0 0 4px 0;">
+          <h3 style="font-family: var(--font-sans); font-size: 18px; font-weight: 800; color: #9A7200; margin: 0 0 2px 0; line-height: 1.2;">
             Reflexi&oacute;n sobre el Proceso
           </h3>
-          <div style="font-family: var(--font-sans); font-size: 20px; color: #110103; font-style: italic; line-height: 1.35; font-weight: 600;">
+          <div style="font-family: var(--font-sans); font-size: 16px; color: #110103; font-style: italic; line-height: 1.28; font-weight: 600;">
             &ldquo;&iquest;Qu&eacute; esperabas que ocurriera al escribir esa frase?&rdquo;
           </div>
         </div>

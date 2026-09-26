@@ -13,108 +13,127 @@
   </header>
   <div class="sh-divider"></div>
 
-  <div class="slide-content-area" style="justify-content: space-between; padding-top: 16px; padding-bottom: 16px;">
+  <div class="slide-content-area" style="padding-top: 14px; padding-bottom: 20px; justify-content: flex-start;">
     
-    <div>
-      <h2 class="s-lead-question" style="font-size: 44px; font-weight: 800; color: #2C0509; margin-bottom: 6px; line-height: 1.2;">
+    <!-- Título Principal y Subtítulo Limpio -->
+    <div style="margin-bottom: 18px;">
+      <h2 class="s-lead-question" style="font-size: 40px; font-weight: 800; color: #2C0509; margin-bottom: 6px; line-height: 1.18;">
         Una gu&iacute;a en Markdown: reglas condicionales y disparadores sem&aacute;nticos
       </h2>
-      <div style="font-family: var(--font-sans); font-size: 24px; color: var(--c-gray-text); font-weight: 600;">
-        Reglas condicionales para orientar una mediaci&oacute;n conversacional sin redactar por el autor.
+      <div style="font-family: var(--font-sans); font-size: 23px; color: var(--c-gray-text); font-weight: 600;">
+        Configuraci&oacute;n del asistente para acompa&ntilde;ar la reflexi&oacute;n sin redactar ni corregir por el autor.
       </div>
     </div>
 
-    <!-- Layout Dividido: Visor de Guía Markdown y Pilares de Operación (100% Plano) -->
-    <div style="display: flex; gap: 32px; align-items: stretch; flex: 1; margin-top: 14px; margin-bottom: 14px;">
+    <!-- Layout Asimétrico 53% / 47% de Alta Legibilidad para Proyector -->
+    <div style="display: grid; grid-template-columns: 53% 47%; gap: 30px; height: 630px; align-items: stretch;">
       
-      <!-- Columna Izquierda: Visor del System Prompt en Markdown -->
-      <div style="flex: 1.2; background: #0E0305; border: 2px solid var(--c-wine-primary); padding: 24px 26px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--font-mono);">
+      <!-- COLUMNA IZQUIERDA: Visor del System Prompt en Markdown Real -->
+      <div style="background: #0E0305; border: 2px solid var(--c-wine-primary); padding: 22px 24px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--font-mono); box-shadow: 0 4px 20px rgba(50, 6, 13, 0.15);">
         
         <div>
+          <!-- Barra Superior Estilo Editor -->
           <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(245, 194, 27, 0.35); padding-bottom: 10px; margin-bottom: 16px;">
-            <span style="color: var(--c-gold); font-size: 18px; font-weight: 800; letter-spacing: 1px;">
-              GU&Iacute;A EN MARKDOWN &middot; GUIA_MEDIACION.MD
-            </span>
-            <span style="color: #FAF5F5; font-size: 16px; font-weight: 700; opacity: 0.85;">
-              FORMATO .MD
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #FF5252;"></span>
+              <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #F5C21B;"></span>
+              <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #4CAF50;"></span>
+              <span style="color: var(--c-gold); font-size: 16px; font-weight: 800; letter-spacing: 1px; margin-left: 6px;">
+                guia_mediacion.md &middot; SYSTEM PROMPT
+              </span>
+            </div>
+            <span style="color: #FAF5F5; font-size: 14px; font-weight: 700; opacity: 0.85; background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 3px;">
+              ESPECIFICACI&Oacute;N FORMAL
             </span>
           </div>
 
-          <pre style="margin: 0; font-size: 21px; line-height: 1.55; color: #FAF5F5; white-space: pre-wrap; font-family: var(--font-mono);">
-<span style="color: var(--c-gold);"># ROL Y LÍMITES</span>
-Eres un espejo dialógico. <strong style="color: var(--c-red-accent);">NO redactes</strong> párrafos ni corrijas estilo.
+          <!-- Fragmento Real del .md de Escritura Reflexiva con Sintaxis Limpia -->
+          <pre style="margin: 0; font-size: 19.5px; line-height: 1.48; color: #FAF5F5; white-space: pre-wrap; font-family: var(--font-mono);">
+<span style="color: var(--c-gold); font-weight: 700;"># REGLA CENTRAL DE NO SUSTITUCIÓN</span>
+<span style="color: #8D7A7D;">&gt; El asistente nunca sustituye al escritor: no genera</span>
+<span style="color: #8D7A7D;">&gt; contenido, no corrige, no evalúa. Solo devuelve preguntas</span>
+<span style="color: #8D7A7D;">&gt; construidas exclusivamente con las palabras del autor.</span>
 
-<span style="color: var(--c-gold);"># DISPARADORES SEMÁNTICOS Y CONDICIONES</span>
-<span style="color: #64B5F6;">SI</span> autor presenta [BORRADOR] con duda o contradicción:
-   &rarr; Formular una pregunta con sus propios términos.
+<span style="color: var(--c-gold); font-weight: 700;"># DISPARADORES SEMÁNTICOS (I1–I4)</span>
+<span style="color: #80D8FF;">SI</span> bloqueo o repetición estéril:
+   <span style="color: #EAE0E1;">&rarr; Pregunta abierta con su término</span> <span style="color: #69F0AE;">(I1 &middot; P3)</span>
 
-<span style="color: #64B5F6;">SI</span> autor solicita <span style="color: var(--c-red-accent);">"Redáctalo tú"</span>:
-   &rarr; Declinar cortésmente: "¿Qué idea central buscas defender?"
+<span style="color: #80D8FF;">SI</span> desajuste declarado <span style="color: #FF8A80;">("algo no cuadra")</span>:
+   <span style="color: #EAE0E1;">&rarr; "¿Qué esperabas decir y qué encuentras?"</span> <span style="color: #69F0AE;">(I3 &middot; P7)</span>
 
-<span style="color: #64B5F6;">SI</span> autor desea continuar sin detenerse (prisa / cierre):
-   &rarr; Permitir avanzar o cerrar el texto.
+<span style="color: #80D8FF;">SI</span> autor pide <span style="color: #FF5252; font-weight: 700;">"Escribe por mí"</span>:
+   <span style="color: #EAE0E1;">&rarr; Declinar cortésmente: "¿Qué idea buscas defender?"</span>
+
+<span style="color: #80D8FF;">SI</span> autor expresa prisa o rechaza pausar:
+   <span style="color: #EAE0E1;">&rarr; <strong>Ruta pragmática:</strong> avanzar y silenciar.</span>
           </pre>
         </div>
 
-        <div style="background: rgba(245, 194, 27, 0.12); border-left: 4px solid var(--c-gold); padding: 12px 18px; font-size: 18px; color: var(--c-gold); font-weight: 700; margin-top: 14px;">
-          Prueba documentada: gu&iacute;a cargada en DeepSeek para las simulaciones de escritorio.
+        <!-- Pie Informativo del Visor -->
+        <div style="background: rgba(245, 194, 27, 0.10); border-left: 4px solid var(--c-gold); padding: 10px 14px; font-size: 16px; color: var(--c-gold); font-weight: 700; margin-top: 10px;">
+          Prueba documentada en DeepSeek &middot; Formato .md portable a entornos conversacionales.
         </div>
       </div>
 
-      <!-- Columna Derecha: 3 Pilares Operativos de la Guía -->
-      <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; justify-content: space-between;">
+      <!-- COLUMNA DERECHA: 3 Pilares Operativos de la Guía (Estilo Suizo Impecable) -->
+      <div style="display: flex; flex-direction: column; gap: 16px; justify-content: space-between;">
         
-        <!-- Pilar 1 -->
+        <!-- Tarjeta 1: Contrato de Arranque -->
         <div style="background: #FAF5F5; border-left: 8px solid var(--c-wine-primary); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 24px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
-          <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-wine-primary); margin-bottom: 4px; letter-spacing: 1px;">
-            01 &middot; FORMATO DE LA GU&Iacute;A
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1px;">
+              01 &middot; CONTRATO DE ARRANQUE
+            </span>
+            <span style="background: rgba(70, 8, 17, 0.12); color: var(--c-wine-primary); font-family: var(--font-mono); font-size: 13px; font-weight: 800; padding: 2px 10px;">
+              NO SUSTITUCI&Oacute;N
+            </span>
           </div>
           <h3 style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 8px 0; line-height: 1.2;">
-            Reglas Expl&iacute;citas en Markdown
+            Encuadre Inicial Expl&iacute;cito
           </h3>
-          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; font-weight: 600;">
-            La gu&iacute;a organiza el rol, los l&iacute;mites, las condiciones y los disparadores de la mediaci&oacute;n.
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; line-height: 1.42; font-weight: 600;">
+            El mensaje de bienvenida define que la IA no escribe ni corrige. Exige ver notas o borradores del autor antes de formular cualquier pregunta reflexiva.
           </div>
         </div>
 
-        <!-- Pilar 2 -->
+        <!-- Tarjeta 2: Disparadores Semánticos -->
         <div style="background: #FAF5F5; border-left: 8px solid var(--c-red-accent); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 24px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
-          <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--c-red-accent); margin-bottom: 4px; letter-spacing: 1px;">
-            02 &middot; DISPARADORES SEM&Aacute;NTICOS
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: var(--c-red-accent); letter-spacing: 1px;">
+              02 &middot; DISPARADORES SEM&Aacute;NTICOS
+            </span>
+            <span style="background: rgba(201, 16, 27, 0.12); color: var(--c-red-accent); font-family: var(--font-mono); font-size: 13px; font-weight: 800; padding: 2px 10px;">
+              I1 &ndash; I4
+            </span>
           </div>
           <h3 style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: var(--c-text-dark); margin: 0 0 8px 0; line-height: 1.2;">
-            Detecci&oacute;n en el Di&aacute;logo
+            Detecci&oacute;n Textual en el Di&aacute;logo
           </h3>
-          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; font-weight: 600;">
-            Reconoce vacilaci&oacute;n, bloqueos o contradicciones para formular una pregunta a partir de las palabras del autor.
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; line-height: 1.42; font-weight: 600;">
+            Se activa solo ante bloqueos expl&iacute;citos o desajustes declarados. Construye preguntas con el l&eacute;xico del autor y permanece en silencio si no hay se&ntilde;al.
           </div>
         </div>
 
-        <!-- Pilar 3 -->
+        <!-- Tarjeta 3: Ruta Pragmática -->
         <div style="background: #FAF5F5; border-left: 8px solid var(--c-gold); border-top: 1px solid var(--c-border-subtle); border-right: 1px solid var(--c-border-subtle); border-bottom: 1px solid var(--c-border-subtle); padding: 22px 24px; display: flex; flex-direction: column; justify-content: center; flex: 1;">
-          <div style="font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: #9A7200; margin-bottom: 4px; letter-spacing: 1px;">
-            03 &middot; CONDICIONES DE AVANCE
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-family: var(--font-mono); font-size: 15px; font-weight: 800; color: #9A7200; letter-spacing: 1px;">
+              03 &middot; CONTROL DEL AUTOR
+            </span>
+            <span style="background: rgba(245, 194, 27, 0.20); color: #7A5B00; font-family: var(--font-mono); font-size: 13px; font-weight: 800; padding: 2px 10px;">
+              RUTA PRAGM&Aacute;TICA
+            </span>
           </div>
           <h3 style="font-family: var(--font-sans); font-size: 26px; font-weight: 800; color: #9A7200; margin: 0 0 8px 0; line-height: 1.2;">
-            Paso entre Fases
+            Condiciones de Paso y Salida R&aacute;pida
           </h3>
-          <div style="font-family: var(--font-sans); font-size: 22px; color: #110103; line-height: 1.4; font-weight: 600;">
-            El avance depende de las condiciones de cada fase; la revisi&oacute;n puede activarse cuando el autor lo requiera.
+          <div style="font-family: var(--font-sans); font-size: 21px; color: #110103; line-height: 1.42; font-weight: 600;">
+            El paso entre fases (P1&ndash;P8) verifica criterios claros, pero respeta la decisi&oacute;n de omitir la reflexi&oacute;n si hay prisa para no paralizar la redacci&oacute;n.
           </div>
         </div>
 
       </div>
 
-    </div>
-
-    <!-- Doble Regla Remate Editorial (100% Plano, Cero Fondos Oscuros) -->
-    <div style="background: #FAF5F5; border-top: 3.5px solid var(--c-wine-primary); border-bottom: 3.5px solid var(--c-wine-primary); padding: 18px 34px; display: flex; align-items: center; gap: 24px;">
-      <span style="font-family: var(--font-mono); font-size: 20px; font-weight: 800; color: var(--c-wine-primary); letter-spacing: 1.5px; white-space: nowrap;">
-        REGLAS DE LA GU&Iacute;A:
-      </span>
-      <span style="font-family: var(--font-sans); font-size: 25px; font-weight: 700; color: #110103; line-height: 1.3;">
-        Las <strong>reglas en Markdown</strong> orientan el silencio, la pregunta y el avance. Su comportamiento en otros entornos debe validarse.
-      </span>
     </div>
 
   </div>
